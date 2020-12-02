@@ -44,13 +44,19 @@ const Hero = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container-sm">
+      <div className="container-xs">
         <div className={innerClasses}>
           <div className="hero-content">
 
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               <span className="text-color-secondary">Best <span className='text-color-primary'>Cryptocurrency</span> Exchanges</span>
             </h1>
+
+            <div className="container-sm">
+              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+                Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
+              </p>
+            </div>
             
           </div>
         </div>

@@ -57,6 +57,7 @@ const Hero = ({
                 learn what’s possible in the world of cryptocurrency
               </p>
             </div>
+            
           </div>
         </div>
       </div>

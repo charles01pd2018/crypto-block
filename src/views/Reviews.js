@@ -7,7 +7,7 @@ const Reviews = () => {
 
     return (
     <>
-        <Hero bottomDivider className='illustration-section-01'/>   
+        <Hero className='illustration-section-01'/>   
     </>
     )
 }
