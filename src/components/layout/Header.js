@@ -20,7 +20,7 @@ const propTypes = {
 const defaultProps = {
   navPosition: '',
   hideNav: false,
-  hideSignin: false,
+  hideSignin: true,
   bottomOuterDivider: false,
   bottomDivider: false
 }
@@ -119,10 +119,10 @@ const Header = ({
                     )}>
 
                     <li>
-                      <Link to="/about" onClick={closeMenu}>About</Link>
+                      <Link to="/about" onClick={closeMenu}><b>About</b></Link>
                     </li>
                     <li>
-                      <Link to="/reviews" onClick={closeMenu}>Reviews</Link>
+                      <Link to="/reviews" onClick={closeMenu}><b>Reviews</b></Link>
                     </li>
                   </ul>
 
