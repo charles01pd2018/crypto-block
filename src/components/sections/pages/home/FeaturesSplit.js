@@ -1,9 +1,12 @@
 import React from 'react';
-import classNames from 'classnames';
 
+// types
+import classNames from 'classnames';
 import { SectionSplitProps } from '../../../../utils/SectionProps';
-import SectionHeader from '../../partials/SectionHeader';
+
+// elements
 import Image from '../../../elements/Image';
+
 
 const propTypes = {
   ...SectionSplitProps.types
@@ -50,10 +53,6 @@ const FeaturesSplit = ({
     alignTop && 'align-top'
   );
 
-  const sectionHeader = {
-    title: 'Workflow that just works',
-    paragraph: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum — semper quis lectus nulla at volutpat diam ut venenatis.'
-  };
 
   return (
     <section
@@ -62,7 +61,6 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <SectionHeader data={sectionHeader} className="center-content" />
           <div className={splitClasses}>
 
             <div className="split-item">
@@ -78,9 +76,9 @@ const FeaturesSplit = ({
 
                 <p className="m-0">
                   We research and compile up-date-information information and extract meaningful insights so you can navigate the crypto landscape.
-                  </p>
-
+                </p>
               </div>
+
               <div className={
                 classNames(
                   'split-item-image center-content-mobile reveal-from-bottom',
@@ -102,14 +100,13 @@ const FeaturesSplit = ({
                   Tough Grading
                   </div>
 
-                <h3 className="mt-0 mb-12">
-                  Rigorous Scoring Guidelines 
-                </h3>
+                  <h3 className="mt-0 mb-12">
+                    Rigorous Scoring Guidelines 
+                  </h3>
 
-                <p className="m-0">
-                  Our scoring procedure takes into account multiple factors that you care about while considering the importance of each factor to calculate accurate rating scores. 
-                </p>
-
+                  <p className="m-0">
+                    Our scoring procedure takes into account multiple factors that you care about while considering the importance of each factor to calculate accurate rating scores. 
+                  </p>
               </div>
               
               <div className={
