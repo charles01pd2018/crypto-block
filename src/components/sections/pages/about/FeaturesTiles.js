@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../elements/Image';
+import SectionHeader from '../../partials/SectionHeader';
 
 
 const propTypes = {
@@ -55,31 +55,20 @@ const FeaturesTiles = ({
       <div className='container feature-tiles'>
         <div className={innerClasses}>
 
-          <div className='section-inner center-content'>
-            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Our Values
-            </h1>
-          </div>
+          <SectionHeader data={ {title: 'Our Values'} } className='center-content' />
 
           <div className={tilesClasses}>
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
+
                 <div className="features-tiles-item-header">
-                  
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-01.svg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
-                  </div>
+                  <h4 className="mt-0 mb-8 text-color-secondary">
+                    Time
+                  </h4>
                 </div>
 
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Time
-                    </h4>
                   <p className="m-0 text-sm">
                     Financial Literacy gives people the time to do what they want to do. Spend time with loved ones. Play video games. Give back to communities. Anything you are passionate about! 
                   </p>
@@ -89,21 +78,14 @@ const FeaturesTiles = ({
           
           <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
+                
                 <div className="features-tiles-item-header">
-                  
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
-                  </div>
+                  <h4 className="mt-0 mb-8 text-color-secondary">
+                    Equal Opportunity
+                  </h4>
                 </div>
 
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Equal Opportunity
-                  </h4>
                   <p className="m-0 text-sm">
                     Decentralized Finance is creating a new economic system backed by trust. It is giving everyone access to financial resources and opportunities not previously seen. <b>We want to make you aware of these new developments so you can take advantage of them</b>.
                   </p>
@@ -113,21 +95,14 @@ const FeaturesTiles = ({
 
             <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
+
                 <div className="features-tiles-item-header">
-                  
-                  <div className="features-tiles-item-image mb-16">
-                    <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 01"
-                      width={64}
-                      height={64} />
-                  </div>
+                  <h4 className="mt-0 mb-8 text-color-secondary">
+                    Learn
+                  </h4>
                 </div>
 
                 <div className="features-tiles-item-content">
-                  <h4 className="mt-0 mb-8">
-                    Learn
-                  </h4>
                   <p className="m-0 text-sm">
                     We believe in constantly learning new things and accepting new ideas. The only way to know if something is better is to challenge traditional methods of thinking and try out new things!  
                   </p>
