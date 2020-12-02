@@ -49,7 +49,7 @@ const Hero = ({
           <div className="hero-content">
 
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              Get to Know the  <span className="text-color-primary">Cryptocurrency</span> Markets
+              Get to Know <span className="text-color-primary">Cryptocurrency</span>
             </h1>
             
             <div className="container-xs">
