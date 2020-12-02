@@ -51,12 +51,13 @@ const FeaturesTiles = ({
       {...props}
       className={outerClasses}
     >
-      <div className="container">
+      <div className='container feature-tiles'>
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
-            <div className="tiles-item reveal-from-bottom">
+            <div className="tiles-item border reveal-from-bottom">
               <div className="tiles-item-inner">
+
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
                     <Image
@@ -66,6 +67,7 @@ const FeaturesTiles = ({
                       height={64} />
                   </div>
                 </div>
+
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
                     Robust Workflow
@@ -77,7 +79,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item border reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -99,7 +101,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div className="tiles-item border reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -121,7 +123,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom">
+            <div className="tiles-item border reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -143,7 +145,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="200">
+            <div className="tiles-item border reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
@@ -165,7 +167,7 @@ const FeaturesTiles = ({
               </div>
             </div>
 
-            <div className="tiles-item reveal-from-bottom" data-reveal-delay="400">
+            <div className="tiles-item border reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   <div className="features-tiles-item-image mb-16">
