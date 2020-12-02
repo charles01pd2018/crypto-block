@@ -6,6 +6,7 @@ import { SectionSplitProps } from '../../../../utils/SectionProps';
 
 // elements
 import Image from '../../../elements/Image';
+import SectionHeader from '../../partials/SectionHeader';
 
 
 const propTypes = {
@@ -53,6 +54,10 @@ const FeaturesSplit = ({
     alignTop && 'align-top'
   );
 
+  const sectionHeaderText = {
+    title: 'Mission',
+    paragraph: 'To equip everyone with the knowledge necessary to navigate the world of cryptocurrency'
+}
 
   return (
     <section
@@ -61,21 +66,19 @@ const FeaturesSplit = ({
     >
       <div className="container">
         <div className={innerClasses}>
-          <div className={splitClasses}>
 
-            <div className="split-item">
+          <SectionHeader data={sectionHeaderText} className='center-content has-bottom-divider' />
+
+          <div className={splitClasses}>
+            <div className="split-item section">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
 
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  A+ Worthy Work
-                  </div>
-
-                <h3 className="mt-0 mb-12">
-                Extensive Research &#38; Testing
-                  </h3>
+                <h3 className="mt-0 mb-12 text-color-secondary">
+                  A New Financial Economy
+                </h3>
 
                 <p className="m-0">
-                  We research and compile up-date-information information and extract meaningful insights so you can navigate the crypto landscape.
+                Cryptocurrency and Decentralized Finance is continuing to revolutionize the traditional financial industry. Approaching this unfamiliar landscape can be daunting. We here at Crypto Block are here to make that confrontation less scary! 
                 </p>
               </div>
 
@@ -93,35 +96,6 @@ const FeaturesSplit = ({
               </div>
             </div>
 
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
-
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
-                  Tough Grading
-                  </div>
-
-                  <h3 className="mt-0 mb-12">
-                    Rigorous Scoring Guidelines 
-                  </h3>
-
-                  <p className="m-0">
-                    Our scoring procedure takes into account multiple factors that you care about while considering the importance of each factor to calculate accurate rating scores. 
-                  </p>
-              </div>
-              
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../../../assets/images/pages/home/features-split-image-02.png')}
-                  alt="Features split 02"
-                  width={528}
-                  height={396} />
-              </div>
-            </div>
           </div>
         </div>
       </div>

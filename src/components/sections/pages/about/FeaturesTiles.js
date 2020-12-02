@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 
 // types
 import classNames from 'classnames';
@@ -55,10 +54,15 @@ const FeaturesTiles = ({
     >
       <div className='container feature-tiles'>
         <div className={innerClasses}>
-          <div className={tilesClasses}>
 
-          <Link to='/reviews'>
-            <div className="tiles-item border reveal-from-bottom">
+          <div className='section-inner center-content'>
+            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
+              Our Values
+            </h1>
+          </div>
+
+          <div className={tilesClasses}>
+            <div className="tiles-item reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   
@@ -73,15 +77,14 @@ const FeaturesTiles = ({
 
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8">
-                    Best Cryptocurrency Exchanges
+                    Time
                     </h4>
                   <p className="m-0 text-sm">
-                    Discover the best exchanges to buy and sell cryptocurrencies 
+                    Financial Literacy gives people the time to do what they want to do. Spend time with loved ones. Play video games. Give back to communities. Anything you are passionate about! 
                   </p>
                 </div>
               </div>
             </div>
-          </Link>
           
           </div>
         </div>
