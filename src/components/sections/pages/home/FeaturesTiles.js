@@ -2,6 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
+import { Link } from 'react-router-dom';
 
 // elements
 import { SectionTilesProps } from '../../../../utils/SectionProps';
@@ -55,10 +56,11 @@ const FeaturesTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom">
               <div className="tiles-item-inner">
-
                 <div className="features-tiles-item-header">
+                  
                   <div className="features-tiles-item-image mb-16">
                     <Image
                       src={require('./../../../../assets/images/feature-tile-icon-01.svg')}
@@ -78,7 +80,9 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
-
+          </Link>
+          
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -100,7 +104,9 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
+          </Link>
 
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -122,7 +128,9 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
+          </Link>
 
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -144,7 +152,9 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
+          </Link>
 
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom" data-reveal-delay="200">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -166,7 +176,9 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
+          </Link>
 
+          <Link to='/reviews'>
             <div className="tiles-item border reveal-from-bottom" data-reveal-delay="400">
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -188,6 +200,7 @@ const FeaturesTiles = ({
                 </div>
               </div>
             </div>
+          </Link>
           </div>
         </div>
       </div>
