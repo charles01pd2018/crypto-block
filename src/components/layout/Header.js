@@ -106,6 +106,7 @@ const Header = ({
                     isActive && 'is-active'
                   )}>
                 <div className="header-nav-inner">
+
                   <ul className={
                     classNames(
                       'list-reset text-xs',
@@ -118,11 +119,8 @@ const Header = ({
                     <li>
                       <Link to="/reviews" onClick={closeMenu}>Reviews</Link>
                     </li>
-                    <li>
-                      <Link to="/examples" onClick={closeMenu}>Examples</Link>
-                    </li>
-                    
                   </ul>
+                  
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
