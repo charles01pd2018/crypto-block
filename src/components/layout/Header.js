@@ -1,8 +1,13 @@
 import React, { useState, useRef, useEffect } from 'react';
+
+// types
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
+
+// elements
 import Logo from './partials/Logo';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -120,7 +125,7 @@ const Header = ({
                       <Link to="/reviews" onClick={closeMenu}>Reviews</Link>
                     </li>
                   </ul>
-                  
+
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"

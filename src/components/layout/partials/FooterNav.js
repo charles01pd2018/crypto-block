@@ -1,4 +1,6 @@
 import React from 'react';
+
+// types
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
