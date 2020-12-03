@@ -119,10 +119,10 @@ const Header = ({
                     )}>
 
                     <li>
-                      <Link to="/about" onClick={closeMenu}><b>About</b></Link>
+                      <Link to="/crypto-block/about" onClick={closeMenu}><b>About</b></Link>
                     </li>
                     <li>
-                      <Link to="/reviews" onClick={closeMenu}><b>Reviews</b></Link>
+                      <Link to="/crypto-block/reviews" onClick={closeMenu}><b>Reviews</b></Link>
                     </li>
                   </ul>
 

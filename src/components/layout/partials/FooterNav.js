@@ -21,10 +21,10 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/crypto-block/about">About</Link>
         </li>
         <li>
-          <Link to="/reviews">Reviews</Link>
+          <Link to="/crypto-block/reviews">Reviews</Link>
         </li>
       </ul>
     </nav>
