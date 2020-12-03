@@ -38,10 +38,10 @@ const App = () => {
       ref={childRef}
       children={() => (
         <Switch>
-          <AppRoute exact path="/" component={Home} layout={LayoutDefault} />
+          <AppRoute exact path="/crypto-block/" component={Home} layout={LayoutDefault} />
           
-          <AppRoute exact path="/about" component={About} layout={LayoutDefault} />
-          <AppRoute exact path="/reviews" component={Reviews} layout={LayoutDefault} />
+          <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
+          <AppRoute exact path="/crypto-block/reviews" component={Reviews} layout={LayoutDefault} />
         </Switch>
       )} />
   );
