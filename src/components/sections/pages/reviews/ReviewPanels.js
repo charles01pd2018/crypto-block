@@ -2,15 +2,15 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../utils/SectionProps';
+import { SectionProps } from '../../../../utils/SectionProps';
 
 
 const propTypes = {
-    ...SectionSplitProps.types
+    ...SectionProps.types
   }
   
   const defaultProps = {
-    ...SectionSplitProps.defaults
+    ...SectionProps.defaults
   }
 
 
@@ -26,11 +26,12 @@ const ReviewPanels = ({
     invertDesktop,
     alignTop,
     imageFill,
+    border,
     ...props
 }) => {
 
     const outerClasses = classNames(
-        'features-split section',
+        'review-panels section',
         topOuterDivider && 'has-top-divider',
         bottomOuterDivider && 'has-bottom-divider',
         hasBgColor && 'has-bg-color',
@@ -39,20 +40,47 @@ const ReviewPanels = ({
       );
     
       const innerClasses = classNames(
-        'features-split-inner section-inner',
+        'review-panels-inner section-inner pt-0',
         topDivider && 'has-top-divider',
         bottomDivider && 'has-bottom-divider'
       );
     
-      const splitClasses = classNames(
-        'split-wrap',
+      const panelsClasses = classNames(
+        'panels-wrap center-content',
         invertMobile && 'invert-mobile',
         invertDesktop && 'invert-desktop',
         alignTop && 'align-top'
       );
 
+      const panelsItemClasses = classNames(
+        'panels-item reveal-from-bottom',
+        border && 'border'
+      );
+
     return (
-        <h1 className='center-content'>Hello World</h1>
+        <section
+        {...props}
+        className={outerClasses}
+        >
+            <div className='container review-panels'>
+                <div className={innerClasses}>
+                    
+                    <h1 className='center-content'>Hello World</h1>
+
+                    <div className={panelsClasses}>
+
+                        <div className={panelsItemClasses}>
+                            
+                        </div>
+
+                        <div className={panelsItemClasses}>
+                            
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
     )
 }
 
