@@ -52,9 +52,9 @@ const Hero = ({
               <span className="text-color-secondary">Best <span className='text-color-primary'>Cryptocurrency</span> Exchanges</span>
             </h1>
 
-              <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
+            <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
-              </p>
+            </p>
             
           </div>
         </div>
