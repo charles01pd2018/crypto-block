@@ -2,15 +2,15 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionProps } from '../../../../utils/SectionProps';
+import { SectionTilesProps } from '../../../../utils/SectionProps';
 
 
 const propTypes = {
-    ...SectionProps.types
+    ...SectionTilesProps.types
   }
   
   const defaultProps = {
-    ...SectionProps.defaults
+    ...SectionTilesProps.defaults
   }
 
 

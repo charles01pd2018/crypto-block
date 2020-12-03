@@ -52,10 +52,13 @@ export const SectionSplitProps = {
 export const SectionTilesProps = {
   types: {
     ...SectionShared.types,
-    pushLeft: PropTypes.bool
+    pushLeft: PropTypes.bool,
+    border: PropTypes.bool
   },
   defaults: {
     ...SectionShared.defaults,
-    pushLeft: false
+    pushLeft: false,
+    border: false
   }
 }
+
