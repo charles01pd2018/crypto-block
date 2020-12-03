@@ -1,8 +1,35 @@
-.cta {
+.review-panels {
+    
+    
+    .section-inner {
+        border: 1px solid grey;
 
-    .form-input {
-        border-color: transparent;
-        border-radius: 2px;
+        .panels-item {
+
+            .logo {
+
+            }
+
+            .main-description {
+                border: 1px solid grey;
+
+                .title-name {
+
+                }
+            }
+
+            .qualities {
+                border: 1px solid grey;
+
+            }
+
+            .drop-down {
+                border-color: transparent;
+                border-radius: 2px;
+
+            }
+
+        }
     }
 }
 
@@ -10,7 +37,6 @@
 	padding-left: 16px;
 	padding-right: 16px;
     background-color: get-color(primary, 3);
-	background-image: url(../../../images/cta-illustration.svg);
 	background-repeat: no-repeat;
     background-size: cover;
     background-position: right bottom;    
