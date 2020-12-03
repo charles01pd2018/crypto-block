@@ -25,6 +25,7 @@ const FeaturesTiles = ({
   hasBgColor,
   invertColor,
   pushLeft,
+  border,
   ...props
 }) => {
 
@@ -48,6 +49,11 @@ const FeaturesTiles = ({
     pushLeft && 'push-left'
   );
 
+  const tilesItemClasses = classNames(
+    'tiles-item reveal-from-bottom',
+    border && 'border'
+  );
+
   return (
     <section
       {...props}
@@ -58,7 +64,7 @@ const FeaturesTiles = ({
           <div className={tilesClasses}>
 
           <Link to='/reviews'>
-            <div className="tiles-item border reveal-from-bottom">
+            <div className={tilesItemClasses}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   

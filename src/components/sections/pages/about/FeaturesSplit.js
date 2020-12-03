@@ -57,7 +57,7 @@ const FeaturesSplit = ({
   const sectionHeaderText = {
     title: 'Mission',
     paragraph: 'To equip everyone with the knowledge necessary to navigate the world of cryptocurrency'
-}
+  };
 
   return (
     <section

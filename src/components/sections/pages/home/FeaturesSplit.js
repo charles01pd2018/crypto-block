@@ -2,18 +2,18 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../utils/SectionProps';
+import { SectionProps } from '../../../../utils/SectionProps';
 
 // elements
 import Image from '../../../elements/Image';
 
 
 const propTypes = {
-  ...SectionSplitProps.types
+  ...SectionProps.types
 }
 
 const defaultProps = {
-  ...SectionSplitProps.defaults
+  ...SectionProps.defaults
 }
 
 const FeaturesSplit = ({
