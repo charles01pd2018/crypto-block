@@ -1,62 +1,13 @@
 .review-panels {
 
-    .section-inner {
-        border: 1px solid white;
+    .panels-item {
+        
+        .panels-heading {
+            display: inline-flex;
+        }
 
-        .panels-item {
-
-            .image {
-                border: 1px solid red;
-
-            }
-
-            .title-name {
-                border: 1px solid orange;
-            }
-
-            .main-description {
-                border: 1px solid blue;
-
-                .title-name {
-
-                }
-            }
-
-            .qualities {
-                border: 1px solid yellow;
-
-            }
-
-            .drop-down {
-                border-color: transparent;
-                border-radius: 2px;
-
-            }
-
+        .panels-description {
+            display: inline-flex;
         }
     }
-}
-
-.cta-inner {
-	padding-left: 16px;
-	padding-right: 16px;
-    background-color: get-color(primary, 3);
-	background-repeat: no-repeat;
-    background-size: cover;
-    background-position: right bottom;    
-}
-
-@include media( '>medium' ) {
-
-.cta {
-
-    .form-input {
-        min-width: 280px;
-    }
-}    
-
-	.cta-inner {
-		padding-left: 48px;
-		padding-right: 48px;
-	}
 }

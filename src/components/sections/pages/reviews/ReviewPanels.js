@@ -48,16 +48,17 @@ const ReviewPanels = ({
       );
     
       const panelsClasses = classNames(
-        'panels-wrap center-content',
+        'panels-wrap',
         invertMobile && 'invert-mobile',
         invertDesktop && 'invert-desktop',
         alignTop && 'align-top'
       );
 
       const panelsItemClasses = classNames(
-        'panels-item reveal-from-bottom ',
+        'panels-item reveal-from-bottom section-inner',
         border && 'border'
       );
+
 
     return (
         <section
@@ -71,90 +72,108 @@ const ReviewPanels = ({
                         <div className={panelsItemClasses}>
                           <div className='panels-item-inner'>
 
-                        <div className='image'>
-                            <Image
-                              src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
-                              alt="Image"
-                              width={150}
-                              height={150} />
+                            <div className='panels-heading'>
+                              <div className='image center-content'>
+                                  <Image
+                                    src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
+                                    alt="Image"
+                                    width={150}
+                                    height={150} />
+                              </div>
+
+                              <div className='title-name panels-item-inner'>
+                                <h2>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></ h2>
+                              </div>
+                            </div>
+                              
+                            <div className='panels-description'>
+                              <div className='main-description'>
+                                <h3>Main Description</h3>
+                                <p>Transaction Fee: <b>High</b></p>
+                                <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
+                                <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
+                              </div>
+
+                              <div className='qualities'>
+                                <h3>Qualities</h3>
+                                <p># of Cryptocurrencies Available: <b>37</b></p>
+                                <p>Margin Trading: <b>No</b></p>
+                              </div>
+                            </div>
+
                         </div>
-                        
-                          <div className='title-name'>
-                            <h2>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></h2>
+                      </div>
+
+                      <div className={panelsItemClasses}>
+                        <div className='panels-item-inner'>
+
+                          <div className='panels-heading'>
+                            <div className='image center-content'>
+                                <Image
+                                  src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
+                                  alt="Image"
+                                  width={150}
+                                  height={150} />
+                            </div>
+
+                            <div className='title-name panels-item-inner'>
+                              <h2>Kraken - <span className='text-color-secondary'>Best for Traders</ span></ h2>
+                            </div>
                           </div>
 
-                          <div className='main-description'>
-                            <h3>Main Description</h3>
-                            <p>Transaction Fee: <b>High</b></p>
-                            <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
-                            <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
-                          </div>
+                          <div className='panels-description'>
+                            <div className='main-description'>
+                              <h3>Main Description</h3>
+                              <p>Transaction Fee: <b>Low</b></p>
+                              <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
+                              <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
+                            </div>
 
-                          <div className='qualities'>
-                            <h3>Qualities</h3>
-                            <p># of Cryptocurrencies Available: <b>37</b></p>
-                            <p>Margin Trading: <b>No</b></p>
+                            <div className='qualities'>
+                              <h3>Qualities</h3>
+                              <p># of Cryptocurrencies Available: <b>50</b></p>
+                              <p>Margin Trading: <b>Yes</b></p>
+                            </div>
                           </div>
-                          
+                            
                           </div>
                         </div>
 
                         <div className={panelsItemClasses}>
+                          <div className='panels-item-inner'>
 
-                        <div className='image'>
-                            <Image
-                              src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
-                              alt="Image"
-                              width={250}
-                              height={100} />
-                        </div>
+                            <div className='panels-heading'>
+                              <div className='image center-content'>
+                                  <Image
+                                    src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
+                                    alt="Image"
+                                    width={150}
+                                    height={150} />
+                              </div>
                         
+                              <div className='title-name panels-item-inner'>
+                                <h2>Crypto.com - <span className='text-color-secondary'>Best for Deal Hunters</ span></h2>
+                              </div>
+                            </div>
 
-                          <h2 className='title-name'>Kraken - <span className='text-color-secondary'>Best for Traders</ span></h2>
+                          <div className='panels-description'>
+                            <div className='main-description'>
+                              <h3>Main Description</h3>
+                              <p>Transaction Fee: <b>Low</b></p>
+                              <p>Transaction Fee with Credit Card: <b>4%</b></p>
+                              <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
+                            </div>
 
-                          <div className='main-description'>
-                            <h3>Main Description</h3>
-                            <p>Transaction Fee: <b>Low</b></p>
-                            <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
-                            <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
+                            <div className='qualities'>
+                              <h3>Qualities</h3>
+                              <p># of Cryptocurrencies Available: <b>58</b></p>
+                              <p>Margin Trading: <b>No</b></p>
+                            </div>
                           </div>
 
-                          <div className='qualities'>
-                            <h3>Qualities</h3>
-                            <p># of Cryptocurrencies Available: <b>50</b></p>
-                            <p>Margin Trading: <b>Yes</b></p>
-                          </div>
-                            
                         </div>
+                      </div>
 
-                        <div className={panelsItemClasses}>
-
-                        <div className='image'>
-                            <Image
-                              src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
-                              alt="Image"
-                              width={150}
-                              height={100} />
-                        </div>
-                        
-
-                          <h2 className='title-name'>Crypto.com - <span className='text-color-secondary'>Best for Deal Hunters</ span></h2>
-
-                          <div className='main-description'>
-                            <h3>Main Description</h3>
-                            <p>Transaction Fee: <b>Low</b></p>
-                            <p>Transaction Fee with Credit Card: <b>4%</b></p>
-                            <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
-                          </div>
-
-                          <div className='qualities'>
-                            <h3>Qualities</h3>
-                            <p># of Cryptocurrencies Available: <b>58</b></p>
-                            <p>Margin Trading: <b>No</b></p>
-                          </div>
-                            
-                        </div>
-                        
                     </div>
                 </div>
             </div>

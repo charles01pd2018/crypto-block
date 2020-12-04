@@ -1,7 +1,6 @@
 .features-tiles {
 
 	.section-inner {
-		border: 1px solid white;
 		padding-top: $features-tiles--padding-t__mobile;
 		padding-bottom: $features-tiles--padding-b__mobile;
 	}
@@ -39,9 +38,9 @@
 	}
 
 	.tiles-item {
-		border: 1px solid white;
 		flex-basis: $features-tiles-item--width;
 		max-width: $features-tiles-item--width;
+		
 		@if ( $features-tiles-items--padding__mobile != null ) {
 			padding: $features-tiles-items--padding__mobile / 2;
 		}

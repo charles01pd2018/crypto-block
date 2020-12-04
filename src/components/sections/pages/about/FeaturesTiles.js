@@ -61,7 +61,7 @@ const FeaturesTiles = ({
       <div className='container feature-tiles'>
         <div className={innerClasses}>
 
-          <SectionHeader data={ {title: 'Our Values'} } className='center-content' />
+          <SectionHeader data={ {title: 'Our Values'} } className='center-content section-header' />
 
           <div className={tilesClasses}>
 
