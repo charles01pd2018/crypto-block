@@ -9,9 +9,9 @@
 
 		@if ( $review-panels-items--padding__mobile != null ) {
 
-			margin-right: -($review-panels-items--padding__mobile / 3);
-			margin-left: -($review-panels-items--padding__mobile / 3);
-			margin-top: -($review-panels-items--padding__mobile / 3);
+			margin-right: -($review-panels-items--padding__mobile / 2);
+			margin-left: -($review-panels-items--padding__mobile / 2);
+			margin-top: -($review-panels-items--padding__mobile / 2);
 		}
 
 		&:not(:last-of-type) {
