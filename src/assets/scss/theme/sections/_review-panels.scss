@@ -1,23 +1,21 @@
 .review-panels {
-    
-    
+
     .section-inner {
-        border: 1px solid grey;
+        border: 1px solid white;
 
         .panels-item {
 
-            .logo {
-                border: 1px solid grey;
-                padding-left: 20px;
-                padding-right: 20px;
-                background-repeat: no-repeat;
-                background-size: cover;
-    background-position: right bottom; 
+            .image {
+                border: 1px solid red;
 
             }
 
+            .title-name {
+                border: 1px solid orange;
+            }
+
             .main-description {
-                border: 1px solid grey;
+                border: 1px solid blue;
 
                 .title-name {
 
@@ -25,7 +23,7 @@
             }
 
             .qualities {
-                border: 1px solid grey;
+                border: 1px solid yellow;
 
             }
 

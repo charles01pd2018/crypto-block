@@ -55,7 +55,7 @@ const ReviewPanels = ({
       );
 
       const panelsItemClasses = classNames(
-        'panels-item reveal-from-bottom section-inner',
+        'panels-item reveal-from-bottom ',
         border && 'border'
       );
 
@@ -69,8 +69,9 @@ const ReviewPanels = ({
                     <div className={panelsClasses}>
 
                         <div className={panelsItemClasses}>
+                          <div className='panels-item-inner'>
 
-                        <div className='logo'>
+                        <div className='image'>
                             <Image
                               src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
                               alt="Image"
@@ -78,8 +79,9 @@ const ReviewPanels = ({
                               height={150} />
                         </div>
                         
-
-                          <h2 className='title-name'>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></h2>
+                          <div className='title-name'>
+                            <h2>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></h2>
+                          </div>
 
                           <div className='main-description'>
                             <h3>Main Description</h3>
@@ -93,12 +95,13 @@ const ReviewPanels = ({
                             <p># of Cryptocurrencies Available: <b>37</b></p>
                             <p>Margin Trading: <b>No</b></p>
                           </div>
-
+                          
+                          </div>
                         </div>
 
                         <div className={panelsItemClasses}>
 
-                        <div className='logo'>
+                        <div className='image'>
                             <Image
                               src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
                               alt="Image"
@@ -126,7 +129,7 @@ const ReviewPanels = ({
 
                         <div className={panelsItemClasses}>
 
-                        <div className='logo'>
+                        <div className='image'>
                             <Image
                               src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
                               alt="Image"
