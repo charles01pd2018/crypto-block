@@ -1,7 +1,6 @@
 .review-panels {
 
 	.section-inner {
-		border: 1px solid white;
 		padding-top: $review-panels--padding-t__mobile;
 		padding-bottom: $review-panels--padding-b__mobile;
 	}
@@ -39,8 +38,11 @@
 
 	.panels-item {
 
+		border: 1px solid white;
+		
 		flex-basis: $review-panels-item--width;
 		max-width: $review-panels-item--width;
+		margin-bottom: $review-panels--padding-b__mobile;
 
 		@if ( $review-panels-items--padding__mobile != null ) {
 			padding: $review-panels-items--padding__mobile / 2;
@@ -93,7 +95,6 @@
 	.review-panels {
 
 		.section-inner {
-			border: 1px solid white;
 			padding-top: $review-panels--padding-t__mobile;
 			padding-bottom: $review-panels--padding-b__mobile;
 		}
@@ -133,7 +134,8 @@
 	
 			flex-basis: $review-panels-item--width;
 			max-width: $review-panels-item--width;
-	
+			margin-bottom: $review-panels--padding-b__mobile;
+
 			@if ( $review-panels-items--padding__mobile != null ) {
 				padding: $review-panels-items--padding__mobile / 2;
 			}
