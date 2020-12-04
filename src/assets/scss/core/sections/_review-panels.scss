@@ -6,7 +6,6 @@
 	}
 
 	.panels-wrap {
-		padding-bottom: $review-panels-header--padding__mobile;
 
 		@if ( $review-panels-items--padding__mobile != null ) {
 
