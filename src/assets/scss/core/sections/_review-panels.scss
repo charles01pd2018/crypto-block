@@ -50,7 +50,7 @@
 
 		.panels-heading {
 
-			.image {
+			.panels-image {
 				border: 1px solid red;
 				flex-basis: $review-panels-image--width;
 				max-width: $review-panels-image--width;
@@ -58,7 +58,7 @@
 	
 			}
 	
-			.title-name {
+			.panels-title-name {
 				border: 1px solid orange;
 				flex-basis: $review-panels-title-name--width;
 				max-width: $review-panels-title-name--width;
@@ -67,13 +67,13 @@
 
 		.panels-description {
 
-			.main-description {
+			.panels-main-description {
 				border: 1px solid blue;
 				flex-basis: $review-panels-main-description--width;
 				max-width: $review-panels-main-description--width;
 			}
 			
-			.qualities {
+			.panels-qualities {
 				border: 1px solid yellow;
 				flex-basis: $review-panels-qualities--width;
 				max-width: $review-panels-qualities--width;
@@ -142,7 +142,7 @@
 	
 			.panels-heading {
 	
-				.image {
+				.panels-image {
 					border: 1px solid red;
 					flex-basis: $review-panels-image--width;
 					max-width: $review-panels-image--width;
@@ -150,7 +150,7 @@
 		
 				}
 		
-				.title-name {
+				.panels-title-name {
 					border: 1px solid orange;
 					flex-basis: $review-panels-title-name--width;
 					max-width: $review-panels-title-name--width;
@@ -159,13 +159,13 @@
 	
 			.panels-description {
 
-				.main-description {
+				.panels-main-description {
 					border: 1px solid blue;
 					flex-basis: $review-panels-main-description--width;
 					max-width: $review-panels-main-description--width;
 				}
 				
-				.qualities {
+				.panels-qualities {
 					border: 1px solid yellow;
 					flex-basis: $review-panels-qualities--width;
 					max-width: $review-panels-qualities--width;

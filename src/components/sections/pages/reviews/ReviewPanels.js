@@ -73,7 +73,7 @@ const ReviewPanels = ({
                           <div className='panels-item-inner'>
 
                             <div className='panels-heading'>
-                              <div className='image center-content'>
+                              <div className='panels-image center-content'>
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
                                     alt="Image"
@@ -81,7 +81,7 @@ const ReviewPanels = ({
                                     height={150} />
                               </div>
 
-                              <div className='title-name panels-item-inner'>
+                              <div className='panels-title-name panels-item-inner'>
                                 <h2>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></ h2>
                               </div>
                             </div>
@@ -94,7 +94,7 @@ const ReviewPanels = ({
                                 <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
                               </div>
 
-                              <div className='qualities'>
+                              <div className='panels-qualities'>
                                 <h3>Qualities</h3>
                                 <p># of Cryptocurrencies Available: <b>37</b></p>
                                 <p>Margin Trading: <b>No</b></p>
@@ -108,7 +108,7 @@ const ReviewPanels = ({
                         <div className='panels-item-inner'>
 
                           <div className='panels-heading'>
-                            <div className='image center-content'>
+                            <div className='panels-image center-content'>
                                 <Image
                                   src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
                                   alt="Image"
@@ -116,20 +116,20 @@ const ReviewPanels = ({
                                   height={150} />
                             </div>
 
-                            <div className='title-name panels-item-inner'>
+                            <div className='panels-title-name panels-item-inner'>
                               <h2>Kraken - <span className='text-color-secondary'>Best for Traders</ span></ h2>
                             </div>
                           </div>
 
                           <div className='panels-description'>
-                            <div className='main-description'>
+                            <div className='panels-main-description'>
                               <h3>Main Description</h3>
                               <p>Transaction Fee: <b>Low</b></p>
                               <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
                               <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                             </div>
 
-                            <div className='qualities'>
+                            <div className='panels-qualities'>
                               <h3>Qualities</h3>
                               <p># of Cryptocurrencies Available: <b>50</b></p>
                               <p>Margin Trading: <b>Yes</b></p>
@@ -143,7 +143,7 @@ const ReviewPanels = ({
                           <div className='panels-item-inner'>
 
                             <div className='panels-heading'>
-                              <div className='image center-content'>
+                              <div className='panels-image center-content'>
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
                                     alt="Image"
@@ -151,20 +151,20 @@ const ReviewPanels = ({
                                     height={150} />
                               </div>
                         
-                              <div className='title-name panels-item-inner'>
+                              <div className='panels-title-name panels-item-inner'>
                                 <h2>Crypto.com - <span className='text-color-secondary'>Best for Deal Hunters</ span></h2>
                               </div>
                             </div>
 
                           <div className='panels-description'>
-                            <div className='main-description'>
+                            <div className='panels-main-description'>
                               <h3>Main Description</h3>
                               <p>Transaction Fee: <b>Low</b></p>
                               <p>Transaction Fee with Credit Card: <b>4%</b></p>
                               <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                             </div>
 
-                            <div className='qualities'>
+                            <div className='panels-qualities'>
                               <h3>Qualities</h3>
                               <p># of Cryptocurrencies Available: <b>58</b></p>
                               <p>Margin Trading: <b>No</b></p>
