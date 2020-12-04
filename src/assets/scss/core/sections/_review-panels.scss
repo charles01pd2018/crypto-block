@@ -38,7 +38,7 @@
 
 	.panels-item {
 
-		border: 1px solid white;
+		border: 1px solid grey;
 		
 		flex-basis: $review-panels-item--width;
 		max-width: $review-panels-item--width;
@@ -50,8 +50,10 @@
 
 		.panels-heading {
 
+			border-bottom: 1px solid grey;
+
+
 			.panels-image {
-				border: 1px solid red;
 				flex-basis: $review-panels-image--width;
 				max-width: $review-panels-image--width;
 				max-height: $review-panels-image--height;
@@ -59,7 +61,6 @@
 			}
 	
 			.panels-title-name {
-				border: 1px solid orange;
 				flex-basis: $review-panels-title-name--width;
 				max-width: $review-panels-title-name--width;
 			}
@@ -68,13 +69,11 @@
 		.panels-description {
 
 			.panels-main-description {
-				border: 1px solid blue;
 				flex-basis: $review-panels-main-description--width;
 				max-width: $review-panels-main-description--width;
 			}
 			
 			.panels-qualities {
-				border: 1px solid yellow;
 				flex-basis: $review-panels-qualities--width;
 				max-width: $review-panels-qualities--width;
 			}
@@ -143,7 +142,6 @@
 			.panels-heading {
 	
 				.panels-image {
-					border: 1px solid red;
 					flex-basis: $review-panels-image--width;
 					max-width: $review-panels-image--width;
 					max-height: $review-panels-image--height;
@@ -151,7 +149,6 @@
 				}
 		
 				.panels-title-name {
-					border: 1px solid orange;
 					flex-basis: $review-panels-title-name--width;
 					max-width: $review-panels-title-name--width;
 				}
@@ -160,13 +157,11 @@
 			.panels-description {
 
 				.panels-main-description {
-					border: 1px solid blue;
 					flex-basis: $review-panels-main-description--width;
 					max-width: $review-panels-main-description--width;
 				}
 				
 				.panels-qualities {
-					border: 1px solid yellow;
 					flex-basis: $review-panels-qualities--width;
 					max-width: $review-panels-qualities--width;
 				}
