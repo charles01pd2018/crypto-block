@@ -73,7 +73,7 @@ const ReviewPanels = ({
                           <div className='panels-item-inner'>
 
                             <div className='panels-heading'>
-                              <div className='panels-image center-content'>
+                              <div className='panels-image'>
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
                                     alt="Image"
@@ -87,7 +87,7 @@ const ReviewPanels = ({
                             </div>
                               
                             <div className='panels-description'>
-                              <div className='main-description'>
+                              <div className='panels-main-description'>
                                 <h3>Main Description</h3>
                                 <p>Transaction Fee: <b>High</b></p>
                                 <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
@@ -108,7 +108,7 @@ const ReviewPanels = ({
                         <div className='panels-item-inner'>
 
                           <div className='panels-heading'>
-                            <div className='panels-image center-content'>
+                            <div className='panels-image'>
                                 <Image
                                   src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
                                   alt="Image"
@@ -143,7 +143,7 @@ const ReviewPanels = ({
                           <div className='panels-item-inner'>
 
                             <div className='panels-heading'>
-                              <div className='panels-image center-content'>
+                              <div className='panels-image'>
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
                                     alt="Image"

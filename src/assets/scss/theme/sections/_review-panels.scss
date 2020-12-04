@@ -3,11 +3,15 @@
     .panels-item {
         
         .panels-heading {
-            display: inline-flex;
+            display: flex;
+
+            .panels-title-name {
+                padding-left: 20px;
+            }
         }
 
         .panels-description {
-            display: inline-flex;
+            display: flex;
         }
     }
 }
