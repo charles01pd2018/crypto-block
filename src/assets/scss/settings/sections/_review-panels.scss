@@ -1,8 +1,15 @@
-// Call to action (core/sections/_cta.scss)
-$cta--padding-t__mobile: 			48px;		// cta, top padding (mobile)
-$cta--padding-b__mobile: 			48px;		// cta, bottom padding (mobile)
-$cta--padding-t__desktop: 			64px;		// cta, top padding (desktop)
-$cta--padding-b__desktop: 			64px;		// cta, bottom padding (desktop)
-$cta-slogan--padding-v__mobile: 	40px;		// cta slogan, margin bottom (mobile)
-$cta-slogan--padding-v__desktop: 	null;		// cta slogan, margin bottom (desktop)
-$cta-slogan--padding-h__desktop:	48px;		// cta slogan, minimum distance between slogan and actions (only .cta-split desktop)
+// Review panels (core/sections/_review-panels.scss)
+$review-panels--padding-t__mobile: 			    null;		// review panels, top padding (mobile)
+$review-panels--padding-b__mobile: 			    null;		// review panels, bottom padding (mobile)
+$review-panels--padding-t__desktop: 		    null;		// review panels, top padding (desktop)
+$review-panels--padding-b__desktop: 			null;		// review panels, bottom padding (desktop)
+
+$review-panels-header--padding__mobile: 	    null;		// review panels header, bottom padding (mobile)
+$review-panels-header--padding__desktop:	    null;		// review panels header, bottom padding (desktop)
+
+$review-panels-items--padding__mobile: 	        null;		// padding between review panels items (mobile)
+$review-panels-items--padding__desktop: 	    null;		// padding between review panels items (desktop)
+
+$review-panels-slogan--padding-v__mobile: 	    40px;		// cta slogan, margin bottom (mobile)
+$review-panels-slogan--padding-v__desktop: 	    null;		// cta slogan, margin bottom (desktop)
+$review-panels-slogan--padding-h__desktop:	    48px;		// cta slogan, minimum distance between slogan and actions (only .cta-split desktop)
