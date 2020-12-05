@@ -1,20 +1,34 @@
 .review-panels {
 
     .panels-item {
+        background-color: get-color(dark, 3);
+
+        border-top: 5px solid get-color(dark, 2);
+        border-right: 5px solid get-color(dark, 2);
+
+        border-radius: 20px;
         
         .panels-heading {
             display: flex;
+            border-bottom: 1.5px solid black;
+
+            .panels-image {
+                padding: 10px 10px 10px 10px;
+            }
+            
 
             .panels-title-name {
                 padding-left: 20px;
-                
             }
+
         }
 
         .panels-description {
             display: flex;
+
             padding-left: 20px;
-        
+            padding-top: 20px;
+            color: get-color(light, 1);
         }
     }
 }

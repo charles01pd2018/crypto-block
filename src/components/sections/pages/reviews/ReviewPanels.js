@@ -88,14 +88,12 @@ const ReviewPanels = ({
                               
                             <div className='panels-description'>
                               <div className='panels-main-description'>
-                                <h3>Main Description</h3>
                                 <p>Transaction Fee: <b>High</b></p>
                                 <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
                                 <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
                               </div>
 
-                              <div className='panels-qualities'>
-                                <h3>Qualities</h3>
+                              <div className='panels-qualities text-color-third'>
                                 <p># of Cryptocurrencies Available: <b>37</b></p>
                                 <p>Margin Trading: <b>No</b></p>
                               </div>
@@ -123,14 +121,12 @@ const ReviewPanels = ({
 
                           <div className='panels-description'>
                             <div className='panels-main-description'>
-                              <h3>Main Description</h3>
                               <p>Transaction Fee: <b>Low</b></p>
                               <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
                               <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                             </div>
 
                             <div className='panels-qualities'>
-                              <h3>Qualities</h3>
                               <p># of Cryptocurrencies Available: <b>50</b></p>
                               <p>Margin Trading: <b>Yes</b></p>
                             </div>
@@ -158,14 +154,12 @@ const ReviewPanels = ({
 
                           <div className='panels-description'>
                             <div className='panels-main-description'>
-                              <h3>Main Description</h3>
                               <p>Transaction Fee: <b>Low</b></p>
                               <p>Transaction Fee with Credit Card: <b>4%</b></p>
                               <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                             </div>
 
                             <div className='panels-qualities'>
-                              <h3>Qualities</h3>
                               <p># of Cryptocurrencies Available: <b>58</b></p>
                               <p>Margin Trading: <b>No</b></p>
                             </div>

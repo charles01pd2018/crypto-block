@@ -37,9 +37,6 @@
 	}
 
 	.panels-item {
-
-		border: 1px solid grey;
-		
 		flex-basis: $review-panels-item--width;
 		max-width: $review-panels-item--width;
 		margin-bottom: $review-panels--padding-b__mobile;
@@ -49,9 +46,6 @@
 		}
 
 		.panels-heading {
-
-			border-bottom: 1px solid grey;
-
 
 			.panels-image {
 				flex-basis: $review-panels-image--width;
