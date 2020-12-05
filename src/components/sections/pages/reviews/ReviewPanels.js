@@ -2,18 +2,18 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionTilesProps } from '../../../../utils/SectionProps';
+import { ReviewPanelsProps } from '../../../../utils/SectionProps';
 
 // elements
 import Image from '../../../elements/Image';
 
 
 const propTypes = {
-    ...SectionTilesProps.types
+    ...ReviewPanelsProps.types
   }
   
   const defaultProps = {
-    ...SectionTilesProps.defaults
+    ...ReviewPanelsProps.defaults
   }
 
 const ReviewPanels = ({
@@ -24,11 +24,6 @@ const ReviewPanels = ({
     bottomDivider,
     hasBgColor,
     invertColor,
-    invertMobile,
-    invertDesktop,
-    alignTop,
-    imageFill,
-    border,
     ...props
 }) => {
 
@@ -49,14 +44,10 @@ const ReviewPanels = ({
     
       const panelsClasses = classNames(
         'panels-wrap',
-        invertMobile && 'invert-mobile',
-        invertDesktop && 'invert-desktop',
-        alignTop && 'align-top'
       );
 
       const panelsItemClasses = classNames(
         'panels-item reveal-from-bottom section-inner',
-        border && 'border'
       );
 
 

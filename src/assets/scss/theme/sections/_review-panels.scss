@@ -13,9 +13,9 @@
             border-bottom: 1.5px solid black;
 
             .panels-image {
+                text-align: center;
                 padding: 10px 10px 10px 10px;
             }
-            
 
             .panels-title-name {
                 padding-left: 20px;
@@ -27,8 +27,14 @@
             display: flex;
 
             padding-left: 20px;
+            padding-right: 20px;
             padding-top: 20px;
             color: get-color(light, 1);
+
+            .panels-qualities {
+                padding-left: 20px;
+
+            }
         }
     }
 }

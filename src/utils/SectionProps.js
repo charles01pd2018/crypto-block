@@ -62,3 +62,13 @@ export const SectionTilesProps = {
   }
 }
 
+// Section tiles props
+export const ReviewPanelsProps = {
+  types: {
+    ...SectionShared.types,
+  },
+  defaults: {
+    ...SectionShared.defaults,
+  }
+}
+
