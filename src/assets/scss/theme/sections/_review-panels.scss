@@ -10,25 +10,19 @@
         .panels-heading {
             display: flex;
             border-bottom: 1.5px solid black;
+            padding-bottom: 15px;
 
             .panels-image {
-                border: 1px solid red;
-                padding: 10px 10px 10px 10px;
+                padding-top: 10px;
+                padding-left: 10px;
             }
 
             .panels-title {
-                border: 1px solid yellow;
                 padding-left: 20px;
+                padding-right: 10px;
 
-                .header-best-attribute {
-                    border: 2px dotted brown;
-                
-                }
-
-                .panels-header {
-                    vertical-align: top;
-                    text-align: left;
-                    border: 2px dotted green;
+                > h4 {
+                    max-height: 0;
                 }
             }
         }
@@ -43,7 +37,6 @@
 
             .panels-qualities {
                 padding-left: 20px;
-
             }
         }
     }

@@ -47,7 +47,7 @@ const ReviewPanels = ({
       );
 
       const panelsItemClasses = classNames(
-        'panels-item reveal-from-bottom section-inner',
+        'panels-item reveal-from-bottom',
       );
 
 
@@ -73,15 +73,8 @@ const ReviewPanels = ({
                               </div>
 
                               <div className='panels-title'>
-                                <div className='header-best-attribute'>
-                                  <div className="text-xs text-color-secondary fw-600 tt-u">
-                                    <p>Best for Beginners</p>
-                                  </div>
-                                </div>
-
-                                  <div className='panels-header'>
-                                    <h2>Coinbase Exchange</ h2>
-                                  </div>
+                                    <h4 className="text-xs text-color-secondary fw-600 tt-u mt-16">Best for Beginners</h4>
+                                    <h2 className='mt-0'>Coinbase Exchange</ h2>
                               </div>
                             </div>
                               
@@ -114,15 +107,8 @@ const ReviewPanels = ({
                             </div>
     
                             <div className='panels-title'>
-                              <div className='header-best-attribute'>
-                                <div className="text-xs text-color-secondary fw-600 tt-u">
-                                  <p>Best for Traders</p>
-                                </div>
-                              </div>
-
-                              <div className='panels-header'>
-                                <h2>Kraken Exchange</ h2>
-                              </div>
+                                <h4 className="text-xs text-color-secondary fw-600 tt-u mt-16">Best for Traders</h4>
+                                <h2 className='mt-0'>Kraken Exchange</ h2>
                             </div>
                           </div>
 
@@ -150,20 +136,13 @@ const ReviewPanels = ({
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
                                     alt="Image"
-                                    width={150}
-                                    height={150} />
+                                    width={200}
+                                    height={200} />
                               </div>
                         
-                              <div className='panels-title'>
-                                <div className='header-best-attribute'>
-                                  <div className="text-xs text-color-secondary fw-600 tt-u mb-8">
-                                    <p>Best for Deal Hunters</p>
-                                  </div>
-                                </div>
-
-                                <div className='panels-header'>
-                                  <h2>Crypto.com Exchange</h2>
-                                </div>
+                              <div className='panels-title' >
+                                  <h4 className="text-xs text-color-secondary fw-600 tt-u mt-24">Best for Deal Hunters</h4>
+                                  <h2 className='mt-0'>Crypto.com Exchange</h2>
                               </div>
                             </div>
 

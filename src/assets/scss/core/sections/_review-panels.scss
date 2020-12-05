@@ -38,23 +38,12 @@
 				flex-basis: $review-panels-image--width;
 				max-width: $review-panels-image--width;
 				max-height: $review-panels-image--height;
-	
 			}
 	
 			.panels-title {
 				flex-basis: $review-panels-title--width;
 				max-width: $review-panels-title--width;
 				max-height: $review-panels-title--height;
-				margin-bottom: $review-panels-title--margin_b;
-
-				.header-best-attribute {
-					max-height: $review-panels-title-best-attribute--height;
-                }
-
-                .panels-header {
-					max-height: $review-panels-title--height - $review-panels-title-best-attribute--height;
-                }
-
 			}
 		}
 
@@ -130,16 +119,6 @@
 					flex-basis: $review-panels-title--width;
 					max-width: $review-panels-title--width;
 					max-height: $review-panels-title--height;
-					margin-bottom: $review-panels-title--margin_b;
-
-					.header-best-attribute {
-						max-height: $review-panels-title-best-attribute--height;
-					}
-	
-					.panels-header {
-						max-height: $review-panels-title--height - $review-panels-title-best-attribute--height;
-					}
-				}
 			}
 	
 			.panels-description {
@@ -156,4 +135,5 @@
 			}
 		}
 	}
+}
 }
