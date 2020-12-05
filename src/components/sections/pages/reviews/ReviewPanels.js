@@ -72,8 +72,16 @@ const ReviewPanels = ({
                                     height={150} />
                               </div>
 
-                              <div className='panels-title-name panels-item-inner'>
-                                <h2>Coinbase - <span className='text-color-secondary'>Best for Beginners</ span></ h2>
+                              <div className='panels-title'>
+                                <div className='header-best-attribute'>
+                                  <div className="text-xs text-color-secondary fw-600 tt-u">
+                                    <p>Best for Beginners</p>
+                                  </div>
+                                </div>
+
+                                  <div className='panels-header'>
+                                    <h2>Coinbase Exchange</ h2>
+                                  </div>
                               </div>
                             </div>
                               
@@ -104,9 +112,17 @@ const ReviewPanels = ({
                                   width={150}
                                   height={150} />
                             </div>
+    
+                            <div className='panels-title'>
+                              <div className='header-best-attribute'>
+                                <div className="text-xs text-color-secondary fw-600 tt-u">
+                                  <p>Best for Traders</p>
+                                </div>
+                              </div>
 
-                            <div className='panels-title-name panels-item-inner'>
-                              <h2>Kraken - <span className='text-color-secondary'>Best for Traders</ span></ h2>
+                              <div className='panels-header'>
+                                <h2>Kraken Exchange</ h2>
+                              </div>
                             </div>
                           </div>
 
@@ -138,8 +154,16 @@ const ReviewPanels = ({
                                     height={150} />
                               </div>
                         
-                              <div className='panels-title-name panels-item-inner'>
-                                <h2>Crypto.com - <span className='text-color-secondary'>Best for Deal Hunters</ span></h2>
+                              <div className='panels-title'>
+                                <div className='header-best-attribute'>
+                                  <div className="text-xs text-color-secondary fw-600 tt-u mb-8">
+                                    <p>Best for Deal Hunters</p>
+                                  </div>
+                                </div>
+
+                                <div className='panels-header'>
+                                  <h2>Crypto.com Exchange</h2>
+                                </div>
                               </div>
                             </div>
 

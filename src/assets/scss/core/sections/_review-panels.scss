@@ -21,19 +21,6 @@
 		&:not(:last-of-type) {
 			margin-bottom: ($review-panels-items--padding__mobile / 2);
 		}
-
-		&.push-left {
-
-			&::after {
-				flex-basis: $review-panels-item--width;
-				max-width: $review-panels-item--width;
-
-				@if ( $review-panels-items--padding__mobile != null ) {
-					padding-left: $review-panels-items--padding__mobile / 2;
-					padding-right: $review-panels-items--padding__mobile / 2;
-				}
-			}
-		}
 	}
 
 	.panels-item {
@@ -54,9 +41,20 @@
 	
 			}
 	
-			.panels-title-name {
-				flex-basis: $review-panels-title-name--width;
-				max-width: $review-panels-title-name--width;
+			.panels-title {
+				flex-basis: $review-panels-title--width;
+				max-width: $review-panels-title--width;
+				max-height: $review-panels-title--height;
+				margin-bottom: $review-panels-title--margin_b;
+
+				.header-best-attribute {
+					max-height: $review-panels-title-best-attribute--height;
+                }
+
+                .panels-header {
+					max-height: $review-panels-title--height - $review-panels-title-best-attribute--height;
+                }
+
 			}
 		}
 
@@ -108,19 +106,6 @@
 			&:not(:last-of-type) {
 				margin-bottom: ($review-panels-items--padding__mobile / 2);
 			}
-	
-			&.push-left {
-	
-				&::after {
-					flex-basis: $review-panels-item--width;
-					max-width: $review-panels-item--width;
-	
-					@if ( $review-panels-items--padding__mobile != null ) {
-						padding-left: $review-panels-items--padding__mobile / 2;
-						padding-right: $review-panels-items--padding__mobile / 2;
-					}
-				}
-			}
 		}
 	
 		.panels-item {
@@ -139,12 +124,21 @@
 					flex-basis: $review-panels-image--width;
 					max-width: $review-panels-image--width;
 					max-height: $review-panels-image--height;
-		
 				}
 		
-				.panels-title-name {
-					flex-basis: $review-panels-title-name--width;
-					max-width: $review-panels-title-name--width;
+				.panels-title {
+					flex-basis: $review-panels-title--width;
+					max-width: $review-panels-title--width;
+					max-height: $review-panels-title--height;
+					margin-bottom: $review-panels-title--margin_b;
+
+					.header-best-attribute {
+						max-height: $review-panels-title-best-attribute--height;
+					}
+	
+					.panels-header {
+						max-height: $review-panels-title--height - $review-panels-title-best-attribute--height;
+					}
 				}
 			}
 	

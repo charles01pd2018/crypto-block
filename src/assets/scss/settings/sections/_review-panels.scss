@@ -14,11 +14,15 @@ $review-panels-items--padding__desktop: 	    0;		    // padding between features
 
 $review-panels-item--width: 				    null;		// review panels item, width
 
-$review-panels-image--width: 				    null;		// review panels image, width
-$review-panels-image--height: 				    null;		// review panels image, height
+$review-panels-image--width: 				    150px;		// review panels image, width
+$review-panels-image--height: 				    150px;		// review panels image, height
 
-$review-panels-title-name--width: 				null;		// review panels title name, width
-$review-panels-title-name--height: 				250px;		// review panels title name, height
+$review-panels-title--width: 				    null;		// review panels title name, width
+$review-panels-title--height: 				    150px;		// review panels title name, height
+
+$review-panels-title-best-attribute--height:    50px;       // review panels title name best attribute, height
+
+$review-panels-title--margin_b:                 20px;       // review panels title name, bottom padding
 
 $review-panels-main-description--width: 		540px;		// review panels main description, width
 $review-panels-qualities--width: 		        540px;		// review panels qualities, width
