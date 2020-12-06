@@ -7,14 +7,21 @@ import ButtonGroup from '../../../components/elements/ButtonGroup';
 
 const Dropdown = () => {
     return (
-        <div clasName='container'>
+        <>
+            <p className='center-content text-color-primary'><b>Dropdown Menu</b></p>
+
             <ButtonGroup>
 
-                <Button wide/>
+                <Button wide tag="a" color="secondary" >
+                    <p>Promotions</p>
+                </Button>
+
+                <Button wide tag="a" color="primary" >
+                    <p>Security</p>
+                </Button>
 
             </ButtonGroup>
-            <p className='center-content'>Dropdown Menu</p>
-        </div>
+        </>
     )
 }
 

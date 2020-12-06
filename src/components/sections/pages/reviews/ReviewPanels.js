@@ -92,7 +92,9 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown />
+                            <div className='dropdown'>
+                              <Dropdown />
+                            </div>
 
                         </div>
                       </div>
