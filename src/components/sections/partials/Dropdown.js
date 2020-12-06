@@ -30,13 +30,13 @@ const Dropdown = () => {
     
       const openMenu = () => {
         document.body.classList.add('off-nav-is-active');
-        nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
+        //nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
         setIsactive(true);
       }
     
       const closeMenu = () => {
         document.body.classList.remove('off-nav-is-active');
-        nav.current && (nav.current.style.maxHeight = null);
+        //nav.current && (nav.current.style.maxHeight = null);
         setIsactive(false);
       }
 
@@ -54,44 +54,17 @@ const Dropdown = () => {
 <>
             <p className='center-content text-color-primary'><b>Dropdown Menu</b></p>
 
-                    <div className="container">
-                        <div className='site-header-inner'>
         
                 <Button wide color="secondary" ref={hamburger} onClick={isActive ? closeMenu : openMenu}>
-                    <span className="hamburger right">
+                    <span className="hamburger">
                         <span className="hamburger-inner"></span>
                      </span>
-
-                     <nav
-                ref={nav}
-                className={
-                  classNames(
-                    'header-nav',
-                    isActive && 'is-active'
-                  )}>
-                <div className="header-nav-inner">
-
-                  <ul className={
-                    classNames(
-                      'list-reset text',
-                      'header-nav-right'
-                    )}>
-
-                    <li>
-                      <Link to="/crypto-block/about" onClick={closeMenu}>About</Link>
-                    </li>
-                    <li>
-                      <Link to="/crypto-block/reviews" onClick={closeMenu}>Reviews</Link>
-                    </li>
-                  </ul>
-                </div>
-              </nav>
               </Button>
-              </div>
-              </div>
-                    
 
-                
+              { isActive ? (
+                <div className='container center-content'> Hello World </div>
+              ) : ( null )
+}
 </ >
     )
 }
