@@ -6,6 +6,7 @@ import { ReviewPanelsProps } from '../../../../utils/SectionProps';
 
 // elements
 import Image from '../../../elements/Image';
+import Dropdown from '../../partials/Dropdown';
 
 
 const propTypes = {
@@ -90,6 +91,8 @@ const ReviewPanels = ({
                                 <p>Margin Trading: <b>No</b></p>
                               </div>
                             </div>
+
+                            <Dropdown />
 
                         </div>
                       </div>
