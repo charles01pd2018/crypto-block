@@ -35,7 +35,12 @@
             padding-top: 20px;
             color: get-color(light, 1);
 
+            .panels-main-description {
+                flex-grow: 1;
+            }
+
             .panels-qualities {
+                flex-grow: 1;
                 padding-left: 20px;
             }
         }
