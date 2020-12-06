@@ -57,15 +57,20 @@ const Dropdown = () => {
               <div className='panel-dropdown'>
 
                   <Button wide panel color='light-dark' size='sm' ref={hamburger} onClick={isActive ? closeMenu : openMenu}>
-                      <span className="hamburger">
-                          <span className="hamburger-inner"></span>
+                      <span className='dropdown-title'>
+                        Promotions
                       </span>
                   </Button>
 
                 { isActive ? (
+
                   <div className='panel-dropdown-descripton'>
-                    <p className='center-content'> Hello World </p>
+                    <div className='container ml-16 pb-4 pt-8 border-top'>
+                      <p className='fw-600 mb-0'> <u>Title</u> </p>
+                        <p> This would be me desribing what is going on</p>
+                    </div>
                   </div>
+
                 ) : ( null ) }
 
               </div>           

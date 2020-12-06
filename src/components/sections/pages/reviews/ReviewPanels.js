@@ -86,7 +86,7 @@ const ReviewPanels = ({
                                 <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
                               </div>
 
-                              <div className='panels-qualities text-color-third'>
+                              <div className='panels-qualities'>
                                 <p># of Cryptocurrencies Available: <b>37</b></p>
                                 <p>Margin Trading: <b>No</b></p>
                               </div>
