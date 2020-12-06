@@ -90,6 +90,24 @@
 	}
 }
 
+.button-light-dark {
+	color: color(button-dark);
+	background-color: color-bg(button-light-dark);
+	border-color: color-border(button-dark);
+
+	&:hover {
+        background-color: color-bg(button-dark-hover);
+		border-color: color-border(button-dark-hover);
+	}
+	
+	&.is-loading {
+
+		&::after {
+			border-color: color(button-dark);
+		}
+	}
+}
+
 .button-primary {
 	color: color(button-primary);
     background-color: color-bg(button-primary);

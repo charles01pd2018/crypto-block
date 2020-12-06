@@ -24,7 +24,9 @@ $button--bg: (
 	button-primary-hover: 	lighten(get-color(primary, 1), 2%),
 	button-secondary: 		get-color(secondary, 1),
 	button-secondary-hover:	lighten(get-color(secondary, 1), 2%),
-	button-disabled: 		get-color(light, 3)
+	button-disabled: 		get-color(light, 3),
+
+	button-light-dark:		get-color(dark, 3)
 );
 
 // Buttons: border color

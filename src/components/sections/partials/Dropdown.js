@@ -54,12 +54,13 @@ const Dropdown = () => {
 <>
             <p className='center-content text-color-primary'><b>Dropdown Menu</b></p>
 
-        
-                <Button wide color="secondary" ref={hamburger} onClick={isActive ? closeMenu : openMenu}>
+              <div className='panel-dropdown'>
+                <Button wide panel color='light-dark' size='sm' ref={hamburger} onClick={isActive ? closeMenu : openMenu}>
                     <span className="hamburger">
                         <span className="hamburger-inner"></span>
                      </span>
-              </Button>
+                </Button>
+              </div>
 
               { isActive ? (
                 <div className='container center-content'> Hello World </div>
