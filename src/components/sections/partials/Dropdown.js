@@ -29,14 +29,10 @@ const Dropdown = () => {
       });  
     
       const openMenu = () => {
-        document.body.classList.add('off-nav-is-active');
-        //nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
         setIsactive(true);
       }
     
       const closeMenu = () => {
-        document.body.classList.remove('off-nav-is-active');
-        //nav.current && (nav.current.style.maxHeight = null);
         setIsactive(false);
       }
 
