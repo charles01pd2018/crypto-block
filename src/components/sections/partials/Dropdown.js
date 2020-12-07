@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 
 // types
 import PropTypes from 'prop-types';
@@ -73,7 +73,7 @@ const Dropdown = ({
                   {children}
                   <Button wide panel color='light-dark' size='sm' onClick={isActive ? closeMenu : openMenu}>
                       <span className='dropdown-title'>
-                        {data.title}
+                        {data.itle}
                       </span>
                   </Button>
 
@@ -87,8 +87,20 @@ const Dropdown = ({
                   </div>
 
                 ) : ( null ) }
-
               </div>           
+
+              { data.map( ( { title, body } ) => { 
+                <div className={dropdownClasses}>
+                {children}
+                <Button wide panel color='light-dark' size='sm' onClick={isActive ? closeMenu : openMenu}>
+                    <span className='dropdown-title'>
+                      {title}
+                    </span>
+                </Button>
+              </div>
+              }
+              )}
+              
             </>
     )
 }

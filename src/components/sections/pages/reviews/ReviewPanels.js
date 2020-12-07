@@ -7,7 +7,6 @@ import { ReviewPanelsProps } from '../../../../utils/SectionProps';
 // elements
 import Image from '../../../elements/Image';
 import Dropdown from '../../partials/Dropdown';
-import ButtonGroup from '../../../../components/elements/ButtonGroup';
 
 
 
@@ -58,10 +57,16 @@ const ReviewPanels = ({
         body: {
           header: 'Sign-Up Bonuses',
           description: 'Get $100 for signing up!'
+        }},
+        { title: 'Security',
+        body: {
+          header: 'Hardware Storage',
+          description: '95% cold storage'
         }
       } ];
 
-      const dropdownText = dropdownObject[0];
+      const dropdownText1 = dropdownObject[0];
+      const dropdownText2 = dropdownObject[1];
 
     return (
         <section
@@ -103,7 +108,10 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown data={dropdownText}/>
+                            <div className='dropdown-buttons'>
+                              <Dropdown data={dropdownText1}/>
+                              <Dropdown data={dropdownText2}/>
+                            </div>
 
                         </div>
                       </div>
