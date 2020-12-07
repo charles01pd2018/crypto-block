@@ -6,7 +6,7 @@ import { ReviewPanelsProps } from '../../../../utils/SectionProps';
 
 // elements
 import Image from '../../../elements/Image';
-import Dropdown from '../../partials/Dropdown';
+import Dropdown from '../../partials/dropdown/DropdownMenu';
 
 
 
@@ -64,9 +64,7 @@ const ReviewPanels = ({
           description: '95% cold storage'
         }
       } ];
-
-      const dropdownText1 = dropdownObject[0];
-      const dropdownText2 = dropdownObject[1];
+      
 
     return (
         <section
@@ -109,8 +107,7 @@ const ReviewPanels = ({
                             </div>
 
                             <div className='dropdown-buttons'>
-                              <Dropdown data={dropdownText1}/>
-                              <Dropdown data={dropdownText2}/>
+                              <Dropdown data={dropdownObject}/>
                             </div>
 
                         </div>
