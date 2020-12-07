@@ -97,15 +97,15 @@ const ReviewPanels = ({
                             
                               <div className='panels-description'>
                                 <div className='panels-main-description text-sm'>
-                                  <div className='text'><p>Transaction Fee: <b>High</b></p></div>
-                                  <div className='text'><p>Transaction Fee with Credit Card: <b>3.99%</b></p></div>
-                                  <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
+                                  <p>Transaction Fee: <div className='highlight'><b>High</b></div></p>
+                                  <p>Transaction Fee with Credit Card: <div className='highlight'><b>3.99%</b></div></p>
+                                  <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>1.49%</b></div></p>
                                 </div>
 
                                 <div className='panels-overlay'>
                                   <div className='panels-qualities text-sm'>
-                                    <p># of Cryptocurrencies Available: <b>37</b></p>
-                                    <p>Margin Trading: <b>No</b></p>
+                                    <p>Cryptocurrencies Available: <div className='highlight'><b>37</b></div></p>
+                                    <p>Margin Trading: <div className='highlight'><b>No</b></div></p>
                                   </div>
 
                                   <div className='affiliate-button'>
@@ -145,15 +145,15 @@ const ReviewPanels = ({
                           
                             <div className='panels-description'>
                               <div className='panels-main-description text-sm'>
-                                <p>Transaction Fee: <b>Low</b></p>
-                                <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
-                                <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
+                                <p>Transaction Fee: <div className='highlight'><b>Low</b></div></p>
+                                <p>Transaction Fee with Credit Card: <div className='highlight'><b>Unavailable</b></div></p>
+                                <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>~0.2%</b></div></p>
                               </div>
 
                             <div className='panels-overlay'>
                               <div className='panels-qualities text-sm'>
-                                <p># of Cryptocurrencies Available: <b>50</b></p>
-                                <p>Margin Trading: <b>Yes</b></p>
+                                <p>Cryptocurrencies Available: <div className='highlight'><b>50</b></div></p>
+                                <p>Margin Trading: <div className='highlight'><b>Yes</b></div></p>
                               </div>
 
                               <div className='affiliate-button'>
@@ -192,15 +192,15 @@ const ReviewPanels = ({
 
                           <div className='panels-description'>
                             <div className='panels-main-description text-sm'>
-                              <p>Transaction Fee: <b>Low</b></p>
-                              <p>Transaction Fee with Credit Card: <b>4%</b></p>
-                              <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
+                              <p>Transaction Fee: <div className='highlight'><b>Low</b></div></p>
+                              <p>Transaction Fee with Credit Card: <div className='highlight'><b>4%</b></div></p>
+                              <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>~0.2%</b></div></p>
                             </div>
 
                             <div className='panels-overlay'>
                               <div className='panels-qualities text-sm'>
-                                <p># of Cryptocurrencies Available: <b>58</b></p>
-                                <p>Margin Trading: <b>No</b></p>
+                                <p>Cryptocurrencies Available: <div className='highlight'><b>58</b></div></p>
+                                <p>Margin Trading: <div className='highlight'><b>No</b></div></p>
                               </div>
 
                             <div className='affiliate-button'>
