@@ -21,6 +21,10 @@
             
             .panels-main-description {
                 flex-grow: 1;
+
+                > p {
+                    border: 1px solid grey;
+                }
             }
             
         .panels-overlay {

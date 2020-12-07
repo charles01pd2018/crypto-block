@@ -85,8 +85,8 @@ const ReviewPanels = ({
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
                                     alt="Image"
-                                    width={125}
-                                    height={125} />
+                                    width={130}
+                                    height={130} />
                               </div>
 
                               <div className='panels-title'>
@@ -97,8 +97,8 @@ const ReviewPanels = ({
                             
                               <div className='panels-description'>
                                 <div className='panels-main-description text-sm'>
-                                  <p>Transaction Fee: <b>High</b></p>
-                                  <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
+                                  <div className='text'><p>Transaction Fee: <b>High</b></p></div>
+                                  <div className='text'><p>Transaction Fee with Credit Card: <b>3.99%</b></p></div>
                                   <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
                                 </div>
 
@@ -132,8 +132,8 @@ const ReviewPanels = ({
                                 <Image
                                   src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
                                   alt="Image"
-                                  width={125}
-                                  height={125} />
+                                  width={130}
+                                  height={130} />
                             </div>
     
                             <div className='panels-title'>
@@ -180,8 +180,8 @@ const ReviewPanels = ({
                                   <Image
                                     src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
                                     alt="Image"
-                                    width={125}
-                                    height={125} />
+                                    width={130}
+                                    height={130} />
                               </div>
                         
                               <div className='panels-title'>
