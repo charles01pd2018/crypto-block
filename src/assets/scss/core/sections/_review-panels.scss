@@ -1,8 +1,10 @@
 .review-panels {
 
-	.section-inner {
-		padding-top: $review-panels--padding-t__mobile;
-		padding-bottom: $review-panels--padding-b__mobile;
+	.panels-item-inner {
+		padding-top: $review-panels-item--inner-padding-v;
+		padding-bottom: $review-panels-item--inner-padding-v;
+		padding-left: $review-panels-item--inner-padding-h;
+		padding-right: $review-panels-item--inner-padding-h;
 	}
 
 	.panels-wrap {
@@ -24,15 +26,18 @@
 	}
 
 	.panels-item {
+		background-color: $review-panels--background-color;
 		flex-basis: $review-panels-item--width;
 		max-width: $review-panels-item--width;
 		margin-bottom: $review-panels--padding-b__mobile;
 
 		@if ( $review-panels-items--padding__mobile != null ) {
-			padding: $review-panels-items--padding__mobile / 2;
+			padding: ($review-panels-items--padding__mobile / 2);
 		}
 
 		.panels-heading {
+			display: flex;
+			padding-bottom: $review-panels-header--padding__desktop;
 
 			.panels-image {
 				flex-basis: $review-panels-image--width;
@@ -44,28 +49,36 @@
 				flex-basis: $review-panels-title--width;
 				max-width: $review-panels-title--width;
 				max-height: $review-panels-title--height;
+				padding-left: $review-panels-item--inner-padding-h;
+				padding-right: $review-panels-item--inner-padding-h;
+
+				* {
+					margin-top: $review-panels-items--padding__mobile;
+				}
 			}
 		}
 
 		.panels-description {
+			padding-top: $review-panels-header--padding__desktop;
 
 			.panels-main-description {
 				flex-basis: $review-panels-main-description--width;
 				max-width: $review-panels-main-description--width;
 			}
 			
-			.panels-qualities {
-				flex-basis: $review-panels-qualities--width;
-				max-width: $review-panels-qualities--width;
+			.panels-overlay {
+
+				.panels-qualities {
+					flex-basis: $review-panels-qualities--width;
+					max-width: $review-panels-qualities--width;
+				}
+
+				.affiliate-button {
+					flex-basis: $review-panels-affiliate-button--width;
+					max-width: $review-panels-affiliate-button--width;
+				}
 			}
 		}
-	}
-
-	.panels-item-inner {
-		padding-top: $review-panels-item--inner-padding-v;
-		padding-bottom: $review-panels-item--inner-padding-v;
-		padding-left: $review-panels-item--inner-padding-h;
-		padding-right: $review-panels-item--inner-padding-h;
 	}
 }
 
@@ -73,14 +86,9 @@
 @include media( '>medium' ) {
 
 	.review-panels {
-
-		.section-inner {
-			padding-top: $review-panels--padding-t__mobile;
-			padding-bottom: $review-panels--padding-b__mobile;
-		}
 	
 		.panels-wrap {
-	
+
 			@if ( $review-panels-items--padding__mobile != null ) {
 	
 				margin-right: -($review-panels-items--padding__mobile / 2);
@@ -98,16 +106,18 @@
 		}
 	
 		.panels-item {
-	
+			background-color: $review-panels--background-color;
 			flex-basis: $review-panels-item--width;
 			max-width: $review-panels-item--width;
 			margin-bottom: $review-panels--padding-b__mobile;
-
+	
 			@if ( $review-panels-items--padding__mobile != null ) {
-				padding: $review-panels-items--padding__mobile / 2;
+				padding: ($review-panels-items--padding__mobile / 2);
 			}
 	
 			.panels-heading {
+				display: flex;
+				padding-bottom: $review-panels-header--padding__desktop;
 	
 				.panels-image {
 					flex-basis: $review-panels-image--width;
@@ -119,21 +129,36 @@
 					flex-basis: $review-panels-title--width;
 					max-width: $review-panels-title--width;
 					max-height: $review-panels-title--height;
+					padding-left: $review-panels-item--inner-padding-h;
+					padding-right: $review-panels-item--inner-padding-h;
+	
+					* {
+						margin-top: $review-panels-items--padding__mobile;
+					}
+				}
 			}
 	
 			.panels-description {
-
+				padding-top: $review-panels-header--padding__desktop;
+	
 				.panels-main-description {
 					flex-basis: $review-panels-main-description--width;
 					max-width: $review-panels-main-description--width;
 				}
 				
-				.panels-qualities {
-					flex-basis: $review-panels-qualities--width;
-					max-width: $review-panels-qualities--width;
+				.panels-overlay {
+	
+					.panels-qualities {
+						flex-basis: $review-panels-qualities--width;
+						max-width: $review-panels-qualities--width;
+					}
+	
+					.affiliate-button {
+						flex-basis: $review-panels-affiliate-button--width;
+						max-width: $review-panels-affiliate-button--width;
+					}
 				}
 			}
 		}
 	}
-}
 }

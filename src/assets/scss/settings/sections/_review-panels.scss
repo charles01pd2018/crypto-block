@@ -1,27 +1,30 @@
-// Review panels (core/sections/_review-panels.scss)
-$review-panels--padding-t__mobile: 			    null;		// review panels, top padding (mobile)
-$review-panels--padding-b__mobile: 			    50px;		// review panels, bottom padding (mobile)
-$review-panels--padding-t__desktop: 		    null;		// review panels, top padding (desktop)
-$review-panels--padding-b__desktop: 			null;		// review panels, bottom padding (desktop)
-$review-panels-header--padding__mobile: 	    null;		// review panels header, bottom padding (mobile)
-$review-panels-header--padding__desktop:	    null;		// review panels header, bottom padding (desktop)
+// Review panels (core/sections/_review-panels.scss)            
+$review-panels--padding-t__mobile: 			    null;		            // review panels, top padding (mobile)
+$review-panels--padding-b__mobile: 			    50px;		            // review panels, bottom padding (mobile)
+$review-panels--padding-t__desktop: 		    null;		            // review panels, top padding (desktop)
+$review-panels--padding-b__desktop: 			50px;		            // review panels, bottom padding (desktop)
+$review-panels-header--padding__mobile: 	    8px;		            // review panels header, bottom padding (mobile)
+$review-panels-header--padding__desktop:	    18px;		            // review panels header, bottom padding (desktop)
 
-$review-panels-items--padding__mobile: 	        null;		// padding between review panels items (mobile)
-$review-panels-items--padding__desktop: 	    null;		// padding between review panels items (desktop)
+$review-panels-items--padding__mobile: 	        null;		            // padding between review panels items (mobile)
+$review-panels-items--padding__desktop: 	    null;		            // padding between review panels items (desktop)
 
-$review-panels-items--padding__mobile: 	        0;		    // padding between features review panels (mobile)
-$review-panels-items--padding__desktop: 	    0;		    // padding between features review panels (desktop)
+$review-panels-items--padding__mobile: 	        0;		                // padding between features review panels (mobile)
+$review-panels-items--padding__desktop: 	    0;		                // padding between features review panels (desktop)
 
-$review-panels-item--width: 				    null;		// review panels item, width
+$review-panels-item--width: 				    null;		            // review panels item, width
 
-$review-panels-image--width: 				    150px;		// review panels image, width
-$review-panels-image--height: 				    150px;		// review panels image, height
+$review-panels-image--width: 				    125px;		            // review panels image, width
+$review-panels-image--height: 				    125px;		            // review panels image, height
 
-$review-panels-title--width: 				    null;		// review panels title name, width
-$review-panels-title--height: 				    150px;		// review panels title name, height
+$review-panels-title--width: 				    null;		            // review panels title name, width
+$review-panels-title--height: 				    null;		            // review panels title name, height
 
-$review-panels-main-description--width: 		null;		// review panels main description, width
-$review-panels-qualities--width: 		        null;		// review panels qualities, width
+$review-panels-main-description--width: 		null;		            // review panels main description, width
+$review-panels-qualities--width: 		        null;		            // review panels qualities, width
+$review-panels-affiliate-button--width: 	    null;		            // review panels affiliate button, width
 
-$review-panels-item--inner-padding-v: 		    0;			// review panels item, inner top and bottom padding (it inherits $reivew-panels--inner-padding-v unless you replace null with a new value)
-$review-panels-item--inner-padding-h: 		    0;			// review panels item, inner left and right padding (it inherits $reivew-panels--inner-padding-h unless you replace null with a new value)
+$review-panels-item--inner-padding-v: 		    20px;		        	// review panels item, inner top and bottom padding (it inherits $reivew-panels--inner-padding-v unless you replace null with a new value)
+$review-panels-item--inner-padding-h: 		    20px;		        	// review panels item, inner left and right padding (it inherits $reivew-panels--inner-padding-h unless you replace null with a new value)
+
+$review-panels--background-color:               get-color(dark, 3);     // review panels, background color

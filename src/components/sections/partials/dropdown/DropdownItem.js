@@ -79,5 +79,7 @@ const DropdownItem = ({
     )
 }
 
+DropdownItem.defaultProps = defaultProps;
+
 
 export default DropdownItem;
