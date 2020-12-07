@@ -7,6 +7,8 @@ import { ReviewPanelsProps } from '../../../../utils/SectionProps';
 // elements
 import Image from '../../../elements/Image';
 import Dropdown from '../../partials/Dropdown';
+import ButtonGroup from '../../../../components/elements/ButtonGroup';
+
 
 
 const propTypes = {
@@ -51,6 +53,15 @@ const ReviewPanels = ({
         'panels-item reveal-from-bottom',
       );
 
+      const dropdownObject = [ { 
+        title: 'Promotions',
+        body: {
+          header: 'Sign-Up Bonuses',
+          description: 'Get $100 for signing up!'
+        }
+      } ];
+
+      const dropdownText = dropdownObject[0];
 
     return (
         <section
@@ -92,7 +103,7 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown />
+                            <Dropdown data={dropdownText}/>
 
                         </div>
                       </div>
