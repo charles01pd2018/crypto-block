@@ -62,14 +62,14 @@ const DropdownItem = ({
                 <div className='dropdown-button'>
                     <Button wide panel color='light-dark' size='sm' onClick={isActive ? closeMenu : openMenu}>
                         <span className='dropdown-title'>
-                        {title}
+                          <p className='mb-0'>{title}</p>
                         </span>
                     </Button>
                 </div>
 
                 { isActive ? (
                 <div className='panel-dropdown-descripton'>
-                    <div className='container ml-16 pb-4 pt-8 border-top'>
+                    <div className='container ml-16 pb-4 pt-8 border-top text-sm'>
                     <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
                         <p>{body.description}</p>
                     </div>

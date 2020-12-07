@@ -96,14 +96,14 @@ const ReviewPanels = ({
                             </div>
                             
                               <div className='panels-description'>
-                                <div className='panels-main-description'>
+                                <div className='panels-main-description text-sm'>
                                   <p>Transaction Fee: <b>High</b></p>
                                   <p>Transaction Fee with Credit Card: <b>3.99%</b></p>
                                   <p>Transaction Fee with Bank Transfer: <b>1.49%</b></p>
                                 </div>
 
                                 <div className='panels-overlay'>
-                                  <div className='panels-qualities'>
+                                  <div className='panels-qualities text-sm'>
                                     <p># of Cryptocurrencies Available: <b>37</b></p>
                                     <p>Margin Trading: <b>No</b></p>
                                   </div>
@@ -144,14 +144,14 @@ const ReviewPanels = ({
 
                           
                             <div className='panels-description'>
-                              <div className='panels-main-description'>
+                              <div className='panels-main-description text-sm'>
                                 <p>Transaction Fee: <b>Low</b></p>
                                 <p>Transaction Fee with Credit Card: <b>Unavailable</b></p>
                                 <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                               </div>
 
                             <div className='panels-overlay'>
-                              <div className='panels-qualities'>
+                              <div className='panels-qualities text-sm'>
                                 <p># of Cryptocurrencies Available: <b>50</b></p>
                                 <p>Margin Trading: <b>Yes</b></p>
                               </div>
@@ -191,14 +191,14 @@ const ReviewPanels = ({
                             </div>
 
                           <div className='panels-description'>
-                            <div className='panels-main-description'>
+                            <div className='panels-main-description text-sm'>
                               <p>Transaction Fee: <b>Low</b></p>
                               <p>Transaction Fee with Credit Card: <b>4%</b></p>
                               <p>Transaction Fee with Bank Transfer: <b>~0.2%</b></p>
                             </div>
 
                             <div className='panels-overlay'>
-                              <div className='panels-qualities'>
+                              <div className='panels-qualities text-sm'>
                                 <p># of Cryptocurrencies Available: <b>58</b></p>
                                 <p>Margin Trading: <b>No</b></p>
                               </div>

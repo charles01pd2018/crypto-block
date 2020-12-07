@@ -70,7 +70,7 @@ const FeaturesSplit = ({
                   <p>A+ Worthy Work</p>
                   </div>
 
-                <h3 className="mt-0 mb-12">
+                <h3 className="mt-0 text-color-secondary">
                 Extensive Research &#38; Testing
                   </h3>
 
@@ -100,7 +100,7 @@ const FeaturesSplit = ({
                   <p>Tough Grading</p>
                   </div>
 
-                  <h3 className="mt-0 mb-12">
+                  <h3 className="mt-0 text-color-secondary">
                     Rigorous Scoring Guidelines 
                   </h3>
 
