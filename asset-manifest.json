@@ -1,28 +1,28 @@
 {
   "files": {
-    "main.css": "/crypto-block/static/css/main.36eaaf91.chunk.css",
-    "main.js": "/crypto-block/static/js/main.2fd15c25.chunk.js",
-    "main.js.map": "/crypto-block/static/js/main.2fd15c25.chunk.js.map",
+    "main.css": "/crypto-block/static/css/main.130a354f.chunk.css",
+    "main.js": "/crypto-block/static/js/main.d50415a9.chunk.js",
+    "main.js.map": "/crypto-block/static/js/main.d50415a9.chunk.js.map",
     "runtime-main.js": "/crypto-block/static/js/runtime-main.a9bcbbd3.js",
     "runtime-main.js.map": "/crypto-block/static/js/runtime-main.a9bcbbd3.js.map",
-    "static/js/2.ba9c07e9.chunk.js": "/crypto-block/static/js/2.ba9c07e9.chunk.js",
-    "static/js/2.ba9c07e9.chunk.js.map": "/crypto-block/static/js/2.ba9c07e9.chunk.js.map",
+    "static/js/2.9af1936b.chunk.js": "/crypto-block/static/js/2.9af1936b.chunk.js",
+    "static/js/2.9af1936b.chunk.js.map": "/crypto-block/static/js/2.9af1936b.chunk.js.map",
     "index.html": "/crypto-block/index.html",
-    "precache-manifest.d5ea28bfe5f9ad5f75ca6b30bd55a467.js": "/crypto-block/precache-manifest.d5ea28bfe5f9ad5f75ca6b30bd55a467.js",
+    "precache-manifest.b71f2184f1e0570f18bcffbe3548f865.js": "/crypto-block/precache-manifest.b71f2184f1e0570f18bcffbe3548f865.js",
     "service-worker.js": "/crypto-block/service-worker.js",
-    "static/css/main.36eaaf91.chunk.css.map": "/crypto-block/static/css/main.36eaaf91.chunk.css.map",
-    "static/js/2.ba9c07e9.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.ba9c07e9.chunk.js.LICENSE.txt",
+    "static/css/main.130a354f.chunk.css.map": "/crypto-block/static/css/main.130a354f.chunk.css.map",
+    "static/js/2.9af1936b.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.9af1936b.chunk.js.LICENSE.txt",
     "static/media/cryptocom-logo.jpg": "/crypto-block/static/media/cryptocom-logo.3ccc032e.jpg",
-    "static/media/style.scss": "/crypto-block/static/media/illustration-section-02.63d0555d.svg",
     "static/media/feature-tile-icon-01.svg": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg",
     "static/media/features-split-image-01.png": "/crypto-block/static/media/features-split-image-01.e617c230.png",
     "static/media/features-split-image-02.png": "/crypto-block/static/media/features-split-image-02.bcde8e70.png",
+    "static/media/style.scss": "/crypto-block/static/media/illustration-section-02.63d0555d.svg",
     "static/media/logo.svg": "/crypto-block/static/media/logo.ee235c71.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.a9bcbbd3.js",
-    "static/js/2.ba9c07e9.chunk.js",
-    "static/css/main.36eaaf91.chunk.css",
-    "static/js/main.2fd15c25.chunk.js"
+    "static/js/2.9af1936b.chunk.js",
+    "static/css/main.130a354f.chunk.css",
+    "static/js/main.d50415a9.chunk.js"
   ]
 }
