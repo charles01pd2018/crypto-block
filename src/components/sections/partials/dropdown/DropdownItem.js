@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // types
 import classNames from 'classnames';
@@ -14,46 +14,54 @@ const defaultProps = {
 const DropdownItem = ({
   className,
   item: { title, body },
+  dropdownName,
   children
 }) => {
 
     const [isActive, setIsactive] = useState(false);
-
-    const nav = useRef(null);
-
+    
     useEffect(() => {
-        isActive && openMenu();
-        document.addEventListener('keydown', keyPress);
-        document.addEventListener('click', clickOutside);
-        return () => {
-          document.removeEventListener('keydown', keyPress);
-          document.addEventListener('click', clickOutside);
-          closeMenu();
-        };
-      });  
-    
-      const openMenu = () => {
-        setIsactive(true);
+      isActive && openMenu();
+      document.addEventListener('keydown', keyPress);
+      return () => {
+        document.removeEventListener('keydown', keyPress);
+        closeMenu();
       };
-    
+    });  
+
+    const keyPress = (e) => {
+      isActive && e.keyCode === 27 && closeMenu();
+    };
+
       const closeMenu = () => {
         setIsactive(false);
+        localStorage.setItem({dropdownName}, false)
       };
 
-      const keyPress = (e) => {
-        isActive && e.keyCode === 27 && closeMenu();
-      };
-    
-      const clickOutside = (e) => {
-        if (!nav.current) return
-        if (!isActive || nav.current.contains(e.target)) return;
-        closeMenu();
+      const openMenu = () => {
+        setIsactive(true);
+
+        const isMenuOpen = localStorage.getItem({dropdownName});
+        
+        if (isMenuOpen === true) {
+          let closeMenuFunc = localStorage.getItem('closeMenu');
+          closeMenuFunc();
+
+          localStorage.setItem('closeMenu', closeMenu);
+        } 
+        else { 
+          localStorage.setItem({ dropdownName }, true );
+          localStorage.setItem('closeMenu', closeMenu);
+        }
       };
 
       const dropdownItemClasses = classNames (
           'dropdown-item',
           className
       );
+
+      console.log( localStorage.getItem({ dropdownName } ))
+      console.log( localStorage.getItem('closeMenu'))
       
 
     return (
