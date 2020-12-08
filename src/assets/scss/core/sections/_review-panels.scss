@@ -83,10 +83,14 @@
 }
 
 
-@include media( '>medium' ) {
+@include media( '<medium' ) {
 
 	.review-panels {
 	
+		.panels-item-inner {
+			padding-right: $review-panels--padding-b__mobile;
+		}
+
 		.panels-wrap {
 
 			@if ( $review-panels-items--padding__mobile != null ) {

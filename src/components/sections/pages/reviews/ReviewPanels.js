@@ -108,10 +108,11 @@ const ReviewPanels = ({
                                     <p>Margin Trading: <div className='highlight'><b>No</b></div></p>
                                   </div>
 
-                                  <div className='affiliate-button'>
+                                  <div className='affiliate-button center-content'>
                                     <Button color='primary' >
                                       <p className='fw-600'>Learn More</p>
                                     </Button>
+                                      <p className='text-xxs'>on Coinbase's site</p>
                                   </div>
                                 </div>
 
@@ -160,6 +161,7 @@ const ReviewPanels = ({
                                 <Button color='primary'>
                                   <p className='fw-600'>Learn More</p>
                                 </Button>
+                                <p className='text-xxs'>on Kraken's site</p>
                               </div>
                             </div>
 
@@ -207,6 +209,7 @@ const ReviewPanels = ({
                                 <Button color='primary'>
                                   <p className='fw-600'>Learn More</p>
                                 </Button>
+                                <p className='text-xxs'>on Crypto.com</p>
                             </div>
                           </div>
 

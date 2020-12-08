@@ -114,7 +114,7 @@ const Header = ({
 
                   <ul className={
                     classNames(
-                      'list-reset text',
+                      'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
 

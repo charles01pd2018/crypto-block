@@ -66,13 +66,13 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
 
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                <div className="text-xxs text-color-primary fw-600 tt-u">
                   <p>A+ Worthy Work</p>
                   </div>
 
-                <h3 className="mt-0 text-color-secondary">
-                Extensive Research &#38; Testing
-                  </h3>
+                <h3 className="mt-0 mb-12 text-color-secondary">
+                  Extensive Research &#38; Testing
+                </h3>
 
                 <p className="m-0">
                   We research and compile up-date-information information and extract meaningful insights so you can navigate the crypto landscape.
@@ -96,11 +96,11 @@ const FeaturesSplit = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-right" data-reveal-container=".split-item">
 
-                <div className="text-xxs text-color-primary fw-600 tt-u mb-8">
+                <div className="text-xxs text-color-primary fw-600 tt-u">
                   <p>Tough Grading</p>
                   </div>
 
-                  <h3 className="mt-0 text-color-secondary">
+                  <h3 className="mt-0 mb-12 text-color-secondary">
                     Rigorous Scoring Guidelines 
                   </h3>
 

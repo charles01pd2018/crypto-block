@@ -73,12 +73,12 @@ const FeaturesSplit = ({
             <div className="split-item section">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
 
-                <h3 className="mt-0 mb-12 text-color-secondary">
+                <h3 className="mb-12 text-color-secondary">
                   A New Financial Economy
                 </h3>
 
                 <p className="m-0">
-                Cryptocurrency and Decentralized Finance is continuing to revolutionize the traditional financial industry. Approaching this unfamiliar landscape can be daunting. We here at Crypto Block are here to make that confrontation less scary! 
+                  Cryptocurrency and Decentralized Finance is continuing to revolutionize the traditional financial industry. Approaching this unfamiliar landscape can be daunting. We here at Crypto Block are here to make that confrontation less scary! 
                 </p>
               </div>
 
