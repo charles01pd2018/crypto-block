@@ -118,9 +118,7 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <div className='dropdown-buttons'>
-                              <Dropdown data={dropdownObject}/>
-                            </div>
+                            <Dropdown data={dropdownObject}/>
                       </div>
 
                       <div className={panelsItemClasses}>
@@ -167,9 +165,7 @@ const ReviewPanels = ({
                           </div>
                           </div>
 
-                          <div className='dropdown-buttons'>
-                              <Dropdown data={dropdownObject}/>
-                           </div>
+                            <Dropdown data={dropdownObject}/>
                         </div>
 
                         <div className={panelsItemClasses}>
@@ -215,10 +211,7 @@ const ReviewPanels = ({
                         </div>
                       </div>
                       
-                      <div className='dropdown-buttons'>
-                        <Dropdown data={dropdownObject}/>
-                      </div>
-
+                      <Dropdown data={dropdownObject}/>
                     </div>
                   </div>
                     

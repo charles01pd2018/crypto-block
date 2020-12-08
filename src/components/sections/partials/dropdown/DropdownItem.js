@@ -69,7 +69,7 @@ const DropdownItem = ({
                 </div>
 
                 { isActive ? (
-                <div className='panel-dropdown-descripton'>
+                <div className='dropdown-descripton'>
                     <div className='container ml-16 pb-4 pt-8 border-top text-sm'>
                     <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
                         <p>{body.description}</p>
