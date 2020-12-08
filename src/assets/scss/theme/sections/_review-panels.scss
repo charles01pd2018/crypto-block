@@ -1,43 +1,59 @@
 .review-panels {
 
     .panels-item {
-        background-color: get-color(dark, 3);
-
         border-top: 5px solid get-color(dark, 2);
         border-right: 5px solid get-color(dark, 2);
         border-radius: 20px;
         
         .panels-heading {
-            display: flex;
-            border-bottom: 1.5px solid black;
-            padding-bottom: 15px;
-
-            .panels-image {
-                padding-top: 10px;
-                padding-left: 10px;
-            }
-
-            .panels-title {
-                padding-left: 20px;
-                padding-right: 10px;
-
-                > h4 {
-                    max-height: 0;
-                }
-            }
+            border-bottom: 3px solid grey;
         }
 
         .panels-description {
             display: flex;
-
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 20px;
-            color: get-color(light, 1);
-
-            .panels-qualities {
-                padding-left: 20px;
+            
+            .panels-main-description {
+                flex-grow: 1;
+            }
+            
+        .panels-overlay {
+            flex-grow: 1;
+            
+            .affiliate-button {
+                text-align: right;
+                padding-right: 30px;
             }
         }
+
+        .highlight {
+            display: inline-block;
+            padding-left: 3px;
+
+            > b {
+                border: 2px solid get-color(secondary, 3);
+                background-color: get-color(secondary, 1);
+                color: get-color(dark, 1);
+                border-radius: 18px;
+                padding: 5px 8px 5px 8px;
+            }
+        }
+
+        @include media("<medium") {
+
+            .highlight {
+                display: block;
+                padding-top: 5px;
+                padding-left: 0;
+            }
+            
+            .panels-overlay {
+                .affiliate-button {
+                    text-align: center;
+                    padding-top: 30px;
+                    padding-right: 0;
+                }
+            }
+        }
+    }
     }
 }

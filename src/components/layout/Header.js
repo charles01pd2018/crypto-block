@@ -114,15 +114,12 @@ const Header = ({
 
                   <ul className={
                     classNames(
-                      'list-reset text-xs',
+                      'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
 
                     <li>
-                      <Link to="/crypto-block/about" onClick={closeMenu}><b>About</b></Link>
-                    </li>
-                    <li>
-                      <Link to="/crypto-block/reviews" onClick={closeMenu}><b>Reviews</b></Link>
+                      <Link to="/crypto-block/reviews" onClick={closeMenu}>Best Cryptocurrency Exchanges</Link>
                     </li>
                   </ul>
 

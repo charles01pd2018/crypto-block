@@ -9,7 +9,8 @@ const propTypes = {
   loading: PropTypes.bool,
   wide: PropTypes.bool,
   wideMobile: PropTypes.bool,
-  disabled: PropTypes.bool
+  disabled: PropTypes.bool,
+  panel: PropTypes.bool
 }
 
 const defaultProps = {
@@ -19,7 +20,8 @@ const defaultProps = {
   loading: false,
   wide: false,
   wideMobile: false,
-  disabled: false
+  disabled: false,
+  panel: false
 }
 
 
@@ -32,6 +34,7 @@ const Button = ({
   wide,
   wideMobile,
   disabled,
+  panel,
   ...props
 }) => {
 
@@ -42,6 +45,7 @@ const Button = ({
     loading && 'is-loading',
     wide && 'button-block',
     wideMobile && 'button-wide-mobile',
+    panel && 'panel-button',
     className
   );
 

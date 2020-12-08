@@ -21,7 +21,7 @@ const FooterSocial = ({
     >
       <ul className="list-reset">
         <li>
-          <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer">
+          <a href="https://twitter.com/yoosh_crypto" target="_blank" rel="noopener noreferrer">
             <svg
               width="16"
               height="16"
