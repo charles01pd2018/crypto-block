@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useCallback } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 
 // types
 import classNames from 'classnames';
@@ -13,7 +13,7 @@ const defaultProps = {
 
 const DropdownItem = ({
   className,
-  item: {title, body},
+  item: { title, body },
   children
 }) => {
 
@@ -34,29 +34,30 @@ const DropdownItem = ({
     
       const openMenu = () => {
         setIsactive(true);
-      }
+      };
     
       const closeMenu = () => {
         setIsactive(false);
-      }
+      };
 
       const keyPress = (e) => {
         isActive && e.keyCode === 27 && closeMenu();
-      }
+      };
     
       const clickOutside = (e) => {
         if (!nav.current) return
         if (!isActive || nav.current.contains(e.target)) return;
         closeMenu();
-      }  
+      };
 
       const dropdownItemClasses = classNames (
           'dropdown-item',
           className
-      )
+      );
+      
 
     return (
-            <>
+          <>
             <div className={dropdownItemClasses}>
                 {children}
                 <div className='dropdown-button'>
@@ -75,11 +76,10 @@ const DropdownItem = ({
                     </div>
                 </div> ) : ( null ) }
             </div>
-            </>
+          </>
     )
 }
 
 DropdownItem.defaultProps = defaultProps;
-
 
 export default DropdownItem;

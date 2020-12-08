@@ -10,7 +10,6 @@ import Dropdown from '../../partials/dropdown/DropdownMenu';
 import Button from '../../../elements/Button';
 
 
-
 const propTypes = {
     ...ReviewPanelsProps.types
   }
