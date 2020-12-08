@@ -3,14 +3,14 @@ $review-panels--padding-t__mobile: 			    null;		            // review panels, t
 $review-panels--padding-b__mobile: 			    50px;		            // review panels, bottom padding (mobile)
 $review-panels--padding-t__desktop: 		    null;		            // review panels, top padding (desktop)
 $review-panels--padding-b__desktop: 			50px;		            // review panels, bottom padding (desktop)
-$review-panels-header--padding__mobile: 	    8px;		            // review panels header, bottom padding (mobile)
+$review-panels-header--padding__mobile: 	    10px;		            // review panels header, bottom padding (mobile)
 $review-panels-header--padding__desktop:	    18px;		            // review panels header, bottom padding (desktop)
 
 $review-panels-items--padding__mobile: 	        null;		            // padding between review panels items (mobile)
 $review-panels-items--padding__desktop: 	    null;		            // padding between review panels items (desktop)
 
 $review-panels-items--padding__mobile: 	        0;		                // padding between features review panels (mobile)
-$review-panels-items--padding__desktop: 	    0;		                // padding between features review panels (desktop)
+$review-panels-items--padding__desktop: 	    18px;		                // padding between features review panels (desktop)
 
 $review-panels-item--width: 				    null;		            // review panels item, width
 
@@ -18,7 +18,7 @@ $review-panels-image--width: 				    130px;		            // review panels image,
 $review-panels-image--height: 				    130px;		            // review panels image, height
 
 $review-panels-title--width: 				    null;		            // review panels title name, width
-$review-panels-title--height: 				    null;		            // review panels title name, height
+$review-panels-title--height: 				    0;		            // review panels title name, height
 
 $review-panels-main-description--width: 		null;		            // review panels main description, width
 $review-panels-qualities--width: 		        null;		            // review panels qualities, width
