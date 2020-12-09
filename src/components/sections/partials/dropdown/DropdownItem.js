@@ -14,12 +14,8 @@ const defaultProps = {
 const DropdownItem = ({
   className,
   item: { title, body },
-  closeMenuFunc,
-  setCloseMenuFunc,
   children
 }) => {
-  
-  console.log(closeMenuFunc)
 
     const [isActive, setIsActive] = useState(false);
     
@@ -41,16 +37,6 @@ const DropdownItem = ({
       };
 
       const openMenu = () => {
-        // if (closeMenuFunc == null) {
-        //   setIsActive(true);
-        //   setCloseMenuFunc(closeMenu);
-        // }
-        // else {
-        //   closeMenuFunc();
-        //   setIsActive(true);
-        //   setCloseMenuFunc(closeMenu);
-        // }
-        setCloseMenuFunc(setIsActive)
         setIsActive(true);
       };
 
@@ -72,11 +58,11 @@ const DropdownItem = ({
                 </div>
 
                 { isActive ? (
-                <div className='dropdown-descripton'>
-                    <div className='container ml-16 pb-4 pt-8 border-top text-sm'>
-                    <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
-                        <p>{body.description}</p>
-                    </div>
+                <div className='dropdown-description panels-item-inner'>
+                    <span className='text-sm'>
+                      <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
+                      <p>{body.description}</p>
+                    </span>
                 </div> ) : ( null ) }
             </div>
           </>

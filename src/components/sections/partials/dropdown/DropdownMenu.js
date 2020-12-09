@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // types
 import PropTypes from 'prop-types';
@@ -29,8 +29,6 @@ const DropdownMenu = ({
   children
 }) => {
 
-  const [closeMenuFunc, setCloseMenuFunc] = useState(null);
-
       const dropdownMenuClasses = classNames(
         'panel-dropdown',
         className
@@ -41,7 +39,7 @@ const DropdownMenu = ({
               <div className={dropdownMenuClasses}>
                 {children}
                 { data.map( item => (
-                  <DropdownItem item={item} closeMenuFunc={closeMenuFunc} setCloseMenuFunc={setCloseMenuFunc} />
+                  <DropdownItem item={item}  />
                 )
                 ) }
               </div>

@@ -9,6 +9,9 @@ import Image from '../../../elements/Image';
 import Dropdown from '../../partials/dropdown/DropdownMenu';
 import Button from '../../../elements/Button';
 
+// objects
+import EXCHANGE_DATA from './objects/exchange-data';
+
 
 const propTypes = {
     ...ReviewPanelsProps.types
@@ -51,19 +54,6 @@ const ReviewPanels = ({
       const panelsItemClasses = classNames(
         'panels-item reveal-from-bottom',
       );
-
-      const dropdownObject = [ { 
-        title: 'Promotions',
-        body: {
-          header: 'Sign-Up Bonuses',
-          description: 'Get $100 for signing up!'
-        }},
-        { title: 'Security',
-        body: {
-          header: 'Hardware Storage',
-          description: '95% cold storage'
-        }
-      } ];
       
 
     return (
@@ -96,18 +86,18 @@ const ReviewPanels = ({
                             
                               <div className='panels-description'>
                                 <div className='panels-main-description text-sm'>
-                                  <p>Transaction Fee: <div className='highlight'><b>High</b></div></p>
-                                  <p>Transaction Fee with Credit Card: <div className='highlight'><b>3.99%</b></div></p>
-                                  <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>1.49%</b></div></p>
+                                  <p>Transaction Fee: <span className='highlight'><b>High</b></span></p>
+                                  <p>Transaction Fee with Credit Card: <span className='highlight'><b>3.99%</b></span></p>
+                                  <p>Transaction Fee with Bank Transfer: <span className='highlight'><b>1.49%</b></span></p>
                                 </div>
 
                                 <div className='panels-overlay'>
                                   <div className='panels-qualities text-sm'>
-                                    <p>Cryptocurrencies Available: <div className='highlight'><b>37</b></div></p>
-                                    <p>Margin Trading: <div className='highlight'><b>No</b></div></p>
+                                    <p>Cryptocurrencies Available: <span className='highlight'><b>37</b></span></p>
+                                    <p>Margin Trading: <span className='highlight'><b>No</b></span></p>
                                   </div>
 
-                                  <div className='affiliate-button center-content'>
+                                  <div className='affiliate-button'>
                                     <Button color='primary' >
                                       <p className='fw-600'>Learn More</p>
                                     </Button>
@@ -118,7 +108,7 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown data={dropdownObject}  />
+                            <Dropdown data={EXCHANGE_DATA}  />
                       </div>
 
                       <div className={panelsItemClasses}>
@@ -143,15 +133,15 @@ const ReviewPanels = ({
                           
                             <div className='panels-description'>
                               <div className='panels-main-description text-sm'>
-                                <p>Transaction Fee: <div className='highlight'><b>Low</b></div></p>
-                                <p>Transaction Fee with Credit Card: <div className='highlight'><b>Unavailable</b></div></p>
-                                <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>~0.2%</b></div></p>
+                                <p>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
+                                <p>Transaction Fee with Credit Card: <span className='highlight'><b>Unavailable</b></span></p>
+                                <p>Transaction Fee with Bank Transfer: <span className='highlight'><b>~0.2%</b></span></p>
                               </div>
 
                             <div className='panels-overlay'>
                               <div className='panels-qualities text-sm'>
-                                <p>Cryptocurrencies Available: <div className='highlight'><b>50</b></div></p>
-                                <p>Margin Trading: <div className='highlight'><b>Yes</b></div></p>
+                                <p>Cryptocurrencies Available: <span className='highlight'><b>50</b></span></p>
+                                <p>Margin Trading: <span className='highlight'><b>Yes</b></span></p>
                               </div>
 
                               <div className='affiliate-button'>
@@ -165,7 +155,7 @@ const ReviewPanels = ({
                           </div>
                           </div>
 
-                            <Dropdown data={dropdownObject}/>
+                            <Dropdown data={EXCHANGE_DATA}/>
                         </div>
 
                         <div className={panelsItemClasses}>
@@ -189,15 +179,15 @@ const ReviewPanels = ({
 
                           <div className='panels-description'>
                             <div className='panels-main-description text-sm'>
-                              <p>Transaction Fee: <div className='highlight'><b>Low</b></div></p>
-                              <p>Transaction Fee with Credit Card: <div className='highlight'><b>4%</b></div></p>
-                              <p>Transaction Fee with Bank Transfer: <div className='highlight'><b>~0.2%</b></div></p>
+                              <p>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
+                              <p>Transaction Fee with Credit Card: <span className='highlight'><b>4%</b></span></p>
+                              <p>Transaction Fee with Bank Transfer: <span className='highlight'><b>~0.2%</b></span></p>
                             </div>
 
                             <div className='panels-overlay'>
                               <div className='panels-qualities text-sm'>
-                                <p>Cryptocurrencies Available: <div className='highlight'><b>58</b></div></p>
-                                <p>Margin Trading: <div className='highlight'><b>No</b></div></p>
+                                <p>Cryptocurrencies Available: <span className='highlight'><b>58</b></span></p>
+                                <p>Margin Trading: <span className='highlight'><b>No</b></span></p>
                               </div>
 
                             <div className='affiliate-button'>
@@ -211,7 +201,7 @@ const ReviewPanels = ({
                         </div>
                       </div>
                       
-                      <Dropdown data={dropdownObject}/>
+                      <Dropdown data={EXCHANGE_DATA}/>
                     </div>
                   </div>
                     
