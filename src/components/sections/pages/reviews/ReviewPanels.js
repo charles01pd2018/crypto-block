@@ -118,7 +118,7 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown data={dropdownObject} dropdownName='coinbase-exchange-dropdown' />
+                            <Dropdown data={dropdownObject}  />
                       </div>
 
                       <div className={panelsItemClasses}>

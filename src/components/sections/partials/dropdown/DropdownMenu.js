@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 // types
 import PropTypes from 'prop-types';
@@ -16,7 +16,6 @@ const propTypes = {
     description: PropTypes.string.isRequired
     })
   }).isRequired,
-  dropdownName: PropTypes.string,
   children: PropTypes.node
 }
 
@@ -27,11 +26,10 @@ const defaultProps = {
 const DropdownMenu = ({
   className,
   data,
-  dropdownName,
   children
 }) => {
 
-  if (dropdownName) localStorage.setItem({ dropdownName }, false );
+  const [closeMenuFunc, setCloseMenuFunc] = useState(null);
 
       const dropdownMenuClasses = classNames(
         'panel-dropdown',
@@ -43,7 +41,7 @@ const DropdownMenu = ({
               <div className={dropdownMenuClasses}>
                 {children}
                 { data.map( item => (
-                  <DropdownItem item={item} dropdownName={dropdownName} />
+                  <DropdownItem item={item} closeMenuFunc={closeMenuFunc} setCloseMenuFunc={setCloseMenuFunc} />
                 )
                 ) }
               </div>

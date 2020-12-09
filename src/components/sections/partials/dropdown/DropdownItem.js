@@ -14,11 +14,14 @@ const defaultProps = {
 const DropdownItem = ({
   className,
   item: { title, body },
-  dropdownName,
+  closeMenuFunc,
+  setCloseMenuFunc,
   children
 }) => {
+  
+  console.log(closeMenuFunc)
 
-    const [isActive, setIsactive] = useState(false);
+    const [isActive, setIsActive] = useState(false);
     
     useEffect(() => {
       isActive && openMenu();
@@ -34,35 +37,27 @@ const DropdownItem = ({
     };
 
       const closeMenu = () => {
-        setIsactive(false);
-        localStorage.setItem({dropdownName}, false)
+        setIsActive(false);
       };
 
       const openMenu = () => {
-        setIsactive(true);
-
-        const isMenuOpen = localStorage.getItem({dropdownName});
-        
-        if (isMenuOpen === true) {
-          let closeMenuFunc = localStorage.getItem('closeMenu');
-          closeMenuFunc();
-
-          localStorage.setItem('closeMenu', closeMenu);
-        } 
-        else { 
-          localStorage.setItem({ dropdownName }, true );
-          localStorage.setItem('closeMenu', closeMenu);
-        }
+        // if (closeMenuFunc == null) {
+        //   setIsActive(true);
+        //   setCloseMenuFunc(closeMenu);
+        // }
+        // else {
+        //   closeMenuFunc();
+        //   setIsActive(true);
+        //   setCloseMenuFunc(closeMenu);
+        // }
+        setCloseMenuFunc(setIsActive)
+        setIsActive(true);
       };
 
       const dropdownItemClasses = classNames (
           'dropdown-item',
           className
       );
-
-      console.log( localStorage.getItem({ dropdownName } ))
-      console.log( localStorage.getItem('closeMenu'))
-      
 
     return (
           <>
