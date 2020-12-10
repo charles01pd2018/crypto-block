@@ -52,7 +52,7 @@ const Hero = ({
   );
 
   const advertisingDiclosureText = (
-    <p className='text-sm'>
+    <p className='text-xs'>
       We make money through affiliate links. Here is how they generally work: 
       <br/><br/>
       If you click on one of the “Learn More” buttons and sign up for the product/service within a specified time frame, we will receive a portion of the money you spend on that product/service. This is known as a revenue share model.
@@ -80,7 +80,7 @@ const Hero = ({
                 Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
             </p>
 
-            <Modal trigger={modalTrigger} textContent={advertisingDiclosureText}/>
+            <Modal trigger={modalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
 
             <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
                   Updated ____ 

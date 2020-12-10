@@ -2,24 +2,28 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Popup from 'reactjs-popup';
-import 'reactjs-popup/dist/index.css';
-
 import Button from './Button';
+import 'reactjs-popup/dist/index.css';
 
 
 const propTypes = {
-    trigger: PropTypes.element,
-    textContent: PropTypes.element
+    trigger: PropTypes.element.isRequired,
+    title: PropTypes.string,
+    textContent: PropTypes.element,
+    buttonColor: PropTypes.string
 };
 
 const defaultProps = {
+  buttonColor: 'primary'
 };
 
 
 const Modal = ({
     className,
     trigger,
+    title,
     textContent,
+    buttonColor,
     ...props
 }) => {
 
@@ -36,12 +40,12 @@ const Modal = ({
         {close => (
           <div className={modalClasses}>
 
-            <Button className="modal-close-icon" color='primary' onClick={close}>
+            <Button className="modal-close-icon" color={buttonColor} onClick={close}>
               &times;
             </Button>
 
             <div className="modal-header"> 
-              <p className='text-color-secondary fw-600 mb-4'>Advertising Disclosure</p>
+              <p className='text-color-secondary fw-600 mb-4'>{title}</p>
             </div>
 
             <div className="modal-content">
