@@ -5,10 +5,6 @@ import classNames from 'classnames';
 import { SectionProps } from '../../../../utils/SectionProps';
 import { Link } from 'react-router-dom';
 
-// elements
-import Modal from '../../../elements/Modal';
-
-
 
 const propTypes = {
   ...SectionProps.types
