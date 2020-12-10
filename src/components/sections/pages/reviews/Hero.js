@@ -5,6 +5,9 @@ import classNames from 'classnames';
 import { SectionProps } from '../../../../utils/SectionProps';
 import { Link } from 'react-router-dom';
 
+// elements
+import Modal from '../../../elements/Modal';
+
 
 const propTypes = {
   ...SectionProps.types
@@ -40,6 +43,14 @@ const Hero = ({
     bottomDivider && 'has-bottom-divider'
   );
 
+  const modalTrigger = (
+    <Link>
+      <p className="m-0 mb-16 reveal-from-bottom text-xs text-color-primary" data-reveal-delay="600">
+          Advertising Disclosure
+      </p>
+    </Link>
+  );
+
   return (
     <section
       {...props}
@@ -57,11 +68,7 @@ const Hero = ({
                 Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
             </p>
 
-            <Link>
-              <p className="m-0 mb-16 reveal-from-bottom text-xs text-color-primary" data-reveal-delay="600">
-                  Advertising Disclosure
-              </p>
-            </Link>
+            <Modal trigger={modalTrigger}/>
 
             <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
                   Updated ____ 
