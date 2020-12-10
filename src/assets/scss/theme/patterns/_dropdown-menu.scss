@@ -9,14 +9,13 @@
             flex-grow: 1;
             display: inline-flex;
 
-            .title {
+            > span {
                 flex-grow: 1;
                 text-align: right;
             }
-
+            
             .chevron {
-                flex-grow: 1;
-                text-align: right;
+                margin-top: 3px;
             }
         }
     }
