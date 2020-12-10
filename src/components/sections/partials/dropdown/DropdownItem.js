@@ -45,15 +45,20 @@ const DropdownItem = ({
           className
       );
 
+      const dropdownTitleClasses = classNames(
+        'dropdown-title',
+        isActive && 'panel-description-open'
+      )
+
     return (
           <>
             <div className={dropdownItemClasses}>
                 {children}
                 <div className='dropdown-button'>
                     <Button wide panel color='light-dark' onClick={isActive ? closeMenu : openMenu}>
-                        <span className='dropdown-title'>
+                        <span className={dropdownTitleClasses}>
                           <span className='title'><p className='mb-0'>{title}</p></span>
-                          <span className="chevron"></span>
+                          <span className='chevron'></span>
                         </span>
                     </Button>
                 </div>

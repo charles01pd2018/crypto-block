@@ -11,4 +11,9 @@
     vertical-align: top;
     width: 0.6em;
     border: 1px solid yellow;
+
+
+    .panel-description-open & {
+        background: yellow;
+    }
 }
