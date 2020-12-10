@@ -3,6 +3,11 @@ import React from 'react';
 // types
 import classNames from 'classnames';
 import { SectionProps } from '../../../../utils/SectionProps';
+import { Link } from 'react-router-dom';
+
+// elements
+import Modal from '../../../elements/Modal';
+
 
 
 const propTypes = {
@@ -54,6 +59,16 @@ const Hero = ({
 
             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
                 Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
+            </p>
+
+            <Link>
+              <p className="m-0 mb-16 reveal-from-bottom text-xs text-color-primary" data-reveal-delay="600">
+                  Advertising Disclosure
+              </p>
+            </Link>
+
+            <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
+                  Updated ____ 
             </p>
             
           </div>
