@@ -39,7 +39,7 @@ const DropdownMenu = ({
               <div className={dropdownMenuClasses}>
                 {children}
                 { data.map( item => (
-                  <DropdownItem item={item}  />
+                  <DropdownItem item={item} />
                 )
                 ) }
               </div>
