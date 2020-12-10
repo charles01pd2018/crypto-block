@@ -1,13 +1,26 @@
 .dropdown-item {
     .dropdown-button{
+
         &:hover {
             background-color: color-bg(button-light-dark-hover);
         }
 
-        .hamburger {
-            text-align: right;
+        .dropdown-title {
+            flex-grow: 1;
+            display: inline-flex;
+
+            .title {
+                flex-grow: 1;
+                text-align: right;
+            }
+
+            .chevron {
+                flex-grow: 1;
+                text-align: right;
+            }
         }
     }
+
     .dropdown-description {
         border-top: 3px solid get-color(light, 3);
     }
