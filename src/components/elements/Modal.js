@@ -4,51 +4,53 @@ import classNames from 'classnames';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
+import Button from './Button';
+
 
 const propTypes = {
-    trigger: PropTypes.element
-}
+    trigger: PropTypes.element,
+    textContent: PropTypes.element
+};
 
 const defaultProps = {
-}
+};
 
 
 const Modal = ({
     className,
     trigger,
+    textContent,
     ...props
 }) => {
 
-     
+    const modalClasses = classNames(
+      'modal container'
+    );
 
     return (
         <Popup
-    trigger={trigger}
-    modal
-  >
-    {close => (
-      <div className="modal">
+        {...props}
+        trigger={trigger}
+        modal
+        >
+        {close => (
+          <div className={modalClasses}>
 
-        <button className="close" onClick={close}>
-          &times;
-        </button>
+            <Button className="modal-close-icon" color='primary' onClick={close}>
+              &times;
+            </Button>
 
-        <div className="header"> Modal Title </div>
-            <div className="content">
-                {' '}
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, a nostrum.
-                Dolorem, repellat quidem ut, minima sint vel eveniet quibusdam voluptates
-                delectus doloremque, explicabo tempore dicta adipisci fugit amet dignissimos?
-                <br />
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur sit
-                commodi beatae optio voluptatum sed eius cumque, delectus saepe repudiandae
-                explicabo nemo nam libero ad, doloribus, voluptas rem alias. Vitae?
+            <div className="modal-header"> 
+              <p className='text-color-secondary fw-600 mb-4'>Advertising Disclosure</p>
             </div>
 
-        
-      </div>
-    )}
-  </Popup>
+            <div className="modal-content">
+              {textContent}
+            </div>
+
+            </div>
+          )}
+        </Popup>
     );
 }
 
