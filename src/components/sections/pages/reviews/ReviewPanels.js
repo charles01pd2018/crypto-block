@@ -11,6 +11,8 @@ import Button from '../../../elements/Button';
 
 // objects
 import COINBASE_EXCHANGE_DATA from './objects/CoinbaseExchangeData';
+import KRAKEN_EXCHANGE_DATA from './objects/KrakenExchangeData';
+import CRYPTOCOM_EXCHANGE_DATA from './objects/CryptocomExchangeData';
 
 
 const propTypes = {
@@ -142,7 +144,7 @@ const ReviewPanels = ({
                             <div className='panels-overlay'>
                               <div className='panels-qualities text-sm'>
                                 <p className='fw-600'>Cryptocurrencies Available: <span className='highlight'><b>BTC, ETH, +48 More</b></span></p>
-                                <p className='fw-600'>Margin Trading: <span className='highlight'><b>Yes</b></span></p>
+                                <p className='fw-600'>Margin Trading: <span className='highlight'><b>Up to 5X</b></span></p>
                               </div>
 
                               <div className='affiliate-button'>
@@ -156,7 +158,7 @@ const ReviewPanels = ({
                           </div>
                           </div>
 
-                            <Dropdown data={COINBASE_EXCHANGE_DATA} dropdownKey='kraken'/>
+                            <Dropdown data={KRAKEN_EXCHANGE_DATA} dropdownKey='kraken'/>
                         </div>
 
                         <div className={panelsItemClasses}>
@@ -173,7 +175,7 @@ const ReviewPanels = ({
                               </div>
                         
                               <div className='panels-title'>
-                                  <h4 className="text-xs text-color-secondary fw-600 tt-u">Best for Deal Hunters</h4>
+                                  <h4 className="text-xs text-color-secondary fw-600 tt-u">Best for Crypto Fans</h4>
                                   <h2 className='mt-0'>Crypto.com Exchange</h2>
                               </div>
                             </div>
@@ -202,7 +204,7 @@ const ReviewPanels = ({
                         </div>
                       </div>
                       
-                      <Dropdown data={COINBASE_EXCHANGE_DATA} dropdownKey='cryptocom'/>
+                      <Dropdown data={CRYPTOCOM_EXCHANGE_DATA} dropdownKey='cryptocom'/>
                     </div>
                   </div>
                     
