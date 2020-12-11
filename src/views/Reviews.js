@@ -12,7 +12,7 @@ const Reviews = () => {
         <Hero className='illustration-section-01'/>   
         <ReviewPanels />
     </>
-    )
+    );
 }
 
 export default Reviews;

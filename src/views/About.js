@@ -14,7 +14,7 @@ const About = () => {
             <FeaturesSplit />
             <FeaturesTiles />
         </>
-    )
+    );
 }
 
 export default About;

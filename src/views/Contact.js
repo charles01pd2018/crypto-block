@@ -16,7 +16,7 @@ const Terms = () => {
             <Hero bottomDivider />
             <GenericSection children={contactEmail}/>
         </>
-    )
+    );
 
 }
 
