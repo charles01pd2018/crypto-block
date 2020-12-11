@@ -1,2 +1,2 @@
 # Crypto Block
-learn what's possible in cryptocurrency
+Cryptocurrency: learn what's possible
