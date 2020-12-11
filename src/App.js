@@ -45,7 +45,7 @@ const App = () => {
       children={() => (
         <ScrollToTop>
           <Switch>
-            <AppRoute exact path="/crypto-block/" component={Home} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block" component={Home} layout={LayoutDefault} />
             
             <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/exchange-reviews" component={Reviews} layout={LayoutDefault} />
