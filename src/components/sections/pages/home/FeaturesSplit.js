@@ -105,7 +105,7 @@ const FeaturesSplit = ({
                   </h3>
 
                   <p className="m-0">
-                    Our scoring procedure takes into account multiple factors that you care about while considering the importance of each factor to calculate accurate rating scores. 
+                    Our scoring procedure takes into account multiple factors that drive overall quality to ensure the best products/services are recommended. 
                   </p>
               </div>
               

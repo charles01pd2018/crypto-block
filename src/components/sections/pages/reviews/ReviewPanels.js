@@ -86,10 +86,9 @@ const ReviewPanels = ({
                             
                               <div className='panels-description' key='coinbase-panel-description'>
                                 <div className='panels-main-description text-sm' key='coinbase-panel-main-description'>
-                                  <p className='mb-0 text-xxs'>*Fees will vary</p>
                                   <p>Transaction Fee: <span className='highlight'><b>High</b></span></p>
-                                  <p>Transaction Fee with Credit Card: <span className='highlight'><b>3.99%</b></span></p>
-                                  <p>Transaction Fee with Bank Transfer: <span className='highlight'><b>1.49%</b></span></p>
+                                  <p>Transaction Fee with Credit Card: <span className='highlight'><b>~3.99%</b></span></p>
+                                  <p>Transaction Fee with Bank Transfer: <span className='highlight'><b>~1.49%</b></span></p>
                                   
                                 </div>
 

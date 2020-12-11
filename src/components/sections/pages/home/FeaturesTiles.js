@@ -63,7 +63,7 @@ const FeaturesTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
-          <Link to='/crypto-block/reviews'>
+          <Link to='/crypto-block/exchange-reviews'>
             <div className={tilesItemClasses}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -79,7 +79,7 @@ const FeaturesTiles = ({
 
                 <div className="features-tiles-item-content">
                   <h4 className="mt-0 mb-8 text-color-secondary">
-                    Best Cryptocurrency Exchanges
+                    Best Cryptocurrency Exchanges in USA
                   </h4>
                   <p className="m-0 text-sm">
                     Discover the best exchanges to buy and sell cryptocurrencies 

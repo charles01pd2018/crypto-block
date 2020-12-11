@@ -25,7 +25,7 @@ const FooterNav = ({
           <Link to="/crypto-block/about">About</Link>
         </li>
         <li>
-          <Link to="/crypto-block/reviews">Reviews</Link>
+          <Link to="/crypto-block/terms">Terms of Service</Link>
         </li>
       </ul>
     </nav>
