@@ -9,13 +9,11 @@ import DropdownItem from './DropdownItem';
 
 
 const propTypes = {
-  data: PropTypes.shape({
+  data: PropTypes.arrayOf(PropTypes.shape({
   title: PropTypes.string.isRequired,
-  body: PropTypes.shape({
-    header: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired
-    })
-  }).isRequired,
+  body: PropTypes.arrayOf(PropTypes.string)
+  })).isRequired,
+  dropdownKey: PropTypes.string.isRequired,
   children: PropTypes.node
 }
 
@@ -26,6 +24,7 @@ const defaultProps = {
 const DropdownMenu = ({
   className,
   data,
+  dropdownKey,
   children
 }) => {
 
@@ -38,8 +37,8 @@ const DropdownMenu = ({
             <>
               <div className={dropdownMenuClasses}>
                 {children}
-                { data.map( item => (
-                  <DropdownItem item={item} />
+                { data.map( ( item, index ) => (
+                  <DropdownItem key={`${dropdownKey}-dropdown-item-${index}`} item={item} dropdownKey={dropdownKey} />
                 )
                 ) }
               </div>

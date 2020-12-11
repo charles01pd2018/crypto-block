@@ -44,7 +44,7 @@ const Hero = ({
   );
 
   const modalTrigger = (
-    <Link>
+    <Link to='#'>
       <p className="m-0 mb-16 reveal-from-bottom text-xs text-color-primary" data-reveal-delay="600">
           Advertising Disclosure
       </p>
@@ -77,7 +77,7 @@ const Hero = ({
             </h1>
 
             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
+                Buy <span className='text-color-secondary'>Bitcoin</span>, <span className='text-color-secondary'>Ethereum</span>, and more. Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
             </p>
 
             <Modal trigger={modalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>

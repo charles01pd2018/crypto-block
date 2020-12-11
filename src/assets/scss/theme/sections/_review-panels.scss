@@ -38,22 +38,26 @@
             }
         }
 
-        @include media("<=medium") {
+        @include media("<=1024px") {
 
             .highlight {
-                display: block;
+                display: flex;
                 padding-top: 5px;
                 padding-left: 0;
             }
+        }
+
+        @include media('<=medium') {
             
             .panels-overlay {
+                
                 .affiliate-button {
                     text-align: center;
                     padding-top: 30px;
                     padding-right: 0;
+                    }
                 }
             }
         }
-    }
     }
 }

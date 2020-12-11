@@ -14,6 +14,7 @@ const defaultProps = {
 const DropdownItem = ({
   className,
   item: { title, body },
+  dropdownKey,
   children
 }) => {
 
@@ -40,7 +41,7 @@ const DropdownItem = ({
         setIsActive(true);
       };
 
-      const dropdownItemClasses = classNames (
+      const dropdownItemClasses = classNames(
           'dropdown-item',
           className
       );
@@ -48,11 +49,15 @@ const DropdownItem = ({
       const dropdownTitleClasses = classNames(
         'dropdown-title',
         isActive && 'panel-description-open'
-      )
+      );
+
+      const dropdownDescriptionClasses = classNames(
+        'dropdown-description panels-item-inner'
+      );
 
     return (
           <>
-            <div className={dropdownItemClasses}>
+            <div className={dropdownItemClasses} >
                 {children}
                 <div className='dropdown-button'>
                     <Button wide panel color='light-dark' onClick={isActive ? closeMenu : openMenu}>
@@ -64,10 +69,15 @@ const DropdownItem = ({
                 </div>
 
                 { isActive ? (
-                <div className='dropdown-description panels-item-inner'>
+                <div className={dropdownDescriptionClasses}>
                     <span className='text-sm'>
-                      <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
-                      <p>{body.description}</p>
+                      <ul>
+                      {body.map( ( description, index ) => (
+                        <li key={`${dropdownKey}-${title}-description-${index}`}>
+                          {description}
+                        </li>
+                      ))}
+                      </ul>
                     </span>
                 </div> ) : ( null ) }
             </div>
