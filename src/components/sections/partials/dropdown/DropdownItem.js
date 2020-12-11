@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 
 // types
 import classNames from 'classnames';
@@ -17,44 +17,38 @@ const DropdownItem = ({
   children
 }) => {
 
-    const [isActive, setIsactive] = useState(false);
-
-    const nav = useRef(null);
-
+    const [isActive, setIsActive] = useState(false);
+    
     useEffect(() => {
-        isActive && openMenu();
-        document.addEventListener('keydown', keyPress);
-        document.addEventListener('click', clickOutside);
-        return () => {
-          document.removeEventListener('keydown', keyPress);
-          document.addEventListener('click', clickOutside);
-          closeMenu();
-        };
-      });  
-    
-      const openMenu = () => {
-        setIsactive(true);
+      isActive && openMenu();
+      document.addEventListener('keydown', keyPress);
+      return () => {
+        document.removeEventListener('keydown', keyPress);
+        closeMenu();
       };
-    
+    });  
+
+    const keyPress = (e) => {
+      isActive && e.keyCode === 27 && closeMenu();
+    };
+
       const closeMenu = () => {
-        setIsactive(false);
+        setIsActive(false);
       };
 
-      const keyPress = (e) => {
-        isActive && e.keyCode === 27 && closeMenu();
-      };
-    
-      const clickOutside = (e) => {
-        if (!nav.current) return
-        if (!isActive || nav.current.contains(e.target)) return;
-        closeMenu();
+      const openMenu = () => {
+        setIsActive(true);
       };
 
       const dropdownItemClasses = classNames (
           'dropdown-item',
           className
       );
-      
+
+      const dropdownTitleClasses = classNames(
+        'dropdown-title',
+        isActive && 'panel-description-open'
+      )
 
     return (
           <>
@@ -62,18 +56,19 @@ const DropdownItem = ({
                 {children}
                 <div className='dropdown-button'>
                     <Button wide panel color='light-dark' onClick={isActive ? closeMenu : openMenu}>
-                        <span className='dropdown-title'>
-                          <p className='mb-0'>{title}</p>
+                        <span className={dropdownTitleClasses}>
+                          <span className='title'><p className='mb-0'>{title}</p></span>
+                          <span className='chevron'></span>
                         </span>
                     </Button>
                 </div>
 
                 { isActive ? (
-                <div className='dropdown-descripton'>
-                    <div className='container ml-16 pb-4 pt-8 border-top text-sm'>
-                    <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
-                        <p>{body.description}</p>
-                    </div>
+                <div className='dropdown-description panels-item-inner'>
+                    <span className='text-sm'>
+                      <p className='fw-600 mb-0'> <u>{body.header}</u> </p>
+                      <p>{body.description}</p>
+                    </span>
                 </div> ) : ( null ) }
             </div>
           </>

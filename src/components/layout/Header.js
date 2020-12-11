@@ -119,7 +119,7 @@ const Header = ({
                     )}>
 
                     <li>
-                      <Link to="/crypto-block/reviews" onClick={closeMenu}>Best Cryptocurrency Exchanges</Link>
+                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>Best Cryptocurrency Exchanges in USA</Link>
                     </li>
                   </ul>
 

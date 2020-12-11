@@ -4,6 +4,7 @@ import React from 'react';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
+
 const FooterNav = ({
   className,
   ...props
@@ -24,7 +25,10 @@ const FooterNav = ({
           <Link to="/crypto-block/about">About</Link>
         </li>
         <li>
-          <Link to="/crypto-block/reviews">Reviews</Link>
+          <Link to="/crypto-block/contact">Contact</Link>
+        </li>
+        <li>
+          <Link to="/crypto-block/terms">Terms of Service</Link>
         </li>
       </ul>
     </nav>

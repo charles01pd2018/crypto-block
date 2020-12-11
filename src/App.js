@@ -1,16 +1,22 @@
 import React, { useRef, useEffect } from 'react';
 import { useLocation, Switch } from 'react-router-dom';
-import AppRoute from './utils/AppRoute';
-import ScrollReveal from './utils/ScrollReveal';
 import ReactGA from 'react-ga';
 
-// Layouts
+// utils
+import ScrollToTop from './utils/ScrollToTop';
+import AppRoute from './utils/AppRoute';
+import ScrollReveal from './utils/ScrollReveal';
+
+// layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
-// Views 
+// views 
 import Home from './views/Home';
 import About from './views/About';
 import Reviews from './views/Reviews';
+import Terms from './views/Terms';
+import Contact from './views/Contact';
+
 
 // Initialize Google Analytics
 ReactGA.initialize(process.env.REACT_APP_GA_CODE);
@@ -37,12 +43,17 @@ const App = () => {
     <ScrollReveal
       ref={childRef}
       children={() => (
-        <Switch>
-          <AppRoute exact path="/crypto-block" component={Home} layout={LayoutDefault} />
-          
-          <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
-          <AppRoute exact path="/crypto-block/reviews" component={Reviews} layout={LayoutDefault} />
-        </Switch>
+        <ScrollToTop>
+          <Switch>
+            <AppRoute exact path="/crypto-block" component={Home} layout={LayoutDefault} />
+            
+            <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block/exchange-reviews" component={Reviews} layout={LayoutDefault} />
+
+            <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />
+          </Switch>
+        </ScrollToTop>
       )} />
   );
 }
