@@ -15,6 +15,7 @@ import Home from './views/Home';
 import About from './views/About';
 import Reviews from './views/Reviews';
 import Terms from './views/Terms';
+import Contact from './views/Contact';
 
 
 // Initialize Google Analytics
@@ -49,8 +50,8 @@ const App = () => {
             <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/exchange-reviews" component={Reviews} layout={LayoutDefault} />
 
+            <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />
-
           </Switch>
         </ScrollToTop>
       )} />
