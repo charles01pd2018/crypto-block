@@ -37,7 +37,7 @@
 
 		.panels-heading {
 			display: flex;
-			padding-bottom: $review-panels-header--padding__mobile;
+			padding-bottom: $review-panels-header--padding-bottom__mobile;
 
 			.panels-image {
 				flex-basis: $review-panels-image--width;
@@ -60,7 +60,7 @@
 		}
 
 		.panels-description {
-			padding-top: $review-panels-header--padding__mobile;
+			padding-top: $review-panels-header--padding-top__mobile;
 			padding-right: $review-panels-item--inner-padding-h;
 			font-size: 70%;
 

@@ -90,7 +90,7 @@ const ReviewPanels = ({
                                 <div className='panels-main-description text-sm'>
                                   <p className='fw-600'>Transaction Fee: <span className='highlight'><b>High</b></span></p>
                                   <p className='fw-600'>Transaction Fee with Credit Card: <span className='highlight'><b>~3.99%</b></span></p>
-                                  <p className='fw-600'>Transaction Fee with Bank Transfer: <span className='highlight'><b>~1.49%</b></span></p>
+                                  <p className='fw-600'>Transaction Fee with USD: <span className='highlight'><b>~1.49%</b></span></p>
                                   
                                 </div>
 
@@ -138,7 +138,7 @@ const ReviewPanels = ({
                               <div className='panels-main-description text-sm'>
                                 <p className='fw-600'>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
                                 <p className='fw-600'>Transaction Fee with Credit Card: <span className='highlight'><b>Unavailable</b></span></p>
-                                <p className='fw-600'>Transaction Fee with Bank Transfer: <span className='highlight'><b>~0.2%</b></span></p>
+                                <p className='fw-600'>Transaction Fee with USD: <span className='highlight'><b>~0.2%</b></span></p>
                               </div>
 
                             <div className='panels-overlay'>
@@ -184,7 +184,7 @@ const ReviewPanels = ({
                             <div className='panels-main-description text-sm'>
                               <p className='fw-600'>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
                               <p className='fw-600'>Transaction Fee with Credit Card: <span className='highlight'><b>4%</b></span></p>
-                              <p className='fw-600'>Transaction Fee with Bank Transfer: <span className='highlight'><b>~0.2%</b></span></p>
+                              <p className='fw-600'>Transaction Fee with USD: <span className='highlight'><b>~0.2%</b></span></p>
                             </div>
 
                             <div className='panels-overlay'>
