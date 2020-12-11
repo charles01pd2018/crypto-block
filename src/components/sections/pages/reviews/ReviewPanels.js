@@ -194,7 +194,7 @@ const ReviewPanels = ({
                               </div>
 
                             <div className='affiliate-button'>
-                                <Button color='primary'>
+                                <Button color='primary' href='https://crypto.com/app/5xf7ch8euu'>
                                   <p className='fw-600'>Learn More</p>
                                 </Button>
                                 <p className='text-xxs'>on Crypto.com</p>
