@@ -83,7 +83,7 @@ const Hero = ({
             <Modal trigger={modalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
 
             <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
-                  <span className='text-xs fw-600'>Updated December 11, 2020</span> 
+                  <time className='text-xs fw-600' datetime="2020-12-11">Updated December 11, 2020</time> 
             </p>
             
           </div>
