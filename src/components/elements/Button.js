@@ -10,7 +10,8 @@ const propTypes = {
   wide: PropTypes.bool,
   wideMobile: PropTypes.bool,
   disabled: PropTypes.bool,
-  panel: PropTypes.bool
+  panel: PropTypes.bool,
+  target: PropTypes.string
 }
 
 const defaultProps = {
@@ -21,7 +22,8 @@ const defaultProps = {
   wide: false,
   wideMobile: false,
   disabled: false,
-  panel: false
+  panel: false,
+  target: ''
 }
 
 
@@ -35,6 +37,7 @@ const Button = ({
   wideMobile,
   disabled,
   panel,
+  target,
   ...props
 }) => {
 
@@ -54,6 +57,7 @@ const Button = ({
     <Component
       {...props}
       className={classes}
+      target={target}
       disabled={disabled}
     />
   );
