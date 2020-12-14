@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e381eeb681c0157eba0b2cd6b82625a3",
+    "revision": "063937dcad5820c4b3650c950c115fc7",
     "url": "/crypto-block/index.html"
   },
   {
-    "revision": "38be3221cf30e04e9a55",
+    "revision": "8dd3798a6cc95c039551",
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "f44874dd0616ed078886",
+    "revision": "cab976a9514744688ed7",
     "url": "/crypto-block/static/css/main.787041f4.chunk.css"
   },
   {
-    "revision": "38be3221cf30e04e9a55",
-    "url": "/crypto-block/static/js/2.b360890a.chunk.js"
+    "revision": "8dd3798a6cc95c039551",
+    "url": "/crypto-block/static/js/2.0ff0cac1.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/crypto-block/static/js/2.b360890a.chunk.js.LICENSE.txt"
+    "url": "/crypto-block/static/js/2.0ff0cac1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f44874dd0616ed078886",
-    "url": "/crypto-block/static/js/main.c9f35f30.chunk.js"
+    "revision": "cab976a9514744688ed7",
+    "url": "/crypto-block/static/js/main.ee4e8a33.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
