@@ -16,6 +16,7 @@ import About from './views/About';
 import Reviews from './views/Reviews';
 import Terms from './views/Terms';
 import Contact from './views/Contact';
+import notFoundPage from './views/notFoundPage';
 
 
 // Initialize Google Analytics
@@ -52,6 +53,8 @@ const App = () => {
 
             <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />
+
+            <AppRoute path="*" component={notFoundPage} layout={LayoutDefault} />
           </Switch>
         </ScrollToTop>
       )} />

@@ -6,6 +6,7 @@
   "homepage": "http://charles01pd2018.github.io/crypto-block",
   "dependencies": {
     "classnames": "^2.2.6",
+    "gatsby": "^2.28.2",
     "lodash": "^4.17.15",
     "node-sass": "^4.13.1",
     "react": "^16.13.1",
