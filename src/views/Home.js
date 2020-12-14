@@ -17,7 +17,7 @@ const Home = () => {
       </Helmet>
 
       <Hero className="illustration-section-01" />
-      <FeaturesTiles bottomDivider border />
+      <FeaturesTiles bottomDivider border tileLink/>
       <FeaturesSplit invertMobile imageFill className="illustration-section-02" />
     </>
   );

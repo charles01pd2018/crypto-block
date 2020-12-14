@@ -53,12 +53,14 @@ export const SectionTilesProps = {
   types: {
     ...SectionShared.types,
     pushLeft: PropTypes.bool,
-    border: PropTypes.bool
+    border: PropTypes.bool,
+    tileLink: PropTypes.bool
   },
   defaults: {
     ...SectionShared.defaults,
     pushLeft: false,
-    border: false
+    border: false,
+    tileLink: false
   }
 }
 

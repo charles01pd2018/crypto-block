@@ -11,11 +11,12 @@ import Image from '../../../elements/Image';
 
 const propTypes = {
   ...SectionTilesProps.types
-}
+};
 
 const defaultProps = {
   ...SectionTilesProps.defaults
-}
+};
+
 const FeaturesTiles = ({
   className,
   topOuterDivider,
@@ -26,6 +27,7 @@ const FeaturesTiles = ({
   invertColor,
   pushLeft,
   border,
+  tileLink,
   ...props
 }) => {
 
@@ -51,7 +53,8 @@ const FeaturesTiles = ({
 
   const tilesItemClasses = classNames(
     'tiles-item reveal-from-bottom',
-    border && 'border'
+    border && 'border',
+    tileLink && 'tile-link'
   );
 
   return (
