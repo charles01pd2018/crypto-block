@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from "react-helmet";
 
 // sections
 import Hero from '../components/sections/pages/contact/Hero';
@@ -13,6 +14,11 @@ const Terms = () => {
 
     return (
         <>
+         <Helmet>
+            <meta name="description" content="Crypto Block Contact" /> 
+            <title>Contact: Crypto Block</title>
+         </Helmet>
+
             <Hero bottomDivider />
             <GenericSection children={contactEmail}/>
         </>
