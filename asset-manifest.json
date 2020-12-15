@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/crypto-block/static/css/main.787041f4.chunk.css",
-    "main.js": "/crypto-block/static/js/main.ee4e8a33.chunk.js",
-    "main.js.map": "/crypto-block/static/js/main.ee4e8a33.chunk.js.map",
+    "main.css": "/crypto-block/static/css/main.72cff115.chunk.css",
+    "main.js": "/crypto-block/static/js/main.6750970e.chunk.js",
+    "main.js.map": "/crypto-block/static/js/main.6750970e.chunk.js.map",
     "runtime-main.js": "/crypto-block/static/js/runtime-main.a9bcbbd3.js",
     "runtime-main.js.map": "/crypto-block/static/js/runtime-main.a9bcbbd3.js.map",
     "static/css/2.f1b50ea8.chunk.css": "/crypto-block/static/css/2.f1b50ea8.chunk.css",
     "static/js/2.0ff0cac1.chunk.js": "/crypto-block/static/js/2.0ff0cac1.chunk.js",
     "static/js/2.0ff0cac1.chunk.js.map": "/crypto-block/static/js/2.0ff0cac1.chunk.js.map",
     "index.html": "/crypto-block/index.html",
-    "precache-manifest.9af0b25d681b1ce98cd726f664094b69.js": "/crypto-block/precache-manifest.9af0b25d681b1ce98cd726f664094b69.js",
+    "precache-manifest.1032f7a99fcb60a3feda56ab92dac400.js": "/crypto-block/precache-manifest.1032f7a99fcb60a3feda56ab92dac400.js",
     "service-worker.js": "/crypto-block/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/crypto-block/static/css/2.f1b50ea8.chunk.css.map",
-    "static/css/main.787041f4.chunk.css.map": "/crypto-block/static/css/main.787041f4.chunk.css.map",
+    "static/css/main.72cff115.chunk.css.map": "/crypto-block/static/css/main.72cff115.chunk.css.map",
     "static/js/2.0ff0cac1.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.0ff0cac1.chunk.js.LICENSE.txt",
-    "static/media/cryptocom-logo.jpg": "/crypto-block/static/media/cryptocom-logo.3ccc032e.jpg",
+    "static/media/cryptocom-logo.jpg": "/crypto-block/static/media/cryptocom-logo.ffe46471.jpg",
     "static/media/feature-tile-icon-01.svg": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg",
     "static/media/features-split-image-01.png": "/crypto-block/static/media/features-split-image-01.e617c230.png",
     "static/media/features-split-image-02.png": "/crypto-block/static/media/features-split-image-02.bcde8e70.png",
@@ -25,7 +25,7 @@
     "static/js/runtime-main.a9bcbbd3.js",
     "static/css/2.f1b50ea8.chunk.css",
     "static/js/2.0ff0cac1.chunk.js",
-    "static/css/main.787041f4.chunk.css",
-    "static/js/main.ee4e8a33.chunk.js"
+    "static/css/main.72cff115.chunk.css",
+    "static/js/main.6750970e.chunk.js"
   ]
 }

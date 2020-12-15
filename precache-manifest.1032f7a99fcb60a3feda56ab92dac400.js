@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "063937dcad5820c4b3650c950c115fc7",
+    "revision": "e2ff43ae43ae2783038c57514beca932",
     "url": "/crypto-block/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "cab976a9514744688ed7",
-    "url": "/crypto-block/static/css/main.787041f4.chunk.css"
+    "revision": "e875581864cf3c575282",
+    "url": "/crypto-block/static/css/main.72cff115.chunk.css"
   },
   {
     "revision": "8dd3798a6cc95c039551",
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/js/2.0ff0cac1.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "cab976a9514744688ed7",
-    "url": "/crypto-block/static/js/main.ee4e8a33.chunk.js"
+    "revision": "e875581864cf3c575282",
+    "url": "/crypto-block/static/js/main.6750970e.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
     "url": "/crypto-block/static/js/runtime-main.a9bcbbd3.js"
   },
   {
-    "revision": "3ccc032ee507d0c45d32ffdf9bb2515b",
-    "url": "/crypto-block/static/media/cryptocom-logo.3ccc032e.jpg"
+    "revision": "ffe46471360b465568e0f07b3bac39c0",
+    "url": "/crypto-block/static/media/cryptocom-logo.ffe46471.jpg"
   },
   {
     "revision": "0f9928d77bc67692e90527ec092fcbd0",
