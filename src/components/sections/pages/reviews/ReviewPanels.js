@@ -101,7 +101,7 @@ const ReviewPanels = ({
                                   </div>
 
                                   <div className='affiliate-button'>
-                                    <Button tag='a' color='primary' href='https://crypto.com/app/5xf7ch8euu' target='_blank'>
+                                    <Button tag='a' color='primary' href='https://coinbase-consumer.sjv.io/DDyE5' target='_blank'>
                                       <p className='fw-600'>Learn More</p>
                                     </Button>
                                       <p className='text-xxs'>on Coinbase's site</p>
@@ -148,7 +148,7 @@ const ReviewPanels = ({
                               </div>
 
                               <div className='affiliate-button'>
-                               <Button tag='a' color='primary' href='https://crypto.com/app/5xf7ch8euu' target='_blank'>
+                               <Button tag='a' color='primary' href='https://r.kraken.com/gyO9g' target='_blank'>
                                   <p className='fw-600'>Learn More</p>
                                 </Button>
                                 <p className='text-xxs'>on Kraken's site</p>
