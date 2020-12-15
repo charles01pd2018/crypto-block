@@ -34,6 +34,22 @@ const Terms = () => {
             <br />
             <br />
             Any external links that redirect to websites outside of the Crypto Block domain will have their own separate Privacy Policy. These external websites may collect browser cookies data on top of any information you supply to the external website. We take no responsibility for any data collection that takes place outside of the Crypto Block domain. 
+            <br />
+            <br />
+            Our affiliate software, <a href='https://impact.com/'><u>Impact</u></a>, does allow us to view data related to our affiliate links. Note that we do not collect this data, but rather the Impact software provides us information so that our affiliate partners can compensate us appropriately. This information is not personally identifiable, and Crypto Block only gets to see a broad overview of the numbers. The data provided includes: 
+            <br />
+            <br />
+            <ul>
+                <li>
+                Number of clicks on the affiliate link.
+                </li>
+                <li>
+                Number of actions taken on our affiliate partner’s website. 
+                </li>
+                <li>
+                Amount of money spent on our affiliate partner’s website.
+                </li>
+            </ul>
         </p>
     );
 
