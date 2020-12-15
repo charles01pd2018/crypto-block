@@ -121,7 +121,7 @@ const ReviewPanels = ({
                           <div className='panels-heading'>
                             <div className='panels-image'>
                                 <Image
-                                  src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.png')}
+                                  src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.jpg')}
                                   alt="Image"
                                   width={130}
                                   height={130} />
