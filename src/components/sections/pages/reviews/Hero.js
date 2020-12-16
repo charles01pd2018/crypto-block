@@ -43,7 +43,7 @@ const Hero = ({
     bottomDivider && 'has-bottom-divider'
   );
 
-  const modalTrigger = (
+  const advertisingModalTrigger = (
     <Link to='#'>
       <p className="m-0 mb-16 reveal-from-bottom text-xs text-color-primary" data-reveal-delay="600">
           Advertising Disclosure
@@ -63,6 +63,40 @@ const Hero = ({
     </p>
   );
 
+  const explanationModalTrigger = (
+    <Link to='#'>
+      <p className="m-0 reveal-from-bottom text-xs text-color-secondary" data-reveal-delay="600">
+          What Are Cryptocurrency Exchanges?
+      </p>
+    </Link>
+  );
+
+  const cryptoExchangeExplanation = (
+    <p className='text-xs'>
+      Cryptocurrency exchanges are your outlet to buy and sell digital assets. This can be done through either fiat currency or other digital assets. 
+      <br/><br/>
+      This can take the form of the following:
+      <br/>
+      <br/>
+      <ul>
+        <li>
+        Buy cryptocurrency in exchange for USD.
+        </li>
+        <li>
+        Sell cryptocurrency in exchange for USD.
+        </li>
+        <li>
+        Buy cryptocurrency in exchange for a different cryptocurrency.
+        </li>
+        <li>
+        Sell cryptocurrency in exchange for a different cryptocurrency.
+        </li>
+      </ul>
+      <br/>
+      *Additionally, owned cryptocurrency can be transferred between different digital wallets.
+      </p>
+  );
+
   return (
     <section
       {...props}
@@ -80,12 +114,13 @@ const Hero = ({
                 Buy <span className='text-color-secondary'>Bitcoin</span>, <span className='text-color-secondary'>Ethereum</span>, and more. Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
             </p>
 
-            <Modal trigger={modalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
-
+            <Modal trigger={advertisingModalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
+            
             <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
-                  <time className='text-xs fw-600' dateTime="2020-12-11">Updated December 11, 2020</time> 
+                  <time className='text-xs fw-600' dateTime="2020-12-11">Updated December 11, 2020</time>
             </p>
             
+            <Modal trigger={explanationModalTrigger} title='What Are Cryptocurrency Exchanges?' textContent={cryptoExchangeExplanation}/>
           </div>
         </div>
       </div>
