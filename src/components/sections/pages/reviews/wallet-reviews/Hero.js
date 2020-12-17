@@ -47,7 +47,7 @@ const Hero = ({
 
   const explanationModalTrigger = (
       <p className="m-0 reveal-from-bottom text-xs text-color-secondary" data-reveal-delay="600">
-          What Are Cryptocurrency Exchanges?
+          What Are Hardware Wallets?
       </p>
   );
 
@@ -87,7 +87,7 @@ const Hero = ({
           <div className="hero-content">
 
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-secondary">Best <span className='text-color-primary'>Cryptocurrency</span> Exchanges in USA</span>
+              <span className="text-color-secondary">Best <span className='text-color-primary'>Cryptocurrency</span> Hardware Wallets in USA</span>
             </h1>
 
             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
