@@ -7,6 +7,7 @@ import { Link } from 'react-router-dom';
 
 // elements
 import { Logo } from './partials';
+import Popup from 'reactjs-popup';
 
 
 const propTypes = {
@@ -120,6 +121,22 @@ const Header = ({
 
                     <li>
                       <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>Best Cryptocurrency Exchanges in USA</Link>
+                    </li>
+
+                    <li>
+                    <Popup
+                        trigger={<div className="menu-item"> Sub menu </div>}
+                        position="bottom"
+                        on="hover"
+                        closeOnDocumentClick
+                        mouseLeaveDelay={300}
+                        mouseEnterDelay={0}
+                        contentStyle={{ padding: '0px', border: 'none' }}
+                        arrow={false} >
+                      
+                      <div className='menu-item center-content'> Hello World </div>
+                    
+                    </Popup>
                     </li>
                   </ul>
 

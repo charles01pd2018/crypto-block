@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import Popup from 'reactjs-popup';
 import Button from './Button';
+import { Link } from 'react-router-dom';
 import 'reactjs-popup/dist/index.css';
 
 
@@ -34,7 +35,7 @@ const Modal = ({
     return (
         <Popup
         {...props}
-        trigger={trigger}
+        trigger={<Link to='#'>{trigger}</Link>}
         modal
         >
         {close => (
