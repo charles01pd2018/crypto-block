@@ -53,28 +53,26 @@ const Hero = ({
 
   const cryptoExchangeExplanation = (
     <p className='text-xs'>
-      Cryptocurrency exchanges are your outlet to buy and sell digital assets. This can be done through either fiat currency or other digital assets. 
+      Cryptocurrency hardware wallets are the safest and most secure method for storing your cryptocurrency and enable you to be the one and only custodian of your digital assets. 
+      Think of it as a way to be your own bank. Instead of putting your trust in financial institutions, you are taking control of your own money.
       <br/><br/>
-      This can take the form of the following:
-      <br/>
-      <br/>
+      <u className='fw-600'>Why Hardware Wallets Are Important</u>
+      <br/><br/>
       <ul>
         <li>
-        Buy cryptocurrency in exchange for USD.
+        Hardware wallets keep your cryptocurrency secure and offline.
         </li>
         <li>
-        Sell cryptocurrency in exchange for USD.
+        Cryptocurrency stored in connected online servers are prone to being hacked. Over $1.78 billion has been hacked from cryptocurrency exchanges. 
         </li>
         <li>
-        Buy cryptocurrency in exchange for a different cryptocurrency.
+        A physical backup device ensures that your crypto is safe in extraneous circumstances.
         </li>
         <li>
-        Sell cryptocurrency in exchange for a different cryptocurrency.
+        It’s cool :-D
         </li>
       </ul>
-      <br/>
-      *Additionally, owned cryptocurrency can be transferred between different digital wallets.
-      </p>
+    </p>
   );
 
   return (
@@ -91,7 +89,7 @@ const Hero = ({
             </h1>
 
             <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                Buy <span className='text-color-secondary'>Bitcoin</span>, <span className='text-color-secondary'>Ethereum</span>, and more. Discover the best and most trusted cryptocurrency exchanges. Compare offers to get the best deals and transaction rates.
+              Discover the best hardware wallets to ensure safe storage of your cryptocurrency. Keep your crypto offline to prevent hackers from getting in.            
             </p>
 
             <Modal trigger={advertisingModalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
@@ -100,7 +98,7 @@ const Hero = ({
                   <time className='text-xs fw-600' dateTime="2020-12-11">Updated December 11, 2020</time>
             </p>
             
-            <Modal trigger={explanationModalTrigger} title='What Are Cryptocurrency Exchanges?' textContent={cryptoExchangeExplanation}/>
+            <Modal trigger={explanationModalTrigger} title='What Are Hardware Wallets?' textContent={cryptoExchangeExplanation}/>
           </div>
         </div>
       </div>

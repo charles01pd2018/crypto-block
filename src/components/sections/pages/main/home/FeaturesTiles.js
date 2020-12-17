@@ -91,6 +91,32 @@ const FeaturesTiles = ({
               </div>
             </div>
           </Link>
+
+          <Link to='/crypto-block/wallet-reviews'>
+            <div className={tilesItemClasses}>
+              <div className="tiles-item-inner">
+                <div className="features-tiles-item-header">
+                  
+                  <div className="features-tiles-item-image mb-16">
+                    <Image
+                      src={require('./../../../../../assets/images/feature-tile-icon-02.svg')}
+                      alt="Features tile icon 01"
+                      width={64}
+                      height={64} />
+                  </div>
+                </div>
+
+                <div className="features-tiles-item-content">
+                  <h4 className="mt-0 mb-8 text-color-secondary">
+                    Best Cryptocurrency Hardware Wallets in USA
+                  </h4>
+                  <p className="m-0 text-sm">
+                    Discover the best hardware wallets to store &#38; manage cryptocurrencies 
+                  </p>
+                </div>
+              </div>
+            </div>
+          </Link>
           
           </div>
         </div>
