@@ -1,0 +1,11 @@
+.menu {
+    .menu-item {
+        margin-bottom: 5px;
+        height: 150px;
+
+        &:hover {
+            background-color: get-color(dark, 2);
+        }
+
+    }
+}

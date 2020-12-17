@@ -120,24 +120,29 @@ const Header = ({
                     )}>
 
                     <li>
-                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>Best Cryptocurrency Exchanges in USA</Link>
-                    </li>
-
-                    <li>
                     <Popup
-                        trigger={<div className="menu-item"> Sub menu </div>}
+                        trigger={<Link to='#'>Reviews</Link>}
                         position="bottom"
-                        on="hover"
-                        closeOnDocumentClick
-                        mouseLeaveDelay={300}
-                        mouseEnterDelay={0}
-                        contentStyle={{ padding: '0px', border: 'none' }}
-                        arrow={false} >
+                        on="click"
+                        contentStyle={{ padding: '5px'}}
+                        arrow={true} >
                       
-                      <div className='menu-item center-content'> Hello World </div>
-                    
+                      <div className='menu center-content'> 
+                        <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>
+                          <div className='menu-item inline-menu'>
+                            <p>Best Cryptocurrency Exchanges in USA</p>
+                          </div>
+                        </Link>
+
+                        <Link to="/crypto-block/wallet-reviews" onClick={closeMenu}>
+                          <div className='menu-item'>
+                            <p>Best Cryptocurrency Hardware Wallets in USA</p>
+                          </div>
+                        </Link>
+                      </div>
                     </Popup>
                     </li>
+
                   </ul>
 
                   {!hideSignin &&

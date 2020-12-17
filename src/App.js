@@ -10,7 +10,7 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // views 
 import { About, Home } from './views/main';
-import { ExchangeReviews } from './views/reviews';
+import { ExchangeReviews, WalletReviews } from './views/reviews';
 import { Contact, NotFoundPage, Terms } from './views/secondary';
 
 
@@ -42,9 +42,10 @@ const App = () => {
         <ScrollToTop>
           <Switch>
             <AppRoute exact path="/crypto-block" component={Home} layout={LayoutDefault} />
-            
             <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
+
             <AppRoute exact path="/crypto-block/exchange-reviews" component={ExchangeReviews} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block/wallet-reviews" component={WalletReviews} layout={LayoutDefault} />
 
             <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />

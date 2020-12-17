@@ -10,8 +10,8 @@ const WalletReviews = () => {
     return (
     <>
         <Helmet>
-            <meta name="description" content="Best Cryptocurrency Exchanges in USA, 2020" /> 
-            <title>Best Cryptocurrency Exchanges in USA, 2020</title>
+            <meta name="description" content="Best Cryptocurrency Hardware Wallets in USA, 2020" /> 
+            <title>Best Cryptocurrency Hardware Wallets in USA, 2020</title>
         </Helmet>
 
         <Hero className='illustration-section-01'/>   
