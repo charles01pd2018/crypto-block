@@ -2,10 +2,10 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import { Hero, ReviewPanels } from '../../components/sections/pages/reviews/exchange-reviews';
+import { Hero, ReviewPanels } from '../../components/sections/pages/reviews/wallet-reviews';
 
 
-const ExchangeReviews = () => {
+const WalletReviews = () => {
 
     return (
     <>
@@ -20,4 +20,4 @@ const ExchangeReviews = () => {
     );
 }
 
-export default ExchangeReviews;
+export default WalletReviews;
