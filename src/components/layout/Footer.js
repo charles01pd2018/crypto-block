@@ -5,9 +5,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 // elements
-import Logo from './partials/Logo';
-import FooterNav from './partials/FooterNav';
-import FooterSocial from './partials/FooterSocial';
+import { Logo, FooterNav, FooterSocial } from './partials';
+
 
 const propTypes = {
   topOuterDivider: PropTypes.bool,

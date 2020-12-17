@@ -2,17 +2,14 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { ReviewPanelsProps } from '../../../../utils/SectionProps';
+import { ReviewPanelsProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../elements/Image';
-import Dropdown from '../../partials/dropdown/DropdownMenu';
-import Button from '../../../elements/Button';
+import { Image, Button } from '../../../../elements';
+import DropdownMenu from '../../../partials/dropdown/DropdownMenu';
 
 // objects
-import COINBASE_EXCHANGE_DATA from './objects/CoinbaseExchangeData';
-import KRAKEN_EXCHANGE_DATA from './objects/KrakenExchangeData';
-import CRYPTOCOM_EXCHANGE_DATA from './objects/CryptocomExchangeData';
+import { COINBASE_EXCHANGE_DATA, KRAKEN_EXCHANGE_DATA, CRYPTOCOM_EXCHANGE_DATA } from './objects';
 
 
 const propTypes = {
@@ -74,7 +71,7 @@ const ReviewPanels = ({
                             <div className='panels-heading'>
                               <div className='panels-image'>
                                   <Image
-                                    src={require('./../../../../assets/images//pages/reviews/exchanges/coinbase-logo.png')}
+                                    src={require('./../../../../../assets/images/pages/reviews/exchanges/coinbase-logo.png')}
                                     alt="Image"
                                     width={130}
                                     height={130} />
@@ -111,7 +108,7 @@ const ReviewPanels = ({
                               </div>
                             </div>
 
-                            <Dropdown data={COINBASE_EXCHANGE_DATA} dropdownKey='coinbase'/>
+                            <DropdownMenu data={COINBASE_EXCHANGE_DATA} dropdownKey='coinbase'/>
                       </div>
 
                       <div className={panelsItemClasses}>
@@ -121,7 +118,7 @@ const ReviewPanels = ({
                           <div className='panels-heading'>
                             <div className='panels-image'>
                                 <Image
-                                  src={require('./../../../../assets/images//pages/reviews/exchanges/kraken-logo.jpg')}
+                                  src={require('./../../../../../assets/images/pages/reviews/exchanges/kraken-logo.jpg')}
                                   alt="Image"
                                   width={130}
                                   height={130} />
@@ -158,7 +155,7 @@ const ReviewPanels = ({
                           </div>
                           </div>
 
-                            <Dropdown data={KRAKEN_EXCHANGE_DATA} dropdownKey='kraken'/>
+                            <DropdownMenu data={KRAKEN_EXCHANGE_DATA} dropdownKey='kraken'/>
                         </div>
 
                         <div className={panelsItemClasses}>
@@ -168,7 +165,7 @@ const ReviewPanels = ({
                             <div className='panels-heading'>
                               <div className='panels-image'>
                                   <Image
-                                    src={require('./../../../../assets/images//pages/reviews/exchanges/cryptocom-logo.jpg')}
+                                    src={require('./../../../../../assets/images/pages/reviews/exchanges/cryptocom-logo.jpg')}
                                     alt="Image"
                                     width={130}
                                     height={130} />
@@ -204,7 +201,7 @@ const ReviewPanels = ({
                         </div>
                       </div>
                       
-                      <Dropdown data={CRYPTOCOM_EXCHANGE_DATA} dropdownKey='cryptocom'/>
+                      <DropdownMenu data={CRYPTOCOM_EXCHANGE_DATA} dropdownKey='cryptocom'/>
                     </div>
                   </div>
                     

@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/secondary/terms/Hero';
-import GenericSection from '../components/sections/GenericSection';
+import { Hero } from '../../components/sections/pages/secondary/terms';
+import GenericSection from '../../components/sections/GenericSection';
 
 
 const Terms = () => {

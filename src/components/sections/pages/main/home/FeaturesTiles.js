@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../../elements/Image';
+import { Image } from '../../../../elements';
 
 
 const propTypes = {

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 // elements
-import Image from '../../elements/Image';
+import { Image } from '../../elements';
 
 const Logo = ({
   className,

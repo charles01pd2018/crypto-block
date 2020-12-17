@@ -2,11 +2,10 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/best-exchanges/Hero';
-import ReviewPanels from '../components/sections/pages/best-exchanges/ReviewPanels';
+import { Hero, ReviewPanels } from '../../components/sections/pages/reviews/exchange-reviews';
 
 
-const Reviews = () => {
+const ExchangeReviews = () => {
 
     return (
     <>
@@ -21,4 +20,4 @@ const Reviews = () => {
     );
 }
 
-export default Reviews;
+export default ExchangeReviews;

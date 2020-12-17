@@ -2,10 +2,10 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/secondary/notFoundPage/Hero';
+import { Hero } from '../../components/sections/pages/secondary/notFoundPage';
 
 
-const notFoundPage = () => {
+const NotFoundPage = () => {
 
     return (
     <>
@@ -19,4 +19,4 @@ const notFoundPage = () => {
     );
 }
 
-export default notFoundPage;
+export default NotFoundPage;

@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../../elements/Image';
+import { Image } from '../../../../elements';
 
 
 const propTypes = {

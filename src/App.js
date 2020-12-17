@@ -3,20 +3,15 @@ import { useLocation, Switch } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 // utils
-import ScrollToTop from './utils/ScrollToTop';
-import AppRoute from './utils/AppRoute';
-import ScrollReveal from './utils/ScrollReveal';
+import { ScrollToTop, AppRoute, ScrollReveal } from'./utils/route';
 
 // layouts
 import LayoutDefault from './layouts/LayoutDefault';
 
 // views 
-import Home from './views/Home';
-import About from './views/About';
-import Reviews from './views/Reviews';
-import Terms from './views/Terms';
-import Contact from './views/Contact';
-import notFoundPage from './views/notFoundPage';
+import { About, Home } from './views/main';
+import { ExchangeReviews } from './views/reviews';
+import { Contact, NotFoundPage, Terms } from './views/secondary';
 
 
 // Initialize Google Analytics
@@ -49,12 +44,12 @@ const App = () => {
             <AppRoute exact path="/crypto-block" component={Home} layout={LayoutDefault} />
             
             <AppRoute exact path="/crypto-block/about" component={About} layout={LayoutDefault} />
-            <AppRoute exact path="/crypto-block/exchange-reviews" component={Reviews} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block/exchange-reviews" component={ExchangeReviews} layout={LayoutDefault} />
 
             <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />
 
-            <AppRoute path="*" component={notFoundPage} layout={LayoutDefault} />
+            <AppRoute path="*" component={NotFoundPage} layout={LayoutDefault} />
           </Switch>
         </ScrollToTop>
       )} />

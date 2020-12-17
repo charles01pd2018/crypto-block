@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { SectionSplitProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../../elements/Image';
+import { Image } from '../../../../elements';
 import SectionHeader from '../../../partials/SectionHeader';
 
 
