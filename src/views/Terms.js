@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/terms/Hero';
+import Hero from '../components/sections/pages/secondary/terms/Hero';
 import GenericSection from '../components/sections/GenericSection';
 
 

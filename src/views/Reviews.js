@@ -2,8 +2,8 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/reviews/Hero';
-import ReviewPanels from '../components/sections/pages/reviews/ReviewPanels';
+import Hero from '../components/sections/pages/best-exchanges/Hero';
+import ReviewPanels from '../components/sections/pages/best-exchanges/ReviewPanels';
 
 
 const Reviews = () => {

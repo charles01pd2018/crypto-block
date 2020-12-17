@@ -2,11 +2,11 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../utils/SectionProps';
+import { SectionSplitProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../elements/Image';
-import SectionHeader from '../../partials/SectionHeader';
+import Image from '../../../../elements/Image';
+import SectionHeader from '../../../partials/SectionHeader';
 
 
 const propTypes = {
@@ -89,7 +89,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../assets/images/pages/about/features-split-image-01.png')}
+                  src={require('./../../../../../assets/images/pages/about/features-split-image-01.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />

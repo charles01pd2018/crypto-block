@@ -2,9 +2,9 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/about/Hero';
-import FeaturesSplit from '../components/sections/pages/about/FeaturesSplit';
-import FeaturesTiles from '../components/sections/pages/about/FeaturesTiles';
+import Hero from '../components/sections/pages/main/about/Hero';
+import FeaturesSplit from '../components/sections/pages/main/about/FeaturesSplit';
+import FeaturesTiles from '../components/sections/pages/main/about/FeaturesTiles';
 
 
 const About = () => {

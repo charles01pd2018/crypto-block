@@ -2,10 +2,10 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../utils/SectionProps';
+import { SectionSplitProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../elements/Image';
+import Image from '../../../../elements/Image';
 
 
 const propTypes = {
@@ -86,7 +86,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../assets/images/pages/home/features-split-image-01.png')}
+                  src={require('./../../../../../assets/images/pages/home/features-split-image-01.png')}
                   alt="Features split 01"
                   width={528}
                   height={396} />
@@ -116,7 +116,7 @@ const FeaturesSplit = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../assets/images/pages/home/features-split-image-02.png')}
+                  src={require('./../../../../../assets/images/pages/home/features-split-image-02.png')}
                   alt="Features split 02"
                   width={528}
                   height={396} />

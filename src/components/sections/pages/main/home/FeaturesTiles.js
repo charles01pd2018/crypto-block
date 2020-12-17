@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom';
 
 // types
 import classNames from 'classnames';
-import { SectionTilesProps } from '../../../../utils/SectionProps';
+import { SectionTilesProps } from '../../../../../utils/SectionProps';
 
 // elements
-import Image from '../../../elements/Image';
+import Image from '../../../../elements/Image';
 
 
 const propTypes = {
@@ -73,7 +73,7 @@ const FeaturesTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-01.svg')}
+                      src={require('./../../../../../assets/images/feature-tile-icon-01.svg')}
                       alt="Features tile icon 01"
                       width={64}
                       height={64} />

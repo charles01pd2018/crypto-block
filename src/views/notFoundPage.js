@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import Hero from '../components/sections/pages/notFoundPage/Hero';
+import Hero from '../components/sections/pages/secondary/notFoundPage/Hero';
 
 
 const notFoundPage = () => {

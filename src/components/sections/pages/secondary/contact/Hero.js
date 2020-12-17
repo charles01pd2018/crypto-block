@@ -2,7 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionProps } from '../../../../utils/SectionProps';
+import { SectionProps } from '../../../../../utils/SectionProps';
 
 
 const propTypes = {
@@ -49,7 +49,7 @@ const Hero = ({
           <div className="hero-content">
 
             <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
-              <span className="text-color-secondary">About Us</span>
+              <span className="text-color-secondary">Contact</span>
             </h1>
             
           </div>
