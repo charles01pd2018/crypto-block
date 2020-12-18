@@ -7,10 +7,6 @@ import { Link } from 'react-router-dom';
 
 // elements
 import { Logo } from './partials';
-import Popup from 'reactjs-popup';
-
-//styles
-import 'reactjs-popup/dist/index.css';
 
 
 const propTypes = {
@@ -122,29 +118,11 @@ const Header = ({
                       navPosition && `header-nav-${navPosition}`
                     )}>
 
-                    <li>
-                    <Popup
-                        trigger={<Link to='#'>Reviews</Link>}
-                        position="bottom"
-                        on="click"
-                        contentStyle={{ padding: '5px'}}
-                        arrow={true} >
-                      
-                      <div className='menu center-content'> 
-                        <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>
-                          <div className='menu-item'>
-                            <p>Exchanges</p>
-                          </div>
-                        </Link>
-
-                        <Link to="/crypto-block/wallet-reviews" onClick={closeMenu}>
-                          <div className='menu-item'>
-                            <p>Wallets</p>
-                          </div>
-                        </Link>
-                      </div>
-
-                    </Popup>
+                    <li className='list-item-label'>
+                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu} >Best Cryptocurrency Exchanges in USA</Link>
+                    </li>
+                    <li className='list-item-label'>
+                      <Link to="/crypto-block/wallet-reviews" onClick={closeMenu} >Best Cryptocurrency Hardware Wallets in USA</Link>
                     </li>
 
                   </ul>

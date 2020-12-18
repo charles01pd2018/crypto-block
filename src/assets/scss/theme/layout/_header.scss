@@ -1,13 +1,7 @@
 
-.menu {
+.list-item-label { 
 
-    .menu-item {
-        margin-bottom: 5px;
-        height: 150px;
-        line-height: 150px;
-
-        &:hover {
-            background-color: get-color(dark, 2);
-        }
+    &:hover {
+        border-bottom: 3px solid get-color(light, 3);
     }
 }
