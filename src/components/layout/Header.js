@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 // elements
-import { Logo } from './partials';
+import { HeaderDropdown, Logo } from './partials';
 
 
 const propTypes = {
@@ -84,7 +84,7 @@ const Header = ({
       {...props}
       className={classes}
     >
-      <div className="container">
+      <div className='container'>
         <div className={
           classNames(
             'site-header-inner',
@@ -117,12 +117,9 @@ const Header = ({
                       'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-
-                    <li className='list-item-label'>
-                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu} >Best Cryptocurrency Exchanges in USA</Link>
-                    </li>
-                    <li className='list-item-label'>
-                      <Link to="/crypto-block/wallet-reviews" onClick={closeMenu} >Best Cryptocurrency Hardware Wallets in USA</Link>
+                      
+                    <li>
+                      <Link to='#'>Test</Link>
                     </li>
 
                   </ul>
@@ -140,6 +137,8 @@ const Header = ({
             </>}
         </div>
       </div>
+      
+      <HeaderDropdown />
     </header>
   );
 }
