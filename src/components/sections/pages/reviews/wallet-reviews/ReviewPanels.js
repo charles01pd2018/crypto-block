@@ -84,30 +84,25 @@ const ReviewPanels = ({
                             </div>
                             
                               <div className='panels-description'>
-                                <div className='panels-main-description text-sm'>
-                                  <div className='pb-12'>Key Features</div>
-                                  <span className='fw-600 highlight'>
-                                    <b>fdsfaas</b>
-                                  </span>
-                                  <span className='fw-600 highlight'>
-                                    <b>fdsafasfdsfsafsadfsadfsadfasdfsadfsdf</b>
-                                  </span>
-                                  <span className='fw-600 highlight'>
-                                    <b>fdsafsfsdfsdfsdfasdfsaddfsdsa</b>
-                                  </span>
-                          
+                                <div className='panels-main-description'>
+                                    <ul className='text-sm fw-600'>
+                                      <div className='pb-12'><u>Key Features</u></div>
+                                      <li className='highlight list-item'><b>1500 Tokens Supported</b></li>
+                                      <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
+                                      <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
+
+                                      <div className='pt-12 pb-12'><u>Security Certifications</u></div>
+                                      <li className='highlight list-item'><b>Independently ANSSI Certified</b></li>
+                                      <li className='highlight list-item'><b>Certified Secure Element</b></li>
+                                    </ul>
                                 </div>
-
-                                <div className='panels-overlay'>
-
-                                  <div className='affiliate-button'>
-                                    <Button tag='a' color='primary' href='https://coinbase-consumer.sjv.io/DDyE5' target='_blank'>
-                                      <p className='fw-600'>Learn More</p>
-                                    </Button>
-                                      <p className='text-xxs'>on Ledger's site</p>
-                                  </div>
-                                </div>
-
+                              </div>
+                              
+                              <div className='affiliate-button'>
+                                <Button tag='a' color='primary' href='https://shop.ledger.com/pages/christmas-pack?r=5556387b0f31' target='_blank'>
+                                  <p className='fw-600'>Learn More</p>
+                                </Button>
+                                  <p className='text-xxs'>on Ledger's site</p>
                               </div>
                             </div>
 
@@ -133,29 +128,26 @@ const ReviewPanels = ({
                             </div>
                           </div>
 
-                          
-                            <div className='panels-description'>
-                              <div className='panels-main-description text-sm'>
-                                <p className='fw-600'>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
-                                <p className='fw-600'>Transaction Fee with Credit Card: <span className='highlight'><b>Unavailable</b></span></p>
-                                <p className='fw-600'>Transaction Fee with Bank: <span className='highlight'><b>~0.2%</b></span></p>
-                              </div>
+                          <div className='panels-description'>
+                                <div className='panels-main-description'>
+                                    <ul className='text-sm fw-600'>
+                                      <div className='pb-12'><u>Key Features</u></div>
+                                      <li className='highlight list-item'><b>1613 Tokens Supported</b></li>
+                                      <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
+                                      <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
 
-                            <div className='panels-overlay'>
-                              <div className='panels-qualities text-sm'>
-                                <p className='fw-600'>Cryptocurrencies Available: <span className='highlight'><b>BTC, ETH, +48 More</b></span></p>
-                                <p className='fw-600'>Margin Trading: <span className='highlight'><b>Up to 5X</b></span></p>
+                                      <div className='pt-12 pb-12'><u>Security Certifications</u></div>
+                                      <li className='highlight list-item'><b>RoHS Certified</b></li>
+                                    </ul>
+                                </div>
                               </div>
-
+                              
                               <div className='affiliate-button'>
-                               <Button tag='a' color='primary' href='https://r.kraken.com/gyO9g' target='_blank'>
+                                <Button tag='a' color='primary' href='https://shop.trezor.io/product/trezor-model-one-double-pack-white?offer_id=73&aff_id=5882' target='_blank'>
                                   <p className='fw-600'>Learn More</p>
                                 </Button>
-                                <p className='text-xxs'>on Trezor's site</p>
+                                  <p className='text-xxs'>on Trezor's site</p>
                               </div>
-                            </div>
-
-                          </div>
                           </div>
 
                             <DropdownMenu data={TREZOR_WALLET_DATA} dropdownKey='trezor'/>

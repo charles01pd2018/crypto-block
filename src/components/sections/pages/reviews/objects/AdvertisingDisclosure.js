@@ -10,7 +10,9 @@ const advertisingModalTrigger = (
     <p className='text-xs'>
       We make money through affiliate links. Here is how they generally work: 
       <br/><br/>
-      If you click on one of the “Learn More” buttons and sign up for the product/service within a specified time frame, we will receive a portion of the money you spend on that product/service. This is known as a revenue share model.
+      If you click on one of the “Learn More” buttons and sign up for the product/service within a specified time frame, we will receive a portion of the money you spend on that product/service. This is known as a revenue share model. 
+      <br/><br/>
+      <b>The more you enjoy and actively use the products/services we recommend, the more money we make!</b>
       <br/><br/>
       The specified time frame and amount of compensation we receive will vary depending on how these products/services structure their program.
       <br/><br/>

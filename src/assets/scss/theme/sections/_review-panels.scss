@@ -9,6 +9,11 @@
             border-bottom: 3px solid get-color(light, 3);
         }
 
+        .affiliate-button  {
+            text-align: right;
+            padding-right: 30px;
+        }
+
         .panels-description {
             display: flex;
             
@@ -16,17 +21,12 @@
                 flex-grow: 1;
             }
             
-        .panels-overlay {
-            flex-grow: 1;
-            
-            .affiliate-button {
-                text-align: right;
-                padding-right: 30px;
+            .panels-overlay {
+                flex-grow: 1;
             }
-        }
 
         .highlight {
-            display: inline-block;
+            display: inline-block;   
             padding-left: 3px;
 
             > b {
@@ -36,6 +36,12 @@
                 border-radius: 18px;
                 padding: 5px 8px 5px 8px;
             }
+
+            &.list-item {
+                padding-left: 0;
+                padding-right: 25px;
+                padding-bottom: 15px;
+            }
         }
 
         @include media("<=1024px") {
@@ -44,6 +50,10 @@
                 display: flex;
                 padding-top: 5px;
                 padding-left: 0;
+
+                &.list-item {
+                    display: inline-block;
+                }
             }
         }
 
