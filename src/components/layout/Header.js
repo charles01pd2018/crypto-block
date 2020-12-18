@@ -9,6 +9,9 @@ import { Link } from 'react-router-dom';
 import { Logo } from './partials';
 import Popup from 'reactjs-popup';
 
+//styles
+import 'reactjs-popup/dist/index.css';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -129,17 +132,18 @@ const Header = ({
                       
                       <div className='menu center-content'> 
                         <Link to="/crypto-block/exchange-reviews" onClick={closeMenu}>
-                          <div className='menu-item inline-menu'>
-                            <p>Best Cryptocurrency Exchanges in USA</p>
+                          <div className='menu-item'>
+                            <p>Exchanges</p>
                           </div>
                         </Link>
 
                         <Link to="/crypto-block/wallet-reviews" onClick={closeMenu}>
                           <div className='menu-item'>
-                            <p>Best Cryptocurrency Hardware Wallets in USA</p>
+                            <p>Wallets</p>
                           </div>
                         </Link>
                       </div>
+
                     </Popup>
                     </li>
 
