@@ -128,30 +128,30 @@ const ReviewPanels = ({
                             </div>
                           </div>
 
-                          <div className='panels-description'>
-                                <div className='panels-main-description'>
-                                    <ul className='text-sm fw-600'>
-                                      <div className='pb-12'><u>Key Features</u></div>
-                                      <li className='highlight list-item'><b>1613 Tokens Supported</b></li>
-                                      <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
-                                      <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
+                            <div className='panels-description'>
+                              <div className='panels-main-description'>
+                                  <ul className='text-sm fw-600'>
+                                    <div className='pb-12'><u>Key Features</u></div>
+                                    <li className='highlight list-item'><b>1613 Tokens Supported</b></li>
+                                    <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
+                                    <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
 
-                                      <div className='pt-12 pb-12'><u>Security Certifications</u></div>
-                                      <li className='highlight list-item'><b>RoHS Certified</b></li>
-                                    </ul>
-                                </div>
+                                    <div className='pt-12 pb-12'><u>Security Certifications</u></div>
+                                    <li className='highlight list-item'><b>RoHS Certified</b></li>
+                                  </ul>
                               </div>
-                              
-                              <div className='affiliate-button'>
-                                <Button tag='a' color='primary' href='https://shop.trezor.io/product/trezor-model-one-double-pack-white?offer_id=73&aff_id=5882' target='_blank'>
-                                  <p className='fw-600'>Learn More</p>
-                                </Button>
-                                  <p className='text-xxs'>on Trezor's site</p>
-                              </div>
-                          </div>
-
-                            <DropdownMenu data={TREZOR_WALLET_DATA} dropdownKey='trezor'/>
+                            </div>
+                            
+                            <div className='affiliate-button'>
+                              <Button tag='a' color='primary' href='https://shop.trezor.io/product/trezor-model-one-double-pack-white?offer_id=73&aff_id=5882' target='_blank'>
+                                <p className='fw-600'>Learn More</p>
+                              </Button>
+                                <p className='text-xxs'>on Trezor's site</p>
+                            </div>
                         </div>
+
+                          <DropdownMenu data={TREZOR_WALLET_DATA} dropdownKey='trezor'/>
+                      </div>
 
                   </div>
             
