@@ -15,20 +15,20 @@ const HeaderDropdown = ({
     return (
     <>
         <div className='header-dropdown'>
-            <div className='container features-tiles'>
-                <div className='header-dropdown-section features-tiles-inner section-inner'>
-                    <div className='tiles-wrap text-sm'>
+            <div className='container feature-tiles'>
+                <div className='features-tiles-inner section-inner pt-0'>
+                    <div className='tiles-wrap text-xs'>
 
-                    <div className='header-dropdown-link tiles-item tiles-item-inner'>
-                        <Link to='/crypto-block'>Best Cryptocurrency Exchanges USA</Link>
-                        <Link to='/crypto-block'>Best Cryptocurrency Hardware Wallets USA</Link>
+                    <div className='header-dropdown-content tiles-item'>
+                        <div className='tiles-item-inner'>
+                            <div className='fw-600 mb-16 text-color-secondary nav-title'>
+                                <u>Essentials</u>
+                            </div>
+                            <Link to='/crypto-block' className='mb-24 list-item-label'>Best Crypto Exchanges in USA</Link>
+                            <Link to='/crypto-block' className='mb-24 list-item-label'>Best Crypto Hardware Wallets in USA</Link>
+                        </div>
                     </div>
-                
-
-                    <div className='header-dropdown-link tiles-item tiles-item-inner'>
-                        <Link to='/crypto-block'>Best Cryptocurrency Hardware Wallets USA</Link>
-                    </div>
-                
+                    
                 </div>
                 </div>
             </div>
