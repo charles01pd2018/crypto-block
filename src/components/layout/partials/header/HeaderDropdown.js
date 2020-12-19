@@ -5,11 +5,12 @@ import { Link } from 'react-router-dom';
 
 
 const HeaderDropdown = ({
-    navBody: { navBodyLabel, navBodyLinks, navBodyLinksDestinations }
+    navBody: { navBodyLabel, navBodyLinks, navBodyLinksDestinations },
+    onClick
 }) => {
 
     return (
-    <section>
+    <>
         <div id='header-dropdown'>
             <div className='container feature-tiles'>
                 <div className='features-tiles-inner section-inner pt-0'>
@@ -25,11 +26,11 @@ const HeaderDropdown = ({
                             { navBodyLinks.map( ( navBodyLink, index )  => {
                                 const linkDesintation = navBodyLinksDestinations[index];
                                 return (
-                                <Link to={linkDesintation} key={linkDesintation} className='mb-24 list-item-label'>
+                                <Link to={linkDesintation} key={linkDesintation} onClick={onClick} className='mb-24 list-item-label'>
                                     {navBodyLink}
                                 </Link>
-                                )})}
-                                
+                            )})}
+
                         </div>
                     </div>
                     
@@ -37,7 +38,7 @@ const HeaderDropdown = ({
                 </div>
             </div>
         </div>
-    </section>
+    </>
     );
 }
 

@@ -48,6 +48,7 @@ const Header = ({
 
   useEffect(() => {
     isActive && openMenu();
+    isNavMenuActive && openNavMenu();
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
     window.addEventListener('resize', handleWindowWidthChange);
@@ -55,7 +56,7 @@ const Header = ({
       document.removeEventListener('keydown', keyPress);
       document.addEventListener('click', clickOutside);
       window.removeEventListener('resize', handleWindowWidthChange)
-      closeMenu();
+      closeAllMenus();
     };
   });  
 
@@ -78,7 +79,8 @@ const Header = ({
 
   const clickOutside = (e) => {
     if (!nav.current) return
-    if (!isActive || !isNavMenuActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
+    if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
+    if (!isNavMenuActive || nav.current.contains(e.target)) return;
     closeMenu();
     closeNavMenu();
   }  
@@ -88,11 +90,20 @@ const Header = ({
   }
 
   const openNavMenu = () => {
+    document.body.classList.add('off-nav-is-active');
+    nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
     setIsNavMenuActive(true);
   }
 
   const closeNavMenu = () => {
+    document.body.classList.remove('off-nav-is-active');
+    nav.current && (nav.current.style.maxHeight = null);
     setIsNavMenuActive(false);
+  }
+
+  const closeAllMenus = () => {
+    closeMenu();
+    closeNavMenu();
   }
 
   
@@ -142,14 +153,14 @@ const Header = ({
                     )}>
 
                       { NAV_LINKS.map( ( { navTitle, navBody } )  => (
-                        
+
                         <li className='list-item-label' key={navTitle}>
                           <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
                             {navTitle}
                           </Link>
 
                           { isNavMenuActive && ( windowWidth <= 1024 ) ? 
-                            <HeaderDropdown navBody={navBody} /> : ( null )
+                            <HeaderDropdown navBody={navBody} onClick={closeAllMenus} /> : ( null )
                           }
                         </li>
                       ))}
@@ -171,9 +182,8 @@ const Header = ({
       </div>
 
       { isNavMenuActive && ( windowWidth > 1024 ) ? 
-      <HeaderDropdown navBody={NAV_LINKS[0].navBody} /> : ( null ) 
+      <HeaderDropdown navBody={NAV_LINKS[0].navBody} onClick={closeAllMenus} /> : ( null ) 
       }
-
 
     </header>
   );
