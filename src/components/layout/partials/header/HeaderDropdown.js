@@ -5,9 +5,7 @@ import { Link } from 'react-router-dom';
 
 
 const HeaderDropdown = ({
-    dropdownLabel,
-    onclick,
-    dropdownLinks
+    navBody: { navBodyLabel, navBodyLinks, navBodyLinksDestinations }
 }) => {
 
     return (
@@ -19,11 +17,19 @@ const HeaderDropdown = ({
 
                     <div className='header-dropdown-content tiles-item'>
                         <div className='tiles-item-inner'>
+                            
                             <div className='fw-600 mb-16 text-color-secondary nav-title'>
-                                <u>Essentials</u>
+                                <u>{navBodyLabel}</u>
                             </div>
-                            <Link to='/crypto-block' className='mb-24 list-item-label'>Best Crypto Exchanges in USA</Link>
-                            <Link to='/crypto-block' className='mb-24 list-item-label'>Best Crypto Hardware Wallets in USA</Link>
+
+                            { navBodyLinks.map( ( navBodyLink, index )  => {
+                                const linkDesintation = navBodyLinksDestinations[index];
+                                return (
+                                <Link to={linkDesintation} key={linkDesintation} className='mb-24 list-item-label'>
+                                    {navBodyLink}
+                                </Link>
+                                )})}
+                                
                         </div>
                     </div>
                     

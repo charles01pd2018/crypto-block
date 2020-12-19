@@ -5,9 +5,13 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
+// objects
+import NAV_LINKS from './objects/NavLinks';
+
 // elements
 import { Logo } from './partials';
-import { HeaderDropdown, HeaderMainLink } from './partials/header';
+import { HeaderDropdown } from './partials/header';
+
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -37,7 +41,6 @@ const Header = ({
 
   const [isActive, setIsactive] = useState(false);
   const [isNavMenuActive, setIsNavMenuActive] = useState(false);
-
   const [windowWidth, setWindowWidth] = useState( window.innerWidth );
 
   const nav = useRef(null);
@@ -55,10 +58,6 @@ const Header = ({
       closeMenu();
     };
   });  
-
-  const handleWindowWidthChange = () => {
-    setWindowWidth(window.innerWidth);
-  }
 
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
@@ -79,9 +78,14 @@ const Header = ({
 
   const clickOutside = (e) => {
     if (!nav.current) return
-    if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
+    if (!isActive || !isNavMenuActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
     closeMenu();
+    closeNavMenu();
   }  
+
+  const handleWindowWidthChange = () => {
+    setWindowWidth(window.innerWidth);
+  }
 
   const openNavMenu = () => {
     setIsNavMenuActive(true);
@@ -91,7 +95,7 @@ const Header = ({
     setIsNavMenuActive(false);
   }
 
-
+  
   const classes = classNames(
     'site-header',
     bottomOuterDivider && 'has-bottom-divider',
@@ -136,18 +140,19 @@ const Header = ({
                       'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                      
-                    <li className='list-item-label'>
-                      <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
 
-                      { isNavMenuActive && ( windowWidth <= 1024 ) ? 
-                        <HeaderDropdown /> : ( null )
-                      }
-                    </li>
-                    
-                    <li className='list-item-label'>
-                      <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
-                    </li>
+                      { NAV_LINKS.map( ( { navTitle, navBody } )  => (
+                        
+                        <li className='list-item-label' key={navTitle}>
+                          <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
+                            {navTitle}
+                          </Link>
+
+                          { isNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown navBody={navBody} /> : ( null )
+                          }
+                        </li>
+                      ))}
 
                   </ul>
 
@@ -166,8 +171,9 @@ const Header = ({
       </div>
 
       { isNavMenuActive && ( windowWidth > 1024 ) ? 
-        <HeaderDropdown /> : ( null )
+      <HeaderDropdown navBody={NAV_LINKS[0].navBody} /> : ( null ) 
       }
+
 
     </header>
   );
