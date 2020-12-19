@@ -88,11 +88,11 @@ const ReviewPanels = ({
                                     <ul className='text-sm fw-600'>
                                       <div className='pb-12'><u>Key Features</u></div>
                                       <li className='highlight list-item'><b>1500 Tokens Supported</b></li>
-                                      <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
+                                      <li className='highlight list-item right'><b>Send &amp; Receive Crypto</b></li>
                                       <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
 
                                       <div className='pt-12 pb-12'><u>Security Certifications</u></div>
-                                      <li className='highlight list-item'><b>Independently ANSSI Certified</b></li>
+                                      <li className='highlight list-item'><b>ANSSI Certified</b></li>
                                       <li className='highlight list-item'><b>Certified Secure Element</b></li>
                                     </ul>
                                 </div>
@@ -133,7 +133,7 @@ const ReviewPanels = ({
                                   <ul className='text-sm fw-600'>
                                     <div className='pb-12'><u>Key Features</u></div>
                                     <li className='highlight list-item'><b>1613 Tokens Supported</b></li>
-                                    <li className='highlight list-item right'><b>Send &amp; Receive Cryptocurrency</b></li>
+                                    <li className='highlight list-item right'><b>Send &amp; Receive Crypto</b></li>
                                     <li className='highlight list-item'><b>Stake &amp; Lend</b></li>
 
                                     <div className='pt-12 pb-12'><u>Security Certifications</u></div>

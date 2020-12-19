@@ -119,10 +119,10 @@ const Header = ({
                     )}>
 
                     <li className='list-item-label'>
-                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu} >Best Cryptocurrency Exchanges in USA</Link>
+                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu} >Best Crypto Exchanges in USA</Link>
                     </li>
                     <li className='list-item-label'>
-                      <Link to="/crypto-block/wallet-reviews" onClick={closeMenu} >Best Cryptocurrency Hardware Wallets in USA</Link>
+                      <Link to="/crypto-block/wallet-reviews" onClick={closeMenu} >Best Crypto Hardware Wallets in USA</Link>
                     </li>
 
                   </ul>
