@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 
 // elements
 import { Logo } from './partials';
-import { HeaderDropdown } from './partials/header';
+import { HeaderDropdown, HeaderMainLink } from './partials/header';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -36,6 +36,7 @@ const Header = ({
 }) => {
 
   const [isActive, setIsactive] = useState(false);
+  const [isNavMenuActive, setIsNavMenuActive] = useState(false);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -64,7 +65,8 @@ const Header = ({
   }
 
   const keyPress = (e) => {
-    isActive && e.keyCode === 27 && closeMenu();
+    isActive && e.keyCode=== 27 && closeMenu();
+    isNavMenuActive && e.keyCode=== 27 && closeNavMenu();
   }
 
   const clickOutside = (e) => {
@@ -72,6 +74,14 @@ const Header = ({
     if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
     closeMenu();
   }  
+
+  const openNavMenu = () => {
+    setIsNavMenuActive(true);
+  }
+
+  const closeNavMenu = () => {
+    setIsNavMenuActive(false);
+  }
 
   const classes = classNames(
     'site-header',
@@ -119,7 +129,10 @@ const Header = ({
                     )}>
                       
                     <li className='list-item-label'>
-                      <Link to='#' onClick={isActive ? closeMenu : openMenu}>Reviews</Link>
+                      <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
+                    </li>
+                    <li className='list-item-label'>
+                      <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
                     </li>
 
                   </ul>
@@ -138,7 +151,7 @@ const Header = ({
         </div>
       </div>
 
-      {isActive ? 
+      {isNavMenuActive ? 
       <HeaderDropdown /> : ( null )
       }
       
