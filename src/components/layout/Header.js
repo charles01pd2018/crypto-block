@@ -38,6 +38,8 @@ const Header = ({
   const [isActive, setIsactive] = useState(false);
   const [isNavMenuActive, setIsNavMenuActive] = useState(false);
 
+  const [windowWidth, setWindowWidth] = useState( window.innerWidth );
+
   const nav = useRef(null);
   const hamburger = useRef(null);
 
@@ -45,12 +47,18 @@ const Header = ({
     isActive && openMenu();
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
+    window.addEventListener('resize', handleWindowWidthChange);
     return () => {
       document.removeEventListener('keydown', keyPress);
       document.addEventListener('click', clickOutside);
+      window.removeEventListener('resize', handleWindowWidthChange)
       closeMenu();
     };
   });  
+
+  const handleWindowWidthChange = () => {
+    setWindowWidth(window.innerWidth);
+  }
 
   const openMenu = () => {
     document.body.classList.add('off-nav-is-active');
@@ -82,6 +90,7 @@ const Header = ({
   const closeNavMenu = () => {
     setIsNavMenuActive(false);
   }
+
 
   const classes = classNames(
     'site-header',
@@ -130,7 +139,12 @@ const Header = ({
                       
                     <li className='list-item-label'>
                       <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
+
+                      { isNavMenuActive && ( windowWidth <= 1024 ) ? 
+                        <HeaderDropdown /> : ( null )
+                      }
                     </li>
+                    
                     <li className='list-item-label'>
                       <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>Reviews</Link>
                     </li>
@@ -151,10 +165,10 @@ const Header = ({
         </div>
       </div>
 
-      {isNavMenuActive ? 
-      <HeaderDropdown /> : ( null )
+      { isNavMenuActive && ( windowWidth > 1024 ) ? 
+        <HeaderDropdown /> : ( null )
       }
-      
+
     </header>
   );
 }

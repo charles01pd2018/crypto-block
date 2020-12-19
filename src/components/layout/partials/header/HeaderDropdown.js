@@ -11,8 +11,8 @@ const HeaderDropdown = ({
 }) => {
 
     return (
-    <>
-        <div className='header-dropdown'>
+    <section>
+        <div id='header-dropdown'>
             <div className='container feature-tiles'>
                 <div className='features-tiles-inner section-inner pt-0'>
                     <div className='tiles-wrap text-xs'>
@@ -31,7 +31,7 @@ const HeaderDropdown = ({
                 </div>
             </div>
         </div>
-    </>
+    </section>
     );
 }
 
