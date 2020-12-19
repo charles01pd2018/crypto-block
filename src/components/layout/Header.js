@@ -41,7 +41,7 @@ const Header = ({
 
   const [isActive, setIsactive] = useState(false);
   const [isNavMenuActive, setIsNavMenuActive] = useState(false);
-  const [windowWidth, setWindowWidth] = useState( window.innerWidth );
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -81,8 +81,7 @@ const Header = ({
     if (!nav.current) return
     if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
     if (!isNavMenuActive || nav.current.contains(e.target)) return;
-    closeMenu();
-    closeNavMenu();
+    closeAllMenus();
   }  
 
   const handleWindowWidthChange = () => {
@@ -90,14 +89,10 @@ const Header = ({
   }
 
   const openNavMenu = () => {
-    document.body.classList.add('off-nav-is-active');
-    nav.current.style.maxHeight = nav.current.scrollHeight + 'px';
     setIsNavMenuActive(true);
   }
 
   const closeNavMenu = () => {
-    document.body.classList.remove('off-nav-is-active');
-    nav.current && (nav.current.style.maxHeight = null);
     setIsNavMenuActive(false);
   }
 

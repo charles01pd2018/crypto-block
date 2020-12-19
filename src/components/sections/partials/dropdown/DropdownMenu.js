@@ -15,11 +15,11 @@ const propTypes = {
   })).isRequired,
   dropdownKey: PropTypes.string.isRequired,
   children: PropTypes.node
-}
+};
 
 const defaultProps = {
   children: null,
-}
+};
 
 const DropdownMenu = ({
   className,
@@ -43,7 +43,7 @@ const DropdownMenu = ({
                 ) }
               </div>
             </>
-    )
+    );
 }
 
 DropdownMenu.propTypes = propTypes;
