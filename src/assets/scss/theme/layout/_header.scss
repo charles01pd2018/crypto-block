@@ -14,6 +14,7 @@
 
     .header-dropdown-content {
         text-align: left;
+        padding-bottom: 0;
         
         .nav-title {
             border-left: 2px solid get-color(light, 3);
@@ -22,6 +23,10 @@
 
         .nav-link {
             padding-left: 0;
+
+            &:last-of-type {
+     
+            }
         }
     }
 }
@@ -35,5 +40,4 @@
             margin-top: 10px;
         }
     }
-
 }

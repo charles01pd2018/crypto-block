@@ -124,7 +124,7 @@ const Header = ({
               <button
                 ref={hamburger}
                 className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
+                onClick={isActive ? closeAllMenus : openMenu}
               >
                 <span className="screen-reader">Menu</span>
                 <span className="hamburger">
@@ -148,7 +148,7 @@ const Header = ({
 
                       { NAV_LINKS.map( ( { navTitle, navBody } )  => (
 
-                        <li className='list-item-label' key={navTitle}>
+                        <li className='list-item-label' key={`${navTitle}-list-item`}>
                           <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
                             {navTitle}
                           </Link>
@@ -175,9 +175,10 @@ const Header = ({
         </div>
       </div>
 
-      { isNavMenuActive && ( windowWidth > 1024 ) ? 
-      <HeaderDropdown navBody={NAV_LINKS[0].navBody} onClick={closeAllMenus} /> : ( null ) 
-      }
+      { NAV_LINKS.map( navLinksItem  => ( 
+        isNavMenuActive && ( windowWidth > 1024 ) ? 
+          <HeaderDropdown key={`${navLinksItem.navTitle}-desktop-header-dropdown`} navBody={navLinksItem.navBody} onClick={closeAllMenus} /> : ( null ) 
+      ))}
 
     </header>
   );
