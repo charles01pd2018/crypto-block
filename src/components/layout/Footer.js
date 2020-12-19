@@ -5,7 +5,8 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 // elements
-import { Logo, FooterNav, FooterSocial } from './partials';
+import { Logo } from './partials';
+import { FooterNav, FooterSocial } from './partials/footer';
 
 
 const propTypes = {

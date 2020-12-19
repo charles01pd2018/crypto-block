@@ -6,8 +6,8 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 // elements
-import { HeaderDropdown, Logo } from './partials';
-
+import { Logo } from './partials';
+import { HeaderDropdown } from './partials/header';
 
 const propTypes = {
   navPosition: PropTypes.string,
@@ -119,7 +119,7 @@ const Header = ({
                     )}>
                       
                     <li className='list-item-label'>
-                      <Link to='#'>Test</Link>
+                      <Link to='#' onClick={isActive ? closeMenu : openMenu}>Reviews</Link>
                     </li>
 
                   </ul>

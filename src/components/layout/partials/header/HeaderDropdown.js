@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 // types
 import { Link } from 'react-router-dom';
@@ -9,8 +9,6 @@ const HeaderDropdown = ({
     onclick,
     dropdownLinks
 }) => {
-
-    const [isActive, setIsActive] = useState(false);
 
     return (
     <>
