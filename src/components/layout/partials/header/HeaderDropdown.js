@@ -5,6 +5,7 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
+
 const propTypes = {
     navBody: PropTypes.shape({
         navBodyLabel: PropTypes.string.isRequired,

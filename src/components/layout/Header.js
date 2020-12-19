@@ -78,9 +78,8 @@ const Header = ({
   }
 
   const clickOutside = (e) => {
-    if (!nav.current) return
-    if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
-    if (!isNavMenuActive || nav.current.contains(e.target)) return;
+    if (!nav.current) return;
+    if (nav.current.contains(e.target) || e.target === hamburger.current) return;
     closeAllMenus();
   }  
 
