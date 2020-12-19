@@ -138,7 +138,10 @@ const Header = ({
         </div>
       </div>
 
-      <HeaderDropdown />
+      {isActive ? 
+      <HeaderDropdown /> : ( null )
+      }
+      
     </header>
   );
 }
