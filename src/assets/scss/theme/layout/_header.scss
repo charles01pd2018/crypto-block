@@ -7,7 +7,6 @@
 
 #header-dropdown {
     width: 100%;
-    height: 100%;
 
     background-color: get-color(dark, 2);
     border-top: 8px solid get-color(dark, 3);
@@ -20,5 +19,21 @@
             border-left: 2px solid get-color(light, 3);
             padding-left: 10px;
         }
+
+        .nav-link {
+            padding-left: 0;
+        }
     }
+}
+
+@include media('>1024px') {
+
+    .nav-link {
+        margin-bottom: 25px;
+
+        &:first-of-type {
+            margin-top: 10px;
+        }
+    }
+
 }

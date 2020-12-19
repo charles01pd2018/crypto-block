@@ -67,7 +67,7 @@ const HeaderDropdown = ({
                             { navBodyLinks.map( ( navBodyLink, index )  => {
                                 const linkDesintation = navBodyLinksDestinations[index];
                                 return (
-                                <Link to={linkDesintation} key={linkDesintation} onClick={onClick} className='mb-24 list-item-label'>
+                                <Link to={linkDesintation} key={linkDesintation} onClick={onClick} className='nav-link list-item-label'>
                                     {navBodyLink}
                                 </Link>
                             )})}
