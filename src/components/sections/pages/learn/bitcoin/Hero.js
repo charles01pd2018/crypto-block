@@ -48,7 +48,7 @@ const Hero = ({
         <div className={innerClasses}>
           <div className="hero-content">
 
-            <h1 className="mt-0 mb-16 reveal-from-bottom text-color-secondary" data-reveal-delay="200">
+            <h1 className="mt-0 mb-16 reveal-from-bottom" data-reveal-delay="200">
               What is <span className="text-color-primary">Bitcoin</span>?
             </h1>
             
