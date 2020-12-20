@@ -52,29 +52,28 @@ const Hero = ({
   );
 
   const cryptoExchangeExplanation = (
-    <p className='text-xs'>
-      Cryptocurrency exchanges are your outlet to buy and sell digital assets. This can be done through either fiat currency or other digital assets. 
-      <br/><br/>
-      This can take the form of the following:
-      <br/>
-      <br/>
+    <span className='text-xs'>
+      <p>Cryptocurrency exchanges are your outlet to buy and sell digital assets. This can be done through either fiat currency or other digital assets.</p>
+
+      <p><u>This can take the form of the following:</u></p>
+
       <ul>
         <li>
-        Buy cryptocurrency in exchange for USD.
+          Buy cryptocurrency in exchange for USD.
         </li>
         <li>
-        Sell cryptocurrency in exchange for USD.
+          Sell cryptocurrency in exchange for USD.
         </li>
         <li>
-        Buy cryptocurrency in exchange for a different cryptocurrency.
+          Buy cryptocurrency in exchange for a different cryptocurrency.
         </li>
         <li>
-        Sell cryptocurrency in exchange for a different cryptocurrency.
+          Sell cryptocurrency in exchange for a different cryptocurrency.
         </li>
       </ul>
-      <br/>
-      *Additionally, owned cryptocurrency can be transferred between different digital wallets.
-      </p>
+     
+      <p>*Additionally, owned cryptocurrency can be transferred between different digital wallets.</p>
+      </span>
   );
 
   return (

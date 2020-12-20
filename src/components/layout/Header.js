@@ -5,8 +5,12 @@ import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
+// objects
+import NAV_LINKS from './objects/NavLinks';
+
 // elements
 import { Logo } from './partials';
+import { HeaderDropdown } from './partials/header';
 
 
 const propTypes = {
@@ -36,18 +40,24 @@ const Header = ({
 }) => {
 
   const [isActive, setIsactive] = useState(false);
+  const [isNavMenuActive, setIsNavMenuActive] = useState(false);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
+  const navDesktopDropdown = useRef(null);
 
   useEffect(() => {
     isActive && openMenu();
+    isNavMenuActive && openNavMenu();
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
+    window.addEventListener('resize', handleWindowWidthChange);
     return () => {
       document.removeEventListener('keydown', keyPress);
-      document.addEventListener('click', clickOutside);
-      closeMenu();
+      document.removeEventListener('click', clickOutside);
+      window.removeEventListener('resize', handleWindowWidthChange)
+      closeAllMenus();
     };
   });  
 
@@ -65,14 +75,36 @@ const Header = ({
 
   const keyPress = (e) => {
     isActive && e.keyCode === 27 && closeMenu();
+    isNavMenuActive && e.keyCode === 27 && closeNavMenu();
   }
 
   const clickOutside = (e) => {
-    if (!nav.current) return
-    if (!isActive || nav.current.contains(e.target) || e.target === hamburger.current) return;
-    closeMenu();
+    if (!nav.current || !navDesktopDropdown.current) return;
+    if (nav.current.contains(e.target) || navDesktopDropdown.current.contains(e.target)) return;
+    if (e.target  === hamburger.current) return;
+    closeAllMenus();
   }  
 
+  const handleWindowWidthChange = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
+  const openNavMenu = () => {
+    navDesktopDropdown.current.style.maxHeight = navDesktopDropdown.current.scrollHeight + 'px';
+    setIsNavMenuActive(true);
+  }
+
+  const closeNavMenu = () => {
+    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
+    setIsNavMenuActive(false);
+  }
+
+  const closeAllMenus = () => {
+    closeMenu();
+    closeNavMenu();
+  }
+
+  
   const classes = classNames(
     'site-header',
     bottomOuterDivider && 'has-bottom-divider',
@@ -84,7 +116,7 @@ const Header = ({
       {...props}
       className={classes}
     >
-      <div className="container">
+      <div className='container'>
         <div className={
           classNames(
             'site-header-inner',
@@ -96,13 +128,14 @@ const Header = ({
               <button
                 ref={hamburger}
                 className="header-nav-toggle"
-                onClick={isActive ? closeMenu : openMenu}
+                onClick={isActive ? closeAllMenus : openMenu}
               >
                 <span className="screen-reader">Menu</span>
                 <span className="hamburger">
                   <span className="hamburger-inner"></span>
                 </span>
               </button>
+
               <nav
                 ref={nav}
                 className={
@@ -110,6 +143,7 @@ const Header = ({
                     'header-nav',
                     isActive && 'is-active'
                   )}>
+
                 <div className="header-nav-inner">
 
                   <ul className={
@@ -117,14 +151,17 @@ const Header = ({
                       'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
+                      { NAV_LINKS.map( ( { navTitle, navBody } )  => (
+                        <li key={`${navTitle}-list-item`}>
+                          <Link to='#' className='list-item-label' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
+                            {navTitle}
+                          </Link>
 
-                    <li className='list-item-label'>
-                      <Link to="/crypto-block/exchange-reviews" onClick={closeMenu} >Best Crypto Exchanges in USA</Link>
-                    </li>
-                    <li className='list-item-label'>
-                      <Link to="/crypto-block/wallet-reviews" onClick={closeMenu} >Best Crypto Hardware Wallets in USA</Link>
-                    </li>
-
+                          { isNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown navBody={navBody} onClick={closeAllMenus}/> : ( null )
+                          }
+                        </li>
+                      ))}
                   </ul>
 
                   {!hideSignin &&
@@ -140,6 +177,18 @@ const Header = ({
             </>}
         </div>
       </div>
+
+      <div ref={navDesktopDropdown}>
+        { NAV_LINKS.map( navLinksItem  => ( 
+          isNavMenuActive && ( windowWidth > 1024 ) ? 
+            <HeaderDropdown
+            key={`${navLinksItem.navTitle}-desktop-header-dropdown`} 
+            navBody={navLinksItem.navBody} 
+            onClick={closeAllMenus} 
+            /> : ( null ) 
+        ))}
+      </div>
+
     </header>
   );
 }

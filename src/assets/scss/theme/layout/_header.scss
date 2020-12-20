@@ -1,7 +1,44 @@
-
 .list-item-label { 
 
     &:hover {
         border-bottom: 3px solid get-color(light, 3);
+    }
+}
+
+#header-dropdown {
+    width: 100%;
+
+    background-color: get-color(dark, 2);
+    opacity: 1;
+    border-top: 8px solid get-color(dark, 3);
+    border-bottom: 8px solid get-color(dark, 3);
+
+    .header-dropdown-content {
+        text-align: left;
+        padding-bottom: 0;
+        
+        .nav-title {
+            border-left: 2px solid get-color(light, 3);
+            padding-left: 10px;
+        }
+
+        .nav-link {
+            padding-left: 0;
+
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+@include media('>1024px') {
+
+    .nav-link {
+        margin-bottom: 25px;
+
+        &:first-of-type {
+            margin-top: 10px;
+        }
     }
 }

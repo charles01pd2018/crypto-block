@@ -52,27 +52,26 @@ const Hero = ({
   );
 
   const cryptoExchangeExplanation = (
-    <p className='text-xs'>
-      Cryptocurrency hardware wallets are the safest and most secure method for storing your cryptocurrency and enable you to be the one and only custodian of your digital assets. 
-      Think of it as a way to be your own bank. Instead of putting your trust in financial institutions, you are taking control of your own money.
-      <br/><br/>
-      <u className='fw-600'>Why Hardware Wallets Are Important</u>
-      <br/><br/>
+    <span className='text-xs'>
+      <p>Cryptocurrency hardware wallets are the safest and most secure method for storing your cryptocurrency and enable you to be the one and only custodian of your digital assets. 
+      Think of it as a way to be your own bank. Instead of putting your trust in financial institutions, you are taking control of your own money.</p>
+
+      <p><u className='fw-600'>Why Hardware Wallets Are Important</u></p>
       <ul>
         <li>
-        Hardware wallets keep your cryptocurrency secure and offline.
+          Hardware wallets keep your cryptocurrency secure and offline.
         </li>
         <li>
-        Cryptocurrency stored in connected online servers are prone to being hacked. Over $1.78 billion has been hacked from cryptocurrency exchanges. 
+          Cryptocurrency stored in connected online servers are prone to being hacked. Over $1.78 billion has been hacked from cryptocurrency exchanges. 
         </li>
         <li>
-        A physical backup device ensures that your crypto is safe in extraneous circumstances.
+          A physical backup device ensures that your crypto is safe in extraneous circumstances.
         </li>
         <li>
-        It’s cool :-D
+          Hardware wallets are cool :-D
         </li>
       </ul>
-    </p>
+    </span>
   );
 
   return (
