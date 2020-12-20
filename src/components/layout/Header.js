@@ -157,12 +157,18 @@ const Header = ({
                             {navTitle}
                           </Link>
 
+                          
+
                           { isNavMenuActive && ( windowWidth <= 1024 ) ? 
                             <HeaderDropdown navBody={navBody} onClick={closeAllMenus}/> : ( null )
                           }
                         </li>
                       ))}
                   </ul>
+
+                  <div className='triangle center-content'>
+                            <span className='triangle-inner'></span>
+                          </div>
 
                   {!hideSignin &&
                     <ul
