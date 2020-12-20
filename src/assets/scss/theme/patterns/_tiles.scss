@@ -9,7 +9,7 @@
 
     &.tile-link {
 
-        &:hover {
+        &:hover, &:active {
 
             background-color: lighten(get-color(dark, 1), 2%);
             border: 3px solid grey;
