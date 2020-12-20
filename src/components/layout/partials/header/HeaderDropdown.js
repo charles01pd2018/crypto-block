@@ -81,7 +81,7 @@ const HeaderDropdown = ({
         </div>
     </>
     );
-}
+} 
 
 HeaderDropdown.propTypes = propTypes;
 HeaderDropdown.defaultProps = defaultProps;

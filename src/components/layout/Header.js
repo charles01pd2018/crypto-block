@@ -45,6 +45,7 @@ const Header = ({
 
   const nav = useRef(null);
   const hamburger = useRef(null);
+  const navDesktopDropdown = useRef(null);
 
   useEffect(() => {
     isActive && openMenu();
@@ -54,7 +55,7 @@ const Header = ({
     window.addEventListener('resize', handleWindowWidthChange);
     return () => {
       document.removeEventListener('keydown', keyPress);
-      document.addEventListener('click', clickOutside);
+      document.removeEventListener('click', clickOutside);
       window.removeEventListener('resize', handleWindowWidthChange)
       closeAllMenus();
     };
@@ -73,13 +74,14 @@ const Header = ({
   }
 
   const keyPress = (e) => {
-    isActive && e.keyCode=== 27 && closeMenu();
-    isNavMenuActive && e.keyCode=== 27 && closeNavMenu();
+    isActive && e.keyCode === 27 && closeMenu();
+    isNavMenuActive && e.keyCode === 27 && closeNavMenu();
   }
 
   const clickOutside = (e) => {
-    if (!nav.current) return;
-    if (nav.current.contains(e.target) || e.target === hamburger.current) return;
+    if (!nav.current || !navDesktopDropdown.current) return;
+    if (nav.current.contains(e.target) || navDesktopDropdown.current.contains(e.target)) return;
+    if (e.target  === hamburger.current) return;
     closeAllMenus();
   }  
 
@@ -88,10 +90,12 @@ const Header = ({
   }
 
   const openNavMenu = () => {
+    navDesktopDropdown.current.style.maxHeight = navDesktopDropdown.current.scrollHeight + 'px';
     setIsNavMenuActive(true);
   }
 
   const closeNavMenu = () => {
+    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
     setIsNavMenuActive(false);
   }
 
@@ -131,6 +135,7 @@ const Header = ({
                   <span className="hamburger-inner"></span>
                 </span>
               </button>
+
               <nav
                 ref={nav}
                 className={
@@ -138,6 +143,7 @@ const Header = ({
                     'header-nav',
                     isActive && 'is-active'
                   )}>
+
                 <div className="header-nav-inner">
 
                   <ul className={
@@ -145,20 +151,17 @@ const Header = ({
                       'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-
                       { NAV_LINKS.map( ( { navTitle, navBody } )  => (
-
-                        <li className='list-item-label' key={`${navTitle}-list-item`}>
-                          <Link to='#' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
+                        <li key={`${navTitle}-list-item`}>
+                          <Link to='#' className='list-item-label' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
                             {navTitle}
                           </Link>
 
                           { isNavMenuActive && ( windowWidth <= 1024 ) ? 
-                            <HeaderDropdown navBody={navBody} onClick={closeAllMenus} /> : ( null )
+                            <HeaderDropdown navBody={navBody} onClick={closeAllMenus}/> : ( null )
                           }
                         </li>
                       ))}
-
                   </ul>
 
                   {!hideSignin &&
@@ -175,10 +178,16 @@ const Header = ({
         </div>
       </div>
 
-      { NAV_LINKS.map( navLinksItem  => ( 
-        isNavMenuActive && ( windowWidth > 1024 ) ? 
-          <HeaderDropdown key={`${navLinksItem.navTitle}-desktop-header-dropdown`} navBody={navLinksItem.navBody} onClick={closeAllMenus} /> : ( null ) 
-      ))}
+      <div ref={navDesktopDropdown}>
+        { NAV_LINKS.map( navLinksItem  => ( 
+          isNavMenuActive && ( windowWidth > 1024 ) ? 
+            <HeaderDropdown
+            key={`${navLinksItem.navTitle}-desktop-header-dropdown`} 
+            navBody={navLinksItem.navBody} 
+            onClick={closeAllMenus} 
+            /> : ( null ) 
+        ))}
+      </div>
 
     </header>
   );
