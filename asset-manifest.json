@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/crypto-block/static/css/main.5f02a590.chunk.css",
+    "main.css": "/crypto-block/static/css/main.b0f0ec35.chunk.css",
     "main.js": "/crypto-block/static/js/main.245677a5.chunk.js",
     "main.js.map": "/crypto-block/static/js/main.245677a5.chunk.js.map",
     "runtime-main.js": "/crypto-block/static/js/runtime-main.a9bcbbd3.js",
@@ -9,10 +9,10 @@
     "static/js/2.ca44075a.chunk.js": "/crypto-block/static/js/2.ca44075a.chunk.js",
     "static/js/2.ca44075a.chunk.js.map": "/crypto-block/static/js/2.ca44075a.chunk.js.map",
     "index.html": "/crypto-block/index.html",
-    "precache-manifest.dcdc64c82aa6a0fb749dbc8c32c57ebb.js": "/crypto-block/precache-manifest.dcdc64c82aa6a0fb749dbc8c32c57ebb.js",
+    "precache-manifest.6c3288aaf195adcc34a3725e441e9d55.js": "/crypto-block/precache-manifest.6c3288aaf195adcc34a3725e441e9d55.js",
     "service-worker.js": "/crypto-block/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/crypto-block/static/css/2.f1b50ea8.chunk.css.map",
-    "static/css/main.5f02a590.chunk.css.map": "/crypto-block/static/css/main.5f02a590.chunk.css.map",
+    "static/css/main.b0f0ec35.chunk.css.map": "/crypto-block/static/css/main.b0f0ec35.chunk.css.map",
     "static/js/2.ca44075a.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.ca44075a.chunk.js.LICENSE.txt",
     "static/media/cryptocom-logo.jpg": "/crypto-block/static/media/cryptocom-logo.ffe46471.jpg",
     "static/media/feature-tile-icon-01.svg": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg",
@@ -28,7 +28,7 @@
     "static/js/runtime-main.a9bcbbd3.js",
     "static/css/2.f1b50ea8.chunk.css",
     "static/js/2.ca44075a.chunk.js",
-    "static/css/main.5f02a590.chunk.css",
+    "static/css/main.b0f0ec35.chunk.css",
     "static/js/main.245677a5.chunk.js"
   ]
 }
