@@ -3,7 +3,7 @@ const NAV_LINKS = [ {
     navBody: { 
         navBodyLabel: 'Essentials',
         navBodyLinks: ['Best Crypto Exchanges in USA', 'Best Crypto Hardware Wallets in USA'],
-        navBodyLinksDestinations: ['/crypto-block/exchange-reviews', '/crypto-block/wallet-reviews']
+        navBodyLinksDestinations: ['/crypto-block/reviews/exchanges', '/crypto-block/reviews/hardware-wallets']
         }
     }    
 ];

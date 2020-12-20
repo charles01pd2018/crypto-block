@@ -164,6 +164,11 @@ const Header = ({
                       ))}
                   </ul>
 
+                  <Link to='/crypto-block/learn/what-is-bitcoin' className='list-item-label' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
+                      What is Bitcoin?
+                  </Link>
+
+
                   {!hideSignin &&
                     <ul
                       className="list-reset header-nav-right"
