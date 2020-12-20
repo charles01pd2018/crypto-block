@@ -96,7 +96,7 @@ const Hero = ({
             <Modal trigger={advertisingModalTrigger} title='Advertising Disclosure' textContent={advertisingDiclosureText}/>
             
             <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
-                  <time className='text-xs fw-600' dateTime="2020-12-11">Updated December 11, 2020</time>
+                <time className='text-xs fw-600' dateTime="2020-12-11">Updated December 11, 2020</time>
             </p>
             
             <Modal trigger={explanationModalTrigger} title='What Are Cryptocurrency Exchanges?' textContent={cryptoExchangeExplanation}/>
