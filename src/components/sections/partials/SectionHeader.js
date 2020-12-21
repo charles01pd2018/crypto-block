@@ -8,12 +8,14 @@ const propTypes = {
     paragraph: PropTypes.string
   }).isRequired,
   children: PropTypes.node,
-  tag: PropTypes.oneOf(['h1', 'h2', 'h3'])
+  tag: PropTypes.oneOf(['h1', 'h2', 'h3']),
+  textColor: PropTypes.string
 }
 
 const defaultProps = {
   children: null,
-  tag: 'h2'
+  tag: 'h2',
+  textColor: ''
 }
 
 const SectionHeader = ({
@@ -21,6 +23,7 @@ const SectionHeader = ({
   data,
   children,
   tag,
+  textColor,
   ...props
 }) => {
 
@@ -43,7 +46,7 @@ const SectionHeader = ({
             {data.title &&
               <Component className={
                 classNames(
-                  'mt-0',
+                  'mt-0', textColor,
                   data.paragraph ? 'mb-16' : 'mb-0'
                 )}>{data.title}</Component>
             }

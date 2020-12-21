@@ -48,7 +48,7 @@ const App = () => {
             <AppRoute exact path="/crypto-block/reviews/exchanges" component={ExchangeReviews} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/reviews/hardware-wallets" component={WalletReviews} layout={LayoutDefault} />
 
-            <AppRoute exact path="/crypto-block/learn/what-is-bitcoin" component={WhatIsBTC} layout={LayoutDefault} />
+            <AppRoute exact path="/crypto-block/learn/bitcoin/what-is-bitcoin" component={WhatIsBTC} layout={LayoutDefault} />
 
             <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />
