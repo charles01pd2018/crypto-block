@@ -17,7 +17,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults
 }
 
-const IsBitcoinMoney = ({
+const BitcoinStoreValue = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -63,41 +63,21 @@ const IsBitcoinMoney = ({
       <div className="container">
         <div className={innerClasses}>
 
-        <SectionHeader data={{title: 'Is Bitcoin Money?'}} textColor='text-color-secondary' className='center-content' />
+        <SectionHeader data={{title: 'Bitcoin as a Store of Value'}} textColor='text-color-secondary' className='center-content' />
 
           <div className={splitClasses}>
 
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-         
-                <p className="m-0">
-                    Bitcoin isn’t money in the traditional sense because it is not regulated by a centralized governing authority. In fact, no single person has control over the supply or protocol of Bitcoin. Compare this to the US dollar, which is backed and governed by the Federal Reserve, giving them direct oversight into USD monetary policy.                
-                </p>
-              </div>
-
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-money.svg')}
-                  alt="Bitcoin Money"
-                  width={528}
-                  height={396} />
-              </div>
-            </div>
-
-            <p className='fw-600 center-content mt-32'>However, bitcoin does have properties that make it comparable to traditional money.</p>
+            <div></div>
+            <p className='fw-600 center-content mt-32'>Bitcoin functions as a relatively reliable store of value because of its programmed qualities.</p>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Payments
+                    Transferable
                 </h3>
+         
                 <p className="m-0">
-                    Bitcoin can be transferred from one person to another person. For example, you could send a specified amount of BTC (short for Bitcoin) to a friend.
+                    Bitcoins can be broken down into very small units (meaning that it is not necessary to own 1 entire bitcoin) and can be easily transferred from one digital wallet to another. The smallest unit of a Bitcoin is called a satoshi, and there are 100 million satoshis in a bitcoin.
                 </p>
               </div>
 
@@ -108,8 +88,35 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-transfer.svg')}
-                  alt="Bitcoin Transfer"
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-store-value/bitcoin-small-unit.svg')}
+                  alt="Bitcoin Small Unit"
+                  width={528}
+                  height={396} />
+              </div>
+            </div>
+            
+            <div></div>
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-12 text-color-secondary">
+                    Durable
+                </h3>
+         
+                <p className="m-0">
+                    Bitcoin’s cannot be destroyed or removed from the circulating supply. Compare Bitcoin to a physical dollar bill, which could potentially be destroyed.
+                </p>
+              </div>
+
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-store-value/bitcoin-durable.svg')}
+                  alt="Bitcoin Durable"
                   width={528}
                   height={396} />
               </div>
@@ -120,10 +127,11 @@ const IsBitcoinMoney = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Monetary Value
+                    Secure
                 </h3>
+         
                 <p className="m-0">
-                    Bitcoin holds a relative amount of monetary value that <i>could</i> be used at time of exchange. For example, let's say 1 BTC is valued at $23,700 (around the current value at the time of this writing). This means you can buy $23,700 worth of goods with your 1 BTC.
+                    Bitcoin is powered by a decentralized network made up of devices that each store a copy of the blockchain ledger database detailing every Bitcoin transaction that has ever occurred. This system makes Bitcoin <i>secure</i> and <i>difficult to manipulate</i>.
                 </p>
               </div>
 
@@ -134,8 +142,8 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-buy.svg')}
-                  alt="Bitcoin Buy"
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-store-value/bitcoin-secure.svg')}
+                  alt="Bitcoin Secure"
                   width={528}
                   height={396} />
               </div>
@@ -148,7 +156,7 @@ const IsBitcoinMoney = ({
   );
 }
 
-IsBitcoinMoney.propTypes = propTypes;
-IsBitcoinMoney.defaultProps = defaultProps;
+BitcoinStoreValue.propTypes = propTypes;
+BitcoinStoreValue.defaultProps = defaultProps;
 
-export default IsBitcoinMoney;
+export default BitcoinStoreValue;

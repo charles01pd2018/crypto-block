@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import { Hero, IsBitcoinMoney, IsBitcoinStock, BitcoinSummary } from '../../../components/sections/pages/learn/bitcoin/what-is-bitcoin';
+import { Hero, BitcoinStoreValue, BitcoinGlobalEconomy, BitcoinTokenomics } from '../../../components/sections/pages/learn/bitcoin/why-is-bitcoin-valuable';
 
 
 const WhyIsBitcoinValuable = () => {
@@ -14,6 +14,10 @@ const WhyIsBitcoinValuable = () => {
                 <title>Why is Bitcoin Valuable?</title>
             </Helmet>
 
+            <Hero bottomDivider className='illustration-section-01'/>
+            <BitcoinStoreValue invertMobile bottomDivider />
+            <BitcoinGlobalEconomy invertMobile bottomDivider />
+            <BitcoinTokenomics invertMobile bottomDivider />
         </>
     );
 }

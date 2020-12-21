@@ -17,7 +17,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults
 }
 
-const BitcoinSummary = ({
+const BitcoinGlobalEconomy = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -63,20 +63,21 @@ const BitcoinSummary = ({
       <div className="container">
         <div className={innerClasses}>
 
-        <SectionHeader data={{title: 'OK, What is Bitcoin Then?'}} textColor='text-color-secondary' className='center-content' />
+        <SectionHeader data={{title: 'Powering the Global Economy'}} textColor='text-color-secondary' className='center-content' />
 
           <div className={splitClasses}>
 
             <div></div>
-            <p className='fw-600 center-content mt-32'>The actual characterization of Bitcoin is still up in the air, due largely to lack of regulation around the digital currency.</p>
+            <p className='fw-600 center-content mt-32'>Bitcoin payments have no boundaries and span the global economy.</p>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Digital Gold
+                    Global Reserve Currency
                 </h3>
+         
                 <p className="m-0">
-                    However, there is a general consensus that bitcoin can be used as the next store of value to protect against inflation. Traditionally, gold has had this function, but bitcoin is now challenging the old asset and being coined the new <i>digital gold</i> as technology continues to become integrated into our society. 
+                    Bitcoin could potentially be used as the standard for our global economy to compare its currency to. Right now, many countries compare its respective currency to the US dollar. However, a non-binding global standard for monetary value could potentially create a higher degree of global economic stability.
                 </p>
               </div>
 
@@ -87,8 +88,8 @@ const BitcoinSummary = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/bitcoin-summary/bitcoin-digital-gold.svg')}
-                  alt="Bitcoin Digital Gold"
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-global-economy/bitcoin-global-reserve-currency.svg')}
+                  alt="Bitcoin Global Reserve Currency"
                   width={528}
                   height={396} />
               </div>
@@ -101,7 +102,7 @@ const BitcoinSummary = ({
   );
 }
 
-BitcoinSummary.propTypes = propTypes;
-BitcoinSummary.defaultProps = defaultProps;
+BitcoinGlobalEconomy.propTypes = propTypes;
+BitcoinGlobalEconomy.defaultProps = defaultProps;
 
-export default BitcoinSummary;
+export default BitcoinGlobalEconomy;

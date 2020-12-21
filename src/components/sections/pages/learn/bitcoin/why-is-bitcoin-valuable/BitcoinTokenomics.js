@@ -17,7 +17,7 @@ const defaultProps = {
   ...SectionSplitProps.defaults
 }
 
-const IsBitcoinMoney = ({
+const BitcoinTokenomics = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -63,41 +63,21 @@ const IsBitcoinMoney = ({
       <div className="container">
         <div className={innerClasses}>
 
-        <SectionHeader data={{title: 'Is Bitcoin Money?'}} textColor='text-color-secondary' className='center-content' />
+        <SectionHeader data={{title: 'Bitcoin Tokenomics'}} textColor='text-color-secondary' className='center-content' />
 
           <div className={splitClasses}>
 
-            <div className="split-item">
-              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-         
-                <p className="m-0">
-                    Bitcoin isn’t money in the traditional sense because it is not regulated by a centralized governing authority. In fact, no single person has control over the supply or protocol of Bitcoin. Compare this to the US dollar, which is backed and governed by the Federal Reserve, giving them direct oversight into USD monetary policy.                
-                </p>
-              </div>
-
-              <div className={
-                classNames(
-                  'split-item-image center-content-mobile reveal-from-bottom',
-                  imageFill && 'split-item-image-fill'
-                )}
-                data-reveal-container=".split-item">
-                <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-money.svg')}
-                  alt="Bitcoin Money"
-                  width={528}
-                  height={396} />
-              </div>
-            </div>
-
-            <p className='fw-600 center-content mt-32'>However, bitcoin does have properties that make it comparable to traditional money.</p>
+            <div></div>
+            <p className='fw-600 center-content mt-32'>Bitcoin is “created” and released into circulating supply at a steady rate.</p>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Payments
+                    Steady Supply Increase
                 </h3>
+         
                 <p className="m-0">
-                    Bitcoin can be transferred from one person to another person. For example, you could send a specified amount of BTC (short for Bitcoin) to a friend.
+                    Bitcoin supply grows at an expected rate and can be tracked based on the blockchain data. Compare this to fiat currency, which can be “printed” at any time. Or gold, which is difficult to determine the amount that will be mined in any given year.                 
                 </p>
               </div>
 
@@ -108,8 +88,35 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-transfer.svg')}
-                  alt="Bitcoin Transfer"
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-tokenomics/bitcoin-steady-supply.svg')}
+                  alt="Bitcoin Steady Supply"
+                  width={528}
+                  height={396} />
+              </div>
+            </div>
+            
+            <div></div>
+
+            <div className="split-item">
+              <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-12 text-color-secondary">
+                    Bitcoin Total Supply
+                </h3>
+         
+                <p className="m-0">
+                    As of right now, there are around 18.5 million Bitcoins. Following Bitcoin’s current rule book, at approximately year 2140, there will only ever be 21 million Bitcoins in existence.                 
+                </p>
+              </div>
+
+              <div className={
+                classNames(
+                  'split-item-image center-content-mobile reveal-from-bottom',
+                  imageFill && 'split-item-image-fill'
+                )}
+                data-reveal-container=".split-item">
+                <Image
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-tokenomics/bitcoin-total-supply.svg')}
+                  alt="Bitcoin Total Supply"
                   width={528}
                   height={396} />
               </div>
@@ -120,10 +127,11 @@ const IsBitcoinMoney = ({
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Monetary Value
+                    Programmed Scarcity
                 </h3>
+         
                 <p className="m-0">
-                    Bitcoin holds a relative amount of monetary value that <i>could</i> be used at time of exchange. For example, let's say 1 BTC is valued at $23,700 (around the current value at the time of this writing). This means you can buy $23,700 worth of goods with your 1 BTC.
+                    Approximately every 4 years, the amount of Bitcoin set to be “created” and released into circulation is cut in half (called the bitcoin halvening). This means that Bitcoin will become increasingly scarce over time.                 
                 </p>
               </div>
 
@@ -134,8 +142,8 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-buy.svg')}
-                  alt="Bitcoin Buy"
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/why-is-bitcoin-valuable/bitcoin-tokenomics/bitcoin-programmed-scarcity.svg')}
+                  alt="Bitcoin Programmed Scarcity"
                   width={528}
                   height={396} />
               </div>
@@ -148,7 +156,7 @@ const IsBitcoinMoney = ({
   );
 }
 
-IsBitcoinMoney.propTypes = propTypes;
-IsBitcoinMoney.defaultProps = defaultProps;
+BitcoinTokenomics.propTypes = propTypes;
+BitcoinTokenomics.defaultProps = defaultProps;
 
-export default IsBitcoinMoney;
+export default BitcoinTokenomics;

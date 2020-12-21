@@ -72,7 +72,9 @@ const IsBitcoinStock = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
-         
+                <h3 className="mb-12 text-color-secondary">
+                    Price Fluctuation
+                </h3>
                 <p className="m-0">
                     The price of Bitcoin fluctuates over time, meaning that the value of 1 BTC can vary greatly at any given point. 
                 </p>
@@ -96,6 +98,9 @@ const IsBitcoinStock = ({
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
+                <h3 className="mb-12 text-color-secondary">
+                    Exchangable
+                </h3>
                 <p className="m-0">
                     Bitcoin can be bought and sold on exchanges that offer support for cryptocurrencies.
                 </p>
