@@ -2,11 +2,11 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../../utils/SectionProps';
+import { SectionSplitProps } from '../../../../../../utils/SectionProps';
 
 // elements
-import { Image } from '../../../../elements';
-import SectionHeader from '../../../partials/SectionHeader';
+import { Image } from '../../../../../elements';
+import SectionHeader from '../../../../partials/SectionHeader';
 
 
 const propTypes = {
@@ -82,14 +82,14 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../assets/images/pages/learn/bitcoin/is-bitcoin-money/bitcoin-money.svg')}
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-money.svg')}
                   alt="Bitcoin Money"
                   width={528}
                   height={396} />
               </div>
             </div>
 
-            <p className='fw-600 center-content mt-32'>However, bitcoin does have properties that make it comparable to traditional money</p>
+            <p className='fw-600 center-content mt-32'>However, bitcoin does have properties that make it comparable to traditional money.</p>
 
             <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
@@ -105,7 +105,7 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../assets/images/pages/learn/bitcoin/is-bitcoin-money/bitcoin-transfer.svg')}
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-transfer.svg')}
                   alt="Bitcoin Transfer"
                   width={528}
                   height={396} />
@@ -128,7 +128,7 @@ const IsBitcoinMoney = ({
                 )}
                 data-reveal-container=".split-item">
                 <Image
-                  src={require('./../../../../../assets/images/pages/learn/bitcoin/is-bitcoin-money/bitcoin-buy.svg')}
+                  src={require('./../../../../../../assets/images/pages/learn/bitcoin/what-is-bitcoin/is-bitcoin-money/bitcoin-buy.svg')}
                   alt="Bitcoin Buy"
                   width={528}
                   height={396} />

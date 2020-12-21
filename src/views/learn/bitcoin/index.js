@@ -1,5 +1,5 @@
-import WhatIsBTC from './WhatIsBTC';
+import WhatIsBitcoin from './WhatIsBitcoin';
 
 export {
-    WhatIsBTC
+    WhatIsBitcoin
 };

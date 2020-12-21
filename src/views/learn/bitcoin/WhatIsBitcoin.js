@@ -2,10 +2,10 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import { Hero, IsBitcoinMoney } from '../../../components/sections/pages/learn/bitcoin';
+import { Hero, IsBitcoinMoney, IsBitcoinStock, BitcoinSummary } from '../../../components/sections/pages/learn/bitcoin/what-is-bitcoin';
 
 
-const WhatIsBTC = () => {
+const WhatIsBitcoin = () => {
 
     return ( 
         <>
@@ -16,8 +16,10 @@ const WhatIsBTC = () => {
 
             <Hero bottomDivider className='illustration-section-01'/>
             <IsBitcoinMoney invertMobile bottomDivider />
+            <IsBitcoinStock invertMobile bottomDivider />
+            <BitcoinSummary invertMobile bottomDivider />
         </>
     );
 }
 
-export default WhatIsBTC;
+export default WhatIsBitcoin;
