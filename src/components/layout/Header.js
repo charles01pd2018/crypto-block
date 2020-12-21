@@ -6,7 +6,7 @@ import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 // objects
-import NAV_LINKS from './objects/NavLinks';
+import { LEARN_LINKS, REVIEW_LINKS } from './objects/NavLinks';
 
 // elements
 import { Logo } from './partials';
@@ -39,9 +39,14 @@ const Header = ({
   ...props
 }) => {
 
-  const [isActive, setIsactive] = useState(false);
-  const [isNavMenuActive, setIsNavMenuActive] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  // hamburger navigation
+  const [isActive, setIsactive] = useState(false);
+
+  // header dropdowns
+  const [isLearnNavMenuActive, setIsLearnNavMenuActive] = useState(false);
+  const [isReviewsNavMenuActive, setIsReviewsNavMenuActive] = useState(false);
 
   const nav = useRef(null);
   const hamburger = useRef(null);
@@ -49,7 +54,8 @@ const Header = ({
 
   useEffect(() => {
     isActive && openMenu();
-    isNavMenuActive && openNavMenu();
+    isLearnNavMenuActive && openLearnNavMenu();
+    isReviewsNavMenuActive && openReviewsNavMenu();
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
     window.addEventListener('resize', handleWindowWidthChange);
@@ -73,9 +79,47 @@ const Header = ({
     setIsactive(false);
   }
 
+  const openLearnNavMenu = () => {
+    closeAllDropdownMenus();
+    navDesktopDropdown.current.style.maxHeight = navDesktopDropdown.current.scrollHeight + 'px';
+    setIsLearnNavMenuActive(true);
+  }
+
+  const closeLearnNavMenu = () => {
+    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
+    setIsLearnNavMenuActive(false);
+  }
+
+  const openReviewsNavMenu = () => {
+    closeAllDropdownMenus();
+    navDesktopDropdown.current.style.maxHeight = navDesktopDropdown.current.scrollHeight + 'px';
+    setIsReviewsNavMenuActive(true);
+  }
+
+  const closeReviewsNavMenu = () => {
+    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
+    setIsReviewsNavMenuActive(false);
+  }
+
+  const closeAllDropdownMenus = () => {
+    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
+    setIsLearnNavMenuActive(false);
+    setIsReviewsNavMenuActive(false);
+  }
+
+  const closeAllMenus = () => {
+    closeAllDropdownMenus();
+    closeMenu();
+  }
+
+  const handleWindowWidthChange = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
   const keyPress = (e) => {
     isActive && e.keyCode === 27 && closeMenu();
-    isNavMenuActive && e.keyCode === 27 && closeNavMenu();
+    isLearnNavMenuActive && e.keyCode === 27 && closeLearnNavMenu();
+    isReviewsNavMenuActive && e.keyCode === 27 && closeReviewsNavMenu();
   }
 
   const clickOutside = (e) => {
@@ -84,27 +128,8 @@ const Header = ({
     if (e.target  === hamburger.current) return;
     closeAllMenus();
   }  
-
-  const handleWindowWidthChange = () => {
-    setWindowWidth(window.innerWidth);
-  }
-
-  const openNavMenu = () => {
-    navDesktopDropdown.current.style.maxHeight = navDesktopDropdown.current.scrollHeight + 'px';
-    setIsNavMenuActive(true);
-  }
-
-  const closeNavMenu = () => {
-    navDesktopDropdown.current && (navDesktopDropdown.current.style.maxHeight = null);
-    setIsNavMenuActive(false);
-  }
-
-  const closeAllMenus = () => {
-    closeMenu();
-    closeNavMenu();
-  }
-
   
+
   const classes = classNames(
     'site-header',
     bottomOuterDivider && 'has-bottom-divider',
@@ -151,22 +176,38 @@ const Header = ({
                       'list-reset text-sm',
                       navPosition && `header-nav-${navPosition}`
                     )}>
-                      { NAV_LINKS.map( ( { navTitle, navBody } )  => (
-                        <li key={`${navTitle}-list-item`}>
-                          <Link to='#' className='list-item-label' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
-                            {navTitle}
+                   
+                        <li>
+                          <Link to='#' className='list-item-label' onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
+                            {LEARN_LINKS.navTitle}
                           </Link>
 
-                          { isNavMenuActive && ( windowWidth <= 1024 ) ? 
-                            <HeaderDropdown navBody={navBody} onClick={closeAllMenus}/> : ( null )
-                          }
+                          { LEARN_LINKS.navBodies.map( navBody => (
+                            isLearnNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown             
+                            key={`${LEARN_LINKS.navTitle}-mobile-header-dropdown`} 
+                            navBody={navBody} 
+                            onClick={closeAllMenus}/> 
+                            : ( null )
+                          ))}
                         </li>
-                      ))}
-                  </ul>
 
-                  <Link to='/crypto-block/learn/bitcoin/what-is-bitcoin' className='list-item-label' onClick={isNavMenuActive ? closeNavMenu : openNavMenu}>
-                      What is Bitcoin?
-                  </Link>
+                        <li>
+                          <Link to='#' className='list-item-label' onClick={isReviewsNavMenuActive ? closeReviewsNavMenu : openReviewsNavMenu}>
+                            {REVIEW_LINKS.navTitle}
+                          </Link>
+
+                          { REVIEW_LINKS.navBodies.map( navBody => (
+                            isReviewsNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown 
+                            key={`${LEARN_LINKS.navTitle}-mobile-header-dropdown`} 
+                            navBody={navBody} 
+                            onClick={closeAllMenus}/> 
+                            : ( null )
+                          ))}
+                        </li>
+    
+                  </ul>
 
                   {!hideSignin &&
                     <ul
@@ -183,11 +224,20 @@ const Header = ({
       </div>
 
       <div ref={navDesktopDropdown}>
-        { NAV_LINKS.map( navLinksItem  => ( 
-          isNavMenuActive && ( windowWidth > 1024 ) ? 
+        { LEARN_LINKS.navBodies.map( navBody  => ( 
+          isLearnNavMenuActive && ( windowWidth > 1024 ) ? 
             <HeaderDropdown
-            key={`${navLinksItem.navTitle}-desktop-header-dropdown`} 
-            navBody={navLinksItem.navBody} 
+            key={`${LEARN_LINKS.navTitle}-desktop-header-dropdown`} 
+            navBody={navBody} 
+            onClick={closeAllMenus} 
+            /> : ( null ) 
+        ))}
+
+        { REVIEW_LINKS.navBodies.map( navBody  => ( 
+          isReviewsNavMenuActive && ( windowWidth > 1024 ) ? 
+            <HeaderDropdown
+            key={`${REVIEW_LINKS.navTitle}-desktop-header-dropdown`} 
+            navBody={navBody} 
             onClick={closeAllMenus} 
             /> : ( null ) 
         ))}
