@@ -1,31 +1,55 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "331f9d65585e8ad3f39c9c0f0aff0a7e",
+    "revision": "34fc35f3285fe6154b352577646cce46",
     "url": "/crypto-block/index.html"
   },
   {
-    "revision": "fa3cddde68f9a35c3419",
+    "revision": "c2ca360295b394ab0c09",
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "50e66b3b312aeb379555",
+    "revision": "8ab5ad2c5c690d1b1b28",
     "url": "/crypto-block/static/css/main.84f25263.chunk.css"
   },
   {
-    "revision": "fa3cddde68f9a35c3419",
-    "url": "/crypto-block/static/js/2.ca44075a.chunk.js"
+    "revision": "c2ca360295b394ab0c09",
+    "url": "/crypto-block/static/js/2.bc9a1834.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/crypto-block/static/js/2.ca44075a.chunk.js.LICENSE.txt"
+    "url": "/crypto-block/static/js/2.bc9a1834.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "50e66b3b312aeb379555",
-    "url": "/crypto-block/static/js/main.245677a5.chunk.js"
+    "revision": "8ab5ad2c5c690d1b1b28",
+    "url": "/crypto-block/static/js/main.da68f741.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
     "url": "/crypto-block/static/js/runtime-main.a9bcbbd3.js"
+  },
+  {
+    "revision": "90f4c19dc2fa0a814c1140b0767e82f3",
+    "url": "/crypto-block/static/media/bitcoin-buy.90f4c19d.svg"
+  },
+  {
+    "revision": "73d1e682912751ef38f63f44d8f54395",
+    "url": "/crypto-block/static/media/bitcoin-digital-gold.73d1e682.svg"
+  },
+  {
+    "revision": "e7e9ab256e8f7b0a93cf81a8ffa3ed4d",
+    "url": "/crypto-block/static/media/bitcoin-exchange.e7e9ab25.svg"
+  },
+  {
+    "revision": "96fbe4a5890dd989aa777d800512d51e",
+    "url": "/crypto-block/static/media/bitcoin-money.96fbe4a5.svg"
+  },
+  {
+    "revision": "e54ef7098c9b635b1a88cdb3193836f2",
+    "url": "/crypto-block/static/media/bitcoin-price-fluctuation.e54ef709.svg"
+  },
+  {
+    "revision": "38e573e866a128abdf007701bf7ba75c",
+    "url": "/crypto-block/static/media/bitcoin-transfer.38e573e8.svg"
   },
   {
     "revision": "ffe46471360b465568e0f07b3bac39c0",
