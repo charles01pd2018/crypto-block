@@ -3,8 +3,8 @@ export const LEARN_LINKS = {
     navBodies: [
         {
             navBodyLabel: 'Bitcoin',
-            navBodyLinks: ['What is Bitcoin?'],
-            navBodyLinksDestinations: ['/crypto-block/learn/bitcoin/what-is-bitcoin']
+            navBodyLinks: ['What is Bitcoin?', 'Why is Bitcoin Valuable?'],
+            navBodyLinksDestinations: ['/crypto-block/learn/bitcoin/what-is-bitcoin', '/crypto-block/learn/bitcoin/why-is-bitcoin-valuable']
         }
     ]
 };

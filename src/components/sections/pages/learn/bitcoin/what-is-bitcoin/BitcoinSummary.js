@@ -74,7 +74,7 @@ const BitcoinSummary = ({
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
          
                 <p className="m-0">
-                    However, there is a general consensus that bitcoin can be used as the next store of value to hedge against inflation. Traditionally, gold has had this function, but bitcoin is now challenging the old asset and being coined the new <i>digital gold</i> as technology continues to become integrated into our society. 
+                    However, there is a general consensus that bitcoin can be used as the next store of value to protect against inflation. Traditionally, gold has had this function, but bitcoin is now challenging the old asset and being coined the new <i>digital gold</i> as technology continues to become integrated into our society. 
                 </p>
               </div>
 
