@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "34fc35f3285fe6154b352577646cce46",
+    "revision": "353eee2f6756e5d668a336a3d985f1d7",
     "url": "/crypto-block/index.html"
   },
   {
-    "revision": "c2ca360295b394ab0c09",
+    "revision": "e96af2b237c84bf7922d",
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "8ab5ad2c5c690d1b1b28",
+    "revision": "e54e5861575906a9114d",
     "url": "/crypto-block/static/css/main.84f25263.chunk.css"
   },
   {
-    "revision": "c2ca360295b394ab0c09",
-    "url": "/crypto-block/static/js/2.bc9a1834.chunk.js"
+    "revision": "e96af2b237c84bf7922d",
+    "url": "/crypto-block/static/js/2.d239ceab.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/crypto-block/static/js/2.bc9a1834.chunk.js.LICENSE.txt"
+    "url": "/crypto-block/static/js/2.d239ceab.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8ab5ad2c5c690d1b1b28",
-    "url": "/crypto-block/static/js/main.da68f741.chunk.js"
+    "revision": "e54e5861575906a9114d",
+    "url": "/crypto-block/static/js/main.936776b7.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
@@ -36,8 +36,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/bitcoin-digital-gold.73d1e682.svg"
   },
   {
+    "revision": "f4be8e065900fc9ab15dc900e845d8af",
+    "url": "/crypto-block/static/media/bitcoin-durable.f4be8e06.svg"
+  },
+  {
     "revision": "e7e9ab256e8f7b0a93cf81a8ffa3ed4d",
     "url": "/crypto-block/static/media/bitcoin-exchange.e7e9ab25.svg"
+  },
+  {
+    "revision": "0090f148d8a3d5b4310e346c174935b0",
+    "url": "/crypto-block/static/media/bitcoin-global-reserve-currency.0090f148.svg"
   },
   {
     "revision": "96fbe4a5890dd989aa777d800512d51e",
@@ -46,6 +54,26 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "e54ef7098c9b635b1a88cdb3193836f2",
     "url": "/crypto-block/static/media/bitcoin-price-fluctuation.e54ef709.svg"
+  },
+  {
+    "revision": "fc22c19feb15ebd1000afb93f64ad884",
+    "url": "/crypto-block/static/media/bitcoin-programmed-scarcity.fc22c19f.svg"
+  },
+  {
+    "revision": "a8283d37bb81727a54d6734aafbd4e7b",
+    "url": "/crypto-block/static/media/bitcoin-secure.a8283d37.svg"
+  },
+  {
+    "revision": "1b18ed7da978fa1583844b8e28da647a",
+    "url": "/crypto-block/static/media/bitcoin-small-unit.1b18ed7d.svg"
+  },
+  {
+    "revision": "8e090e7c0aee94389e3a23b37b036522",
+    "url": "/crypto-block/static/media/bitcoin-steady-supply.8e090e7c.svg"
+  },
+  {
+    "revision": "4ffd0dacd6bf654289daf4fb51aa0dcf",
+    "url": "/crypto-block/static/media/bitcoin-total-supply.4ffd0dac.svg"
   },
   {
     "revision": "38e573e866a128abdf007701bf7ba75c",

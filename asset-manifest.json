@@ -1,24 +1,31 @@
 {
   "files": {
     "main.css": "/crypto-block/static/css/main.84f25263.chunk.css",
-    "main.js": "/crypto-block/static/js/main.da68f741.chunk.js",
-    "main.js.map": "/crypto-block/static/js/main.da68f741.chunk.js.map",
+    "main.js": "/crypto-block/static/js/main.936776b7.chunk.js",
+    "main.js.map": "/crypto-block/static/js/main.936776b7.chunk.js.map",
     "runtime-main.js": "/crypto-block/static/js/runtime-main.a9bcbbd3.js",
     "runtime-main.js.map": "/crypto-block/static/js/runtime-main.a9bcbbd3.js.map",
     "static/css/2.f1b50ea8.chunk.css": "/crypto-block/static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.bc9a1834.chunk.js": "/crypto-block/static/js/2.bc9a1834.chunk.js",
-    "static/js/2.bc9a1834.chunk.js.map": "/crypto-block/static/js/2.bc9a1834.chunk.js.map",
+    "static/js/2.d239ceab.chunk.js": "/crypto-block/static/js/2.d239ceab.chunk.js",
+    "static/js/2.d239ceab.chunk.js.map": "/crypto-block/static/js/2.d239ceab.chunk.js.map",
     "index.html": "/crypto-block/index.html",
-    "precache-manifest.d5d3bf53e80d8f13260d6e458a93937e.js": "/crypto-block/precache-manifest.d5d3bf53e80d8f13260d6e458a93937e.js",
+    "precache-manifest.be313d51fd528e1d7ab123eb88ed0054.js": "/crypto-block/precache-manifest.be313d51fd528e1d7ab123eb88ed0054.js",
     "service-worker.js": "/crypto-block/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/crypto-block/static/css/2.f1b50ea8.chunk.css.map",
     "static/css/main.84f25263.chunk.css.map": "/crypto-block/static/css/main.84f25263.chunk.css.map",
-    "static/js/2.bc9a1834.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.bc9a1834.chunk.js.LICENSE.txt",
+    "static/js/2.d239ceab.chunk.js.LICENSE.txt": "/crypto-block/static/js/2.d239ceab.chunk.js.LICENSE.txt",
     "static/media/bitcoin-buy.svg": "/crypto-block/static/media/bitcoin-buy.90f4c19d.svg",
     "static/media/bitcoin-digital-gold.svg": "/crypto-block/static/media/bitcoin-digital-gold.73d1e682.svg",
+    "static/media/bitcoin-durable.svg": "/crypto-block/static/media/bitcoin-durable.f4be8e06.svg",
     "static/media/bitcoin-exchange.svg": "/crypto-block/static/media/bitcoin-exchange.e7e9ab25.svg",
+    "static/media/bitcoin-global-reserve-currency.svg": "/crypto-block/static/media/bitcoin-global-reserve-currency.0090f148.svg",
     "static/media/bitcoin-money.svg": "/crypto-block/static/media/bitcoin-money.96fbe4a5.svg",
     "static/media/bitcoin-price-fluctuation.svg": "/crypto-block/static/media/bitcoin-price-fluctuation.e54ef709.svg",
+    "static/media/bitcoin-programmed-scarcity.svg": "/crypto-block/static/media/bitcoin-programmed-scarcity.fc22c19f.svg",
+    "static/media/bitcoin-secure.svg": "/crypto-block/static/media/bitcoin-secure.a8283d37.svg",
+    "static/media/bitcoin-small-unit.svg": "/crypto-block/static/media/bitcoin-small-unit.1b18ed7d.svg",
+    "static/media/bitcoin-steady-supply.svg": "/crypto-block/static/media/bitcoin-steady-supply.8e090e7c.svg",
+    "static/media/bitcoin-total-supply.svg": "/crypto-block/static/media/bitcoin-total-supply.4ffd0dac.svg",
     "static/media/bitcoin-transfer.svg": "/crypto-block/static/media/bitcoin-transfer.38e573e8.svg",
     "static/media/cryptocom-logo.jpg": "/crypto-block/static/media/cryptocom-logo.ffe46471.jpg",
     "static/media/feature-tile-icon-01.svg": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg",
@@ -33,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.a9bcbbd3.js",
     "static/css/2.f1b50ea8.chunk.css",
-    "static/js/2.bc9a1834.chunk.js",
+    "static/js/2.d239ceab.chunk.js",
     "static/css/main.84f25263.chunk.css",
-    "static/js/main.da68f741.chunk.js"
+    "static/js/main.936776b7.chunk.js"
   ]
 }
