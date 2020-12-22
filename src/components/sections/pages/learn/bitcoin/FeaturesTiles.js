@@ -67,7 +67,7 @@ const FeaturesTiles = ({
           <div className={tilesClasses}>
 
           <Link to='/crypto-block/learn/bitcoin/what-is-bitcoin'>
-            <div className={tilesItemClasses}>
+            <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   
@@ -93,7 +93,7 @@ const FeaturesTiles = ({
           </Link>
 
           <Link to='/crypto-block/learn/bitcoin/why-is-bitcoin-valuable'>
-            <div className={tilesItemClasses}>
+            <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   
@@ -119,7 +119,7 @@ const FeaturesTiles = ({
           </Link>
 
           <Link to='/crypto-block/learn/bitcoin/what-is-the-bitcoin-network'>
-            <div className={tilesItemClasses}>
+            <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
                   
