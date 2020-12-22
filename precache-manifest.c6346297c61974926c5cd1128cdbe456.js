@@ -1,35 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "353eee2f6756e5d668a336a3d985f1d7",
+    "revision": "a02961f8d8df2ef92c4e5a22f30d1105",
     "url": "/crypto-block/index.html"
   },
   {
-    "revision": "e96af2b237c84bf7922d",
+    "revision": "94578debbc0e45b89672",
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "e54e5861575906a9114d",
+    "revision": "376087d5cba2ed8ca4dd",
     "url": "/crypto-block/static/css/main.84f25263.chunk.css"
   },
   {
-    "revision": "e96af2b237c84bf7922d",
-    "url": "/crypto-block/static/js/2.d239ceab.chunk.js"
+    "revision": "94578debbc0e45b89672",
+    "url": "/crypto-block/static/js/2.442d133f.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/crypto-block/static/js/2.d239ceab.chunk.js.LICENSE.txt"
+    "url": "/crypto-block/static/js/2.442d133f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e54e5861575906a9114d",
-    "url": "/crypto-block/static/js/main.936776b7.chunk.js"
+    "revision": "376087d5cba2ed8ca4dd",
+    "url": "/crypto-block/static/js/main.d91b8882.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
     "url": "/crypto-block/static/js/runtime-main.a9bcbbd3.js"
   },
   {
+    "revision": "0d2cc392667c07fa9ea472b4b35eef54",
+    "url": "/crypto-block/static/media/bitcoin-accessibility.0d2cc392.svg"
+  },
+  {
     "revision": "90f4c19dc2fa0a814c1140b0767e82f3",
     "url": "/crypto-block/static/media/bitcoin-buy.90f4c19d.svg"
+  },
+  {
+    "revision": "a9c9ed5555df14d63472c7c40d755d1a",
+    "url": "/crypto-block/static/media/bitcoin-consensus.a9c9ed55.svg"
   },
   {
     "revision": "73d1e682912751ef38f63f44d8f54395",
@@ -44,12 +52,32 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/bitcoin-exchange.e7e9ab25.svg"
   },
   {
+    "revision": "9f55a63647fd39c7ab748a8e86f8a189",
+    "url": "/crypto-block/static/media/bitcoin-global-payments.9f55a636.svg"
+  },
+  {
     "revision": "0090f148d8a3d5b4310e346c174935b0",
     "url": "/crypto-block/static/media/bitcoin-global-reserve-currency.0090f148.svg"
   },
   {
+    "revision": "a275d20472e24c421da2a05a04140b5d",
+    "url": "/crypto-block/static/media/bitcoin-lower-fees.a275d204.svg"
+  },
+  {
+    "revision": "f8f0af61b91b016642b5ecb99f0e0d5a",
+    "url": "/crypto-block/static/media/bitcoin-miners.f8f0af61.svg"
+  },
+  {
     "revision": "96fbe4a5890dd989aa777d800512d51e",
     "url": "/crypto-block/static/media/bitcoin-money.96fbe4a5.svg"
+  },
+  {
+    "revision": "97a25f1ab3cae3f030d65f23deef3dc6",
+    "url": "/crypto-block/static/media/bitcoin-nodes.97a25f1a.svg"
+  },
+  {
+    "revision": "2fe96fd5ba484171e408f303919c68a2",
+    "url": "/crypto-block/static/media/bitcoin-p2p-decentralized-network.2fe96fd5.svg"
   },
   {
     "revision": "e54ef7098c9b635b1a88cdb3193836f2",
@@ -76,8 +104,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/bitcoin-total-supply.4ffd0dac.svg"
   },
   {
+    "revision": "a842d894523619830288f108ef922640",
+    "url": "/crypto-block/static/media/bitcoin-transaction-submit.a842d894.svg"
+  },
+  {
     "revision": "38e573e866a128abdf007701bf7ba75c",
     "url": "/crypto-block/static/media/bitcoin-transfer.38e573e8.svg"
+  },
+  {
+    "revision": "31a4498c3bf36aafd16729a4e0c89264",
+    "url": "/crypto-block/static/media/bitcoin-validate-transaction.31a4498c.svg"
   },
   {
     "revision": "ffe46471360b465568e0f07b3bac39c0",
