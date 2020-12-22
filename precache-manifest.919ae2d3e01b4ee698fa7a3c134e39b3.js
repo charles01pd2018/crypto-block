@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a02961f8d8df2ef92c4e5a22f30d1105",
+    "revision": "84d8d0b154ad36b8fa08b7d3276574dc",
     "url": "/crypto-block/index.html"
   },
   {
-    "revision": "94578debbc0e45b89672",
+    "revision": "00f29e6a9de226d4e379",
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "376087d5cba2ed8ca4dd",
-    "url": "/crypto-block/static/css/main.84f25263.chunk.css"
+    "revision": "80671d902102ada5c8c7",
+    "url": "/crypto-block/static/css/main.ab82385e.chunk.css"
   },
   {
-    "revision": "94578debbc0e45b89672",
-    "url": "/crypto-block/static/js/2.442d133f.chunk.js"
+    "revision": "00f29e6a9de226d4e379",
+    "url": "/crypto-block/static/js/2.d3c64a10.chunk.js"
   },
   {
     "revision": "ce15a0ffcfe8b91e4f219c1d7bb8c5ef",
-    "url": "/crypto-block/static/js/2.442d133f.chunk.js.LICENSE.txt"
+    "url": "/crypto-block/static/js/2.d3c64a10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "376087d5cba2ed8ca4dd",
-    "url": "/crypto-block/static/js/main.d91b8882.chunk.js"
+    "revision": "80671d902102ada5c8c7",
+    "url": "/crypto-block/static/js/main.44e3fa5f.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
@@ -124,8 +124,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg"
   },
   {
+    "revision": "66f37ba5c7e4b6648f04883fa637e634",
+    "url": "/crypto-block/static/media/feature-tile-icon-03.66f37ba5.svg"
+  },
+  {
+    "revision": "836acd100a942420f8ab4e6c5e4162d8",
+    "url": "/crypto-block/static/media/feature-tile-icon-04.836acd10.svg"
+  },
+  {
     "revision": "fa9ba00b178abc7bd2e02bd986e91fe3",
     "url": "/crypto-block/static/media/feature-tile-icon-05.fa9ba00b.svg"
+  },
+  {
+    "revision": "6a1776963deb39d710bae80bb449aebe",
+    "url": "/crypto-block/static/media/feature-tile-icon-06.6a177696.svg"
   },
   {
     "revision": "4e5db7d436281b7150a58924c32b3b6b",
