@@ -1,7 +1,7 @@
 import Hero from './Hero';
-import FeaturesTiles from './FeaturesTiles';
+import LearnBitcoinTiles from './LearnBitcoinTiles';
 
 export {
     Hero,
-    FeaturesTiles
+    LearnBitcoinTiles
 };

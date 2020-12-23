@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // sections
-import { Hero, FeaturesTiles } from '../../../components/sections/pages/learn/bitcoin';
+import { Hero, LearnBitcoinTiles } from '../../../components/sections/pages/learn/bitcoin';
 
 
 const LearnBitcoin = () => {
@@ -15,7 +15,7 @@ const LearnBitcoin = () => {
         </Helmet>
 
         <Hero className='illustration-section-01'/>   
-        <FeaturesTiles border tileLink />
+        <LearnBitcoinTiles border tileLink />
     </>
     );
 }

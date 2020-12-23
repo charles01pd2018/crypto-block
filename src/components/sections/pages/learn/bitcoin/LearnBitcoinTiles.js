@@ -17,7 +17,7 @@ const defaultProps = {
   ...SectionTilesProps.defaults
 };
 
-const FeaturesTiles = ({
+const LearnBitcoinTiles = ({
   className,
   topOuterDivider,
   bottomOuterDivider,
@@ -151,7 +151,7 @@ const FeaturesTiles = ({
   );
 }
 
-FeaturesTiles.propTypes = propTypes;
-FeaturesTiles.defaultProps = defaultProps;
+LearnBitcoinTiles.propTypes = propTypes;
+LearnBitcoinTiles.defaultProps = defaultProps;
 
-export default FeaturesTiles;
+export default LearnBitcoinTiles;
