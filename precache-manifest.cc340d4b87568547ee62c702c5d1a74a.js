@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "84d8d0b154ad36b8fa08b7d3276574dc",
+    "revision": "eaf3c689edabebc72cee8c6c081cd3c6",
     "url": "/crypto-block/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "80671d902102ada5c8c7",
+    "revision": "2382d6f996db0ec7cde1",
     "url": "/crypto-block/static/css/main.ab82385e.chunk.css"
   },
   {
@@ -20,16 +20,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/js/2.d3c64a10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "80671d902102ada5c8c7",
-    "url": "/crypto-block/static/js/main.44e3fa5f.chunk.js"
+    "revision": "2382d6f996db0ec7cde1",
+    "url": "/crypto-block/static/js/main.c19b1938.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
     "url": "/crypto-block/static/js/runtime-main.a9bcbbd3.js"
   },
   {
-    "revision": "0d2cc392667c07fa9ea472b4b35eef54",
-    "url": "/crypto-block/static/media/bitcoin-accessibility.0d2cc392.svg"
+    "revision": "bd1c39be9fef92094302f227827bd20b",
+    "url": "/crypto-block/static/media/bitcoin-accessibility.bd1c39be.svg"
   },
   {
     "revision": "90f4c19dc2fa0a814c1140b0767e82f3",
@@ -52,20 +52,20 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/bitcoin-exchange.e7e9ab25.svg"
   },
   {
-    "revision": "9f55a63647fd39c7ab748a8e86f8a189",
-    "url": "/crypto-block/static/media/bitcoin-global-payments.9f55a636.svg"
+    "revision": "2a3cfb84d6093d38767a31b9be3e1f99",
+    "url": "/crypto-block/static/media/bitcoin-global-payments.2a3cfb84.svg"
   },
   {
     "revision": "0090f148d8a3d5b4310e346c174935b0",
     "url": "/crypto-block/static/media/bitcoin-global-reserve-currency.0090f148.svg"
   },
   {
-    "revision": "a275d20472e24c421da2a05a04140b5d",
-    "url": "/crypto-block/static/media/bitcoin-lower-fees.a275d204.svg"
+    "revision": "e305ae34ec3cd52ac4f5db44cc99a91d",
+    "url": "/crypto-block/static/media/bitcoin-lower-fees.e305ae34.svg"
   },
   {
-    "revision": "f8f0af61b91b016642b5ecb99f0e0d5a",
-    "url": "/crypto-block/static/media/bitcoin-miners.f8f0af61.svg"
+    "revision": "02becc4b86e94ac7658b68deb6c35bac",
+    "url": "/crypto-block/static/media/bitcoin-miners.02becc4b.svg"
   },
   {
     "revision": "96fbe4a5890dd989aa777d800512d51e",
@@ -116,12 +116,60 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/media/bitcoin-validate-transaction.31a4498c.svg"
   },
   {
+    "revision": "738d882037474152a6aab02d6c764700",
+    "url": "/crypto-block/static/media/crypto-decentralized.738d8820.svg"
+  },
+  {
+    "revision": "8b95d8a5d232a57ff39efd45907ebb7d",
+    "url": "/crypto-block/static/media/crypto-financial-applications.8b95d8a5.svg"
+  },
+  {
+    "revision": "6f58262b28931c023c9575045eec610d",
+    "url": "/crypto-block/static/media/crypto-governance-tokens.6f58262b.svg"
+  },
+  {
+    "revision": "732878d733a2112b065f3012cd3744d4",
+    "url": "/crypto-block/static/media/crypto-instant-payments.732878d7.svg"
+  },
+  {
+    "revision": "2d558caebded80dc419dcdfa945cff9a",
+    "url": "/crypto-block/static/media/crypto-investment.2d558cae.svg"
+  },
+  {
+    "revision": "2fc7bcd63ca064c668a1124cc39ca21b",
+    "url": "/crypto-block/static/media/crypto-methodology.2fc7bcd6.svg"
+  },
+  {
+    "revision": "da5803ea44da52c5a8aa3651a976bcca",
+    "url": "/crypto-block/static/media/crypto-self-storage.da5803ea.svg"
+  },
+  {
+    "revision": "59bf264257532a740e2cbc960b23ef24",
+    "url": "/crypto-block/static/media/crypto-stablecoins.59bf2642.svg"
+  },
+  {
+    "revision": "77a2b729f4fc91050f890ec72812e510",
+    "url": "/crypto-block/static/media/crypto-utility-tokens.77a2b729.svg"
+  },
+  {
+    "revision": "6b96bc394ab9fc07037c3c99563b1dcd",
+    "url": "/crypto-block/static/media/crypto-value-tokens.6b96bc39.svg"
+  },
+  {
     "revision": "ffe46471360b465568e0f07b3bac39c0",
     "url": "/crypto-block/static/media/cryptocom-logo.ffe46471.jpg"
   },
   {
+    "revision": "25e6ce23c466edecc85e83a1547446b1",
+    "url": "/crypto-block/static/media/cryptocurrencies.25e6ce23.svg"
+  },
+  {
     "revision": "0f9928d77bc67692e90527ec092fcbd0",
     "url": "/crypto-block/static/media/feature-tile-icon-01.0f9928d7.svg"
+  },
+  {
+    "revision": "bd39f30434175e7c8b1d1c74fa6569fd",
+    "url": "/crypto-block/static/media/feature-tile-icon-02.bd39f304.svg"
   },
   {
     "revision": "66f37ba5c7e4b6648f04883fa637e634",
