@@ -17,7 +17,7 @@ const Learn = () => {
     <>
         <Helmet>
             <meta name="description" content="Learn what's possible in cryptocurrency." /> 
-            <title>Learn About Cryptocurrency</title>
+            <title>Learn About Bitcoin &amp; Cryptocurrency</title>
         </Helmet>
 
         <Hero className='illustration-section-01' bottomDivider/>   

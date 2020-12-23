@@ -54,7 +54,7 @@ const Hero = ({
             
             <div className="container-xs">
               <p className="m-0 mb-32 reveal-from-bottom" data-reveal-delay="400">
-                learn all about cryptocurrency
+                learn all about the world of crypto
               </p>
             </div>
             
