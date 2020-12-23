@@ -10,10 +10,13 @@ import LayoutDefault from './layouts/LayoutDefault';
 
 // views 
 import { About, Home } from './views/main';
-import { Reviews, ExchangeReviews, WalletReviews } from './views/reviews';
 import { Contact, NotFoundPage, Terms } from './views/secondary';
+
+import { Reviews, ExchangeReviews, WalletReviews } from './views/reviews';
+
 import { Learn } from './views/learn';
 import { LearnBitcoin, WhatIsBitcoin, WhyIsBitcoinValuable, WhatIsBitcoinNetwork } from './views/learn/bitcoin';
+import { WhatIsCrypto } from './views/learn/crypto';
 
 
 // Initialize Google Analytics
@@ -56,6 +59,8 @@ const App = () => {
             <AppRoute exact path="/crypto-block/learn/bitcoin/what-is-bitcoin" component={WhatIsBitcoin} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/learn/bitcoin/why-is-bitcoin-valuable" component={WhyIsBitcoinValuable} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/learn/bitcoin/what-is-the-bitcoin-network" component={WhatIsBitcoinNetwork} layout={LayoutDefault} />
+
+            <AppRoute exact path="/crypto-block/learn/cryptocurrency/what-is-cryptocurrency" component={WhatIsCrypto} layout={LayoutDefault} />
 
             <AppRoute exact path="/crypto-block/contact" component={Contact} layout={LayoutDefault} />
             <AppRoute exact path="/crypto-block/terms" component={Terms} layout={LayoutDefault} />

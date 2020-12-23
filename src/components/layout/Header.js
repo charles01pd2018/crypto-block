@@ -182,14 +182,9 @@ const Header = ({
                             {LEARN_LINKS.navTitle}
                           </Link>
 
-                          { LEARN_LINKS.navBodies.map( navBody => (
-                            isLearnNavMenuActive && ( windowWidth <= 1024 ) ? 
-                            <HeaderDropdown             
-                            key={`${LEARN_LINKS.navTitle}-mobile-header-dropdown`} 
-                            navBody={navBody} 
-                            onClick={closeAllMenus}/> 
-                            : ( null )
-                          ))}
+                          { isLearnNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus}/> 
+                            : ( null ) }
                         </li>
 
                         <li>
@@ -197,14 +192,9 @@ const Header = ({
                             {REVIEW_LINKS.navTitle}
                           </Link>
 
-                          { REVIEW_LINKS.navBodies.map( navBody => (
-                            isReviewsNavMenuActive && ( windowWidth <= 1024 ) ? 
-                            <HeaderDropdown 
-                            key={`${LEARN_LINKS.navTitle}-mobile-header-dropdown`} 
-                            navBody={navBody} 
-                            onClick={closeAllMenus}/> 
-                            : ( null )
-                          ))}
+                          { isReviewsNavMenuActive && ( windowWidth <= 1024 ) ? 
+                            <HeaderDropdown navBodies={REVIEW_LINKS.navBodies} onClick={closeAllMenus} /> 
+                            : ( null ) }
                         </li>
     
                   </ul>
@@ -224,23 +214,13 @@ const Header = ({
       </div>
 
       <div ref={navDesktopDropdown}>
-        { LEARN_LINKS.navBodies.map( navBody  => ( 
-          isLearnNavMenuActive && ( windowWidth > 1024 ) ? 
-            <HeaderDropdown
-            key={`${LEARN_LINKS.navTitle}-desktop-header-dropdown`} 
-            navBody={navBody} 
-            onClick={closeAllMenus} 
-            /> : ( null ) 
-        ))}
+        { isLearnNavMenuActive && ( windowWidth > 1024 ) ? 
+            <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus} /> 
+          : ( null ) }
 
-        { REVIEW_LINKS.navBodies.map( navBody  => ( 
-          isReviewsNavMenuActive && ( windowWidth > 1024 ) ? 
-            <HeaderDropdown
-            key={`${REVIEW_LINKS.navTitle}-desktop-header-dropdown`} 
-            navBody={navBody} 
-            onClick={closeAllMenus} 
-            /> : ( null ) 
-        ))}
+        { isReviewsNavMenuActive && ( windowWidth > 1024 ) ? 
+            <HeaderDropdown navBodies={REVIEW_LINKS.navBodies} onClick={closeAllMenus} /> 
+            : ( null ) }
       </div>
 
     </header>

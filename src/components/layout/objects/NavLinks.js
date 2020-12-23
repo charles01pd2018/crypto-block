@@ -5,6 +5,11 @@ export const LEARN_LINKS = {
             navBodyLabel: 'Bitcoin',
             navBodyLinks: ['What is Bitcoin?', 'Why is Bitcoin Valuable?', 'What is the Bitcoin Network?'],
             navBodyLinksDestinations: ['/crypto-block/learn/bitcoin/what-is-bitcoin', '/crypto-block/learn/bitcoin/why-is-bitcoin-valuable', '/crypto-block/learn/bitcoin/what-is-the-bitcoin-network']
+        },
+        {
+            navBodyLabel: 'Cryptocurrency',
+            navBodyLinks: ['What is Cryptocurrency?'],
+            navBodyLinksDestinations: ['/crypto-block/learn/cryptocurrency/what-is-cryptocurrency']
         }
     ]
 };
