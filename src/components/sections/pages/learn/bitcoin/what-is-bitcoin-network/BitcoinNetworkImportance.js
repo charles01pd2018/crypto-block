@@ -73,11 +73,11 @@ const BitcoinNetworkImportance = ({
           <div className="split-item">
               <div className="split-item-content center-content-mobile reveal-from-left" data-reveal-container=".split-item">
                 <h3 className="mb-12 text-color-secondary">
-                    Global Payments
+                    Faster, Global Payments
                 </h3>
          
                 <p className="m-0">
-                    You can send your payments anywhere you want!
+                    You can send payments anywhere you want in typically 10 minutes!
                 </p>
               </div>
 
