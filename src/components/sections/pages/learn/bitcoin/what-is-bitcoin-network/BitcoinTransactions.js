@@ -147,7 +147,7 @@ const BitcoinTransactions = ({
             <p className='fw-600 center-content mt-32'>All transactions are stored on the bitcoin blockchain (kept safe by bitcoin nodes), so that everyone will know how much bitcoin they have at any given time!</p>
             
             <div className='pt-32'>
-              <p className='mt-32 text-xs'>*The financial benefits of Bitcoin also apply to many other cryptocurrencies. However, bitcoin was the first to popularize applications of the blockchain network to enable P2P financial transactions.</p>
+              <p className='mt-32 text-xs'>*The benefits of the Bitcoin network also apply to many other cryptocurrencies. However, bitcoin was the first to popularize applications of the blockchain network to enable P2P financial transactions when the founder Satoshi Nakamoto created it in January 2009.</p>
             </div>
 
           </div>
