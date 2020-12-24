@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/crypto-block/static/css/main.ab82385e.chunk.css",
-    "main.js": "/crypto-block/static/js/main.c19b1938.chunk.js",
-    "main.js.map": "/crypto-block/static/js/main.c19b1938.chunk.js.map",
+    "main.js": "/crypto-block/static/js/main.c5842002.chunk.js",
+    "main.js.map": "/crypto-block/static/js/main.c5842002.chunk.js.map",
     "runtime-main.js": "/crypto-block/static/js/runtime-main.a9bcbbd3.js",
     "runtime-main.js.map": "/crypto-block/static/js/runtime-main.a9bcbbd3.js.map",
     "static/css/2.f1b50ea8.chunk.css": "/crypto-block/static/css/2.f1b50ea8.chunk.css",
     "static/js/2.d3c64a10.chunk.js": "/crypto-block/static/js/2.d3c64a10.chunk.js",
     "static/js/2.d3c64a10.chunk.js.map": "/crypto-block/static/js/2.d3c64a10.chunk.js.map",
     "index.html": "/crypto-block/index.html",
-    "precache-manifest.cc340d4b87568547ee62c702c5d1a74a.js": "/crypto-block/precache-manifest.cc340d4b87568547ee62c702c5d1a74a.js",
+    "precache-manifest.a63fd33bbadf2782b562ab5ac6859f06.js": "/crypto-block/precache-manifest.a63fd33bbadf2782b562ab5ac6859f06.js",
     "service-worker.js": "/crypto-block/service-worker.js",
     "static/css/2.f1b50ea8.chunk.css.map": "/crypto-block/static/css/2.f1b50ea8.chunk.css.map",
     "static/css/main.ab82385e.chunk.css.map": "/crypto-block/static/css/main.ab82385e.chunk.css.map",
@@ -66,6 +66,6 @@
     "static/css/2.f1b50ea8.chunk.css",
     "static/js/2.d3c64a10.chunk.js",
     "static/css/main.ab82385e.chunk.css",
-    "static/js/main.c19b1938.chunk.js"
+    "static/js/main.c5842002.chunk.js"
   ]
 }
