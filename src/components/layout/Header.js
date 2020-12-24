@@ -58,10 +58,12 @@ const Header = ({
     isReviewsNavMenuActive && openReviewsNavMenu();
     document.addEventListener('keydown', keyPress);
     document.addEventListener('click', clickOutside);
+    document.addEventListener("touchstart", function() {}, true);
     window.addEventListener('resize', handleWindowWidthChange);
     return () => {
       document.removeEventListener('keydown', keyPress);
       document.removeEventListener('click', clickOutside);
+      document.removeEventListener("touchstart", function() {}, true);
       window.removeEventListener('resize', handleWindowWidthChange)
       closeAllMenus();
     };
