@@ -48,7 +48,7 @@ const DropdownItem = ({
 
       const dropdownTitleClasses = classNames(
         'dropdown-title',
-        isActive && 'panel-description-open'
+        isActive && 'chevron-active'
       );
 
       const dropdownDescriptionClasses = classNames(

@@ -38,8 +38,7 @@ const DropdownMenu = ({
               <div className={dropdownMenuClasses}>
                 {children}
                 { data.map( ( item, index ) => (
-                  <DropdownItem key={`${dropdownKey}-dropdown-item-${index}`} item={item} dropdownKey={dropdownKey} />
-                )
+                  <DropdownItem key={`${dropdownKey}-dropdown-item-${index}`} item={item} dropdownKey={dropdownKey} /> )
                 ) }
               </div>
             </>

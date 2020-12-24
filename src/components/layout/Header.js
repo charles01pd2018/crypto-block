@@ -139,7 +139,7 @@ const Header = ({
     bottomOuterDivider && 'has-bottom-divider',
     className
   );
-  
+
 
   return (
     <header
@@ -189,7 +189,7 @@ const Header = ({
                               isLearnNavMenuActive && !isDesktop() ? ( null ) : ( 'list-item-label' ) )} 
                             onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
                             {LEARN_LINKS.navTitle}
-                          </Link>
+                          </Link>  
                           
                           { isLearnNavMenuActive && !isDesktop() ? 
                             <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus}/> 
