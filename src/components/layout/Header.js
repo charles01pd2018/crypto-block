@@ -128,13 +128,18 @@ const Header = ({
     if (e.target  === hamburger.current) return;
     closeAllMenus();
   }  
-  
 
+  const isDesktop = () => {
+    if ( windowWidth > 1024 ) return true;
+    return false;
+  }
+  
   const classes = classNames(
     'site-header',
     bottomOuterDivider && 'has-bottom-divider',
     className
   );
+  
 
   return (
     <header
@@ -178,21 +183,29 @@ const Header = ({
                     )}>
                    
                         <li>
-                          <Link to='#' className='list-item-label' onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
+                          <Link to='#' 
+                            className={classNames(
+                              isLearnNavMenuActive && isDesktop() ? 'list-item-active' : ( null ), 
+                              isLearnNavMenuActive && !isDesktop() ? ( null ) : ( 'list-item-label' ) )} 
+                            onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
                             {LEARN_LINKS.navTitle}
                           </Link>
-
-                          { isLearnNavMenuActive && ( windowWidth <= 1024 ) ? 
+                          
+                          { isLearnNavMenuActive && !isDesktop() ? 
                             <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus}/> 
                             : ( null ) }
                         </li>
 
                         <li>
-                          <Link to='#' className='list-item-label' onClick={isReviewsNavMenuActive ? closeReviewsNavMenu : openReviewsNavMenu}>
+                          <Link to='#' 
+                            className={classNames(
+                              isReviewsNavMenuActive && isDesktop() ? 'list-item-active' : ( null ), 
+                              isReviewsNavMenuActive && !isDesktop() ? ( null ) : ( 'list-item-label' ))}
+                            onClick={isReviewsNavMenuActive ? closeReviewsNavMenu : openReviewsNavMenu}>
                             {REVIEW_LINKS.navTitle}
                           </Link>
 
-                          { isReviewsNavMenuActive && ( windowWidth <= 1024 ) ? 
+                          { isReviewsNavMenuActive && !isDesktop() ? 
                             <HeaderDropdown navBodies={REVIEW_LINKS.navBodies} onClick={closeAllMenus} /> 
                             : ( null ) }
                         </li>
@@ -214,11 +227,11 @@ const Header = ({
       </div>
 
       <div ref={navDesktopDropdown}>
-        { isLearnNavMenuActive && ( windowWidth > 1024 ) ? 
+        { isLearnNavMenuActive && isDesktop() ? 
             <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus} /> 
           : ( null ) }
 
-        { isReviewsNavMenuActive && ( windowWidth > 1024 ) ? 
+        { isReviewsNavMenuActive && isDesktop() ? 
             <HeaderDropdown navBodies={REVIEW_LINKS.navBodies} onClick={closeAllMenus} /> 
             : ( null ) }
       </div>

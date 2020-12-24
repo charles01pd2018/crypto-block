@@ -5,6 +5,13 @@
     }
 }
 
+.list-item-active {
+
+    &:focus {
+        border-bottom: 3px solid get-color(light, 3);
+    }
+}
+
 #header-dropdown {
     width: 100%;
 
