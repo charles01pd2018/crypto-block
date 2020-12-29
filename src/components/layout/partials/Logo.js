@@ -9,6 +9,7 @@ import { Image } from '../../elements';
 
 const Logo = ({
   className,
+  onClick,
   ...props
 }) => {
 
@@ -28,7 +29,8 @@ const Logo = ({
             src={require('./../../../assets/images/logo.svg')}
             alt="Open"
             width={60}
-            height={60} />
+            height={60} 
+            onClick={onClick} />
         </Link>
       </h1>
     </div>
