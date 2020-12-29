@@ -6,10 +6,7 @@
 }
 
 .list-item-active {
-
-    &:focus {
-        border-bottom: 3px solid get-color(light, 1);
-    }
+    border-bottom: 3px solid get-color(light, 1);
 }
 
 #header-dropdown {
