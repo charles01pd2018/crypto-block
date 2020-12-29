@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "b7a2d6a19f632b7d47714fa363ebb748",
+    "revision": "f24a2e5f41f1e47af39ee57b615a4598",
     "url": "/crypto-block/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/css/2.f1b50ea8.chunk.css"
   },
   {
-    "revision": "f58c01ef7cc5cb336da5",
-    "url": "/crypto-block/static/css/main.eee487bb.chunk.css"
+    "revision": "1e3a573f1fffb93622a5",
+    "url": "/crypto-block/static/css/main.5917229c.chunk.css"
   },
   {
     "revision": "00f29e6a9de226d4e379",
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/crypto-block/static/js/2.d3c64a10.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f58c01ef7cc5cb336da5",
-    "url": "/crypto-block/static/js/main.f141ba01.chunk.js"
+    "revision": "1e3a573f1fffb93622a5",
+    "url": "/crypto-block/static/js/main.25f80e1d.chunk.js"
   },
   {
     "revision": "92c23ca2d179d60d3db8",
