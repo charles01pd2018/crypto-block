@@ -7,6 +7,10 @@
 
 .list-item-active {
     border-bottom: 3px solid get-color(light, 1);
+
+    > span {
+        color: get-color(light, 1);
+    }
 }
 
 #header-dropdown {

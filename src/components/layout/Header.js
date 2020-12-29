@@ -190,7 +190,7 @@ const Header = ({
                               isLearnNavMenuActive && isDesktop() ? 'list-item-active' : ( null ), 
                               isLearnNavMenuActive && !isDesktop() ? ( null ) : ( 'list-item-label' ) )} 
                             onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
-                            {LEARN_LINKS.navTitle}
+                            <span>{LEARN_LINKS.navTitle}</span>
                           </Link>  
                           
                           { isLearnNavMenuActive && !isDesktop() ? 
@@ -204,7 +204,7 @@ const Header = ({
                               isReviewsNavMenuActive && isDesktop() ? 'list-item-active' : ( null ), 
                               isReviewsNavMenuActive && !isDesktop() ? ( null ) : ( 'list-item-label' ))}
                             onClick={isReviewsNavMenuActive ? closeReviewsNavMenu : openReviewsNavMenu}>
-                            {REVIEW_LINKS.navTitle}
+                            <span>{REVIEW_LINKS.navTitle}</span>
                           </Link>
 
                           { isReviewsNavMenuActive && !isDesktop() ? 
