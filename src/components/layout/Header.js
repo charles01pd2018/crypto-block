@@ -192,6 +192,14 @@ const Header = ({
                             onClick={isLearnNavMenuActive ? closeLearnNavMenu : openLearnNavMenu}>
                             <span>{LEARN_LINKS.navTitle}</span>
                           </Link>  
+
+                          { !isDesktop() ? (
+                            <span className={classNames(
+                              'chevron-container',
+                              isLearnNavMenuActive && 'chevron-active' )}>
+                                <span className='chevron'></span> 
+                            </span>
+                          ) : ( null ) }
                           
                           { isLearnNavMenuActive && !isDesktop() ? 
                             <HeaderDropdown navBodies={LEARN_LINKS.navBodies} onClick={closeAllMenus}/> 
@@ -206,6 +214,14 @@ const Header = ({
                             onClick={isReviewsNavMenuActive ? closeReviewsNavMenu : openReviewsNavMenu}>
                             <span>{REVIEW_LINKS.navTitle}</span>
                           </Link>
+
+                          { !isDesktop() ? (
+                            <span className={classNames(
+                              'chevron-container',
+                              isReviewsNavMenuActive && 'chevron-active' )}>
+                                <span className='chevron'></span> 
+                            </span>
+                          ) : ( null ) }
 
                           { isReviewsNavMenuActive && !isDesktop() ? 
                             <HeaderDropdown navBodies={REVIEW_LINKS.navBodies} onClick={closeAllMenus} /> 

@@ -40,6 +40,14 @@
     }
 }
 
+.chevron-container {
+    position: absolute;
+    right: 0;
+    display: inline-flex;
+    margin-right: 35px;
+    margin-top: 16px;
+}
+
 @include media('>1024px') {
 
     .nav-link {
