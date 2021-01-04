@@ -34,7 +34,6 @@ const HeaderDropdown = ({
 
     const outerClasses = classNames(
         'container feature-tiles',
-        className
       );
     
       const innerClasses = classNames(
@@ -53,7 +52,7 @@ const HeaderDropdown = ({
 
     return (
     <>
-        <div id='header-dropdown'>
+        <nav id='header-dropdown' className={className}>
             <div className={outerClasses}>
                 <div className={innerClasses}>
                     <div className={tilesClasses}>
@@ -81,7 +80,7 @@ const HeaderDropdown = ({
                     </div>
                 </div>
             </div>
-        </div>
+        </nav>
     </>
     );
 } 

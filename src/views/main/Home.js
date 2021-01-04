@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 // sections
 import { Hero, FeaturesTiles, FeaturesSplit } from '../../components/sections/pages/main/home';
+import { Banner } from '../../components/elements';
 
 
 const Home = () => {
