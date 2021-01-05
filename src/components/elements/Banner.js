@@ -35,19 +35,15 @@ const Banner = ({
   
   const [tokenPriceData, setTokenPriceData] = useState(null);
 
-  const setTokenStatus = data => {
-    setTokenPriceData(data);
-  }
-
   const getTokenPriceData = async () => {
     axios.get( GetTokenPriceURL() )
       .then( response => {
         const data = response.data;
-        setTokenStatus(data);
-        console.log(data);
+        setTokenPriceData(data.bitcoin);
+        console.log(data.bitcoin);
       })
       .catch( error => {
-        setTokenStatus(null);
+        setTokenPriceData(null);
         console.log(error);
       });
   }
