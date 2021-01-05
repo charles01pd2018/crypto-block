@@ -1,5 +1,16 @@
 .banner {
     width: 100%;
-    z-index: 99;
-    background: white;
+    background-color: orange;
+    top: 10px;
+    bottom: 1000px;
+    overflow: none;
+    position: -webkit-sticky;
+    position: sticky;
+
+    .banner-inner {
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+        text-align: center;
+    }
 }

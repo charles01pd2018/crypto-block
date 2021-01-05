@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 // sections
 import { Hero, LearnBitcoinTiles } from '../../../components/sections/pages/learn/bitcoin';
+import { Banner } from '../../../components/elements';
 
 
 const LearnBitcoin = () => {
@@ -14,6 +15,7 @@ const LearnBitcoin = () => {
             <title>Learn About Bitcoin</title>
         </Helmet>
 
+        <Banner price="BTC: $5" />
         <Hero className='illustration-section-01'/>   
         <LearnBitcoinTiles border tileLink />
     </>

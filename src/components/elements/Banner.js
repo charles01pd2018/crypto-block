@@ -1,8 +1,12 @@
-import React from 'react';
+import React, { useState, useCallback, useEffect } from 'react';
+import axios from 'axios';
 
 // types
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+
+// data fetching
+import { GetTokenPriceURL } from '../../data/tokens';
 
 
 const propTypes = {
@@ -16,27 +20,52 @@ const defaultProps = {
 const Banner = ({
   className,
   children,
+  price,
   ...props
 }) => {
 
   const outerClasses = classNames(
-    'banner',
+    'section',
     className
   );
 
   const innerClasses = classNames(
-    'section-inner',
+    'banner-inner',
   );
+  
+  const [tokenPriceData, setTokenPriceData] = useState(null);
+
+  const setTokenStatus = data => {
+    setTokenPriceData(data);
+  }
+
+  const getTokenPriceData = async () => {
+    axios.get( GetTokenPriceURL() )
+      .then( response => {
+        const data = response.data;
+        setTokenStatus(data);
+        console.log(data);
+      })
+      .catch( error => {
+        setTokenStatus(null);
+        console.log(error);
+      });
+  }
+
+  useEffect( () => {
+    getTokenPriceData();
+    console.log(tokenPriceData);
+  }, [] );
 
   return (
     <section
       {...props}
       className={outerClasses}
     >
-      <div className="container">
+      <div className="banner">
         <div className={innerClasses}>
           {children}
-          fdafsd
+          <span className='fw-600'>{price}</span>
         </div>
       </div>
     </section>
