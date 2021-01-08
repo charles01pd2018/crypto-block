@@ -22,13 +22,13 @@ const FooterNav = ({
     >
       <ul className="list-reset">
         <li>
-          <Link to="/crypto-block/about">About</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <Link to="/crypto-block/contact">Contact</Link>
+          <Link to="/contact">Contact</Link>
         </li>
         <li>
-          <Link to="/crypto-block/terms">Terms of Service</Link>
+          <Link to="/terms">Terms of Service</Link>
         </li>
       </ul>
     </nav>
