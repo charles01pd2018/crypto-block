@@ -1,0 +1,6 @@
+{
+    "buildpacks": [
+     { "url": "heroku/nodejs" },
+     { "url": "https://github.com/charles01pd2018/crypto-block" }
+    ]
+}
