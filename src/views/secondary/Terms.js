@@ -36,6 +36,8 @@ const Terms = () => {
                     <p>Amount of money spent on our affiliate partner’s website.</p>
                     </li>
                 </ul>
+            <br />
+            <p className='text-xs'><i>Updated <time datetime='2021-01-10'>Jan 10, 2021</time></i></p>
         </span>
     );
 
