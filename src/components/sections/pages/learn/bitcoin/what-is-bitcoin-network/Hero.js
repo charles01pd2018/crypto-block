@@ -57,6 +57,10 @@ const Hero = ({
                 learn the technology behind bitcoin
               </p>
             </div>
+
+            <p className="m-0 reveal-from-bottom text-sm" data-reveal-delay="600">
+                <time className='text-xs fw-600' dateTime="2021-01-10">Updated January 10, 2021</time>
+            </p>
             
           </div>
         </div>
