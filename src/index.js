@@ -2,6 +2,8 @@ import React from 'react';
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { hydrate, render } from "react-dom";
+import sslRedirect from 'heroku-ssl-redirect';
+import express from 'express';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -22,6 +24,15 @@ if (rootElement.hasChildNodes()) {
 } else {
   render(appRoute, rootElement);
 }
+
+//ssl redirect
+const app = express();
+app.use(sslRedirect());
+app.get('/', (req, res) => {
+  res.send('hello world');
+});
+ 
+app.listen(process.env.PORT || 3000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
