@@ -2,26 +2,23 @@ import React from 'react';
 import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { hydrate, render } from "react-dom";
-import sslRedirect from 'heroku-ssl-redirect';
-import express from 'express';
+import HttpsRedirect from 'react-https-redirect';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
 import './assets/scss/style.scss';
 
-const app = express();
 const history = createBrowserHistory();
 
 const rootElement = document.getElementById('root');
 const appRoute = (
-  <Router history={history}>
-    <App />
-  </Router>
+  <HttpsRedirect>
+    <Router history={history}>
+      <App />
+    </Router>
+  </HttpsRedirect>
 );
-
-//ssl redirect
-app.use(sslRedirect());
 
 if (rootElement.hasChildNodes()) {
   hydrate(appRoute, rootElement);
