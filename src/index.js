@@ -20,14 +20,14 @@ const appRoute = (
   </Router>
 );
 
+//ssl redirect
+app.use(sslRedirect());
+
 if (rootElement.hasChildNodes()) {
   hydrate(appRoute, rootElement);
 } else {
   render(appRoute, rootElement);
 }
-
-//ssl redirect
-app.use(sslRedirect());
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
