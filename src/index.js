@@ -1,7 +1,7 @@
 import React from 'react';
+import { Router } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import { hydrate, render } from "react-dom";
-import HttpsRedirect from 'react-https-redirect';
 
 import App from './App';
 import * as serviceWorker from './serviceWorker';
@@ -12,9 +12,9 @@ const history = createBrowserHistory();
 
 const rootElement = document.getElementById('root');
 const appRoute = (
-  <HttpsRedirect history={history}>
+  <Router history={history}>
       <App />
-  </HttpsRedirect>
+  </Router>
 );
 
 if (rootElement.hasChildNodes()) {
