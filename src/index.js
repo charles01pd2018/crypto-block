@@ -10,6 +10,7 @@ import * as serviceWorker from './serviceWorker';
 
 import './assets/scss/style.scss';
 
+const app = express();
 const history = createBrowserHistory();
 
 const rootElement = document.getElementById('root');
@@ -26,13 +27,7 @@ if (rootElement.hasChildNodes()) {
 }
 
 //ssl redirect
-const app = express();
 app.use(sslRedirect());
-app.get('/', (req, res) => {
-  res.send('hello world');
-});
- 
-app.listen(process.env.PORT || 3000);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
