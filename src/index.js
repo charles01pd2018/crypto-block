@@ -1,5 +1,4 @@
 import React from 'react';
-import { Router } from "react-router-dom";
 import { createBrowserHistory } from "history";
 import { hydrate, render } from "react-dom";
 import HttpsRedirect from 'react-https-redirect';
@@ -13,10 +12,8 @@ const history = createBrowserHistory();
 
 const rootElement = document.getElementById('root');
 const appRoute = (
-  <HttpsRedirect>
-    <Router history={history}>
+  <HttpsRedirect history={history}>
       <App />
-    </Router>
   </HttpsRedirect>
 );
 
