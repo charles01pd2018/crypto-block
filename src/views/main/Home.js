@@ -10,7 +10,7 @@ const Home = () => {
   return (
     <>
       <Helmet>
-        <meta name="description" content="Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges." /> 
+        <meta name="description" content="Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges and hardware wallets." /> 
         <title>Cryptocurrency: learn what's possible</title>
       </Helmet>
 
