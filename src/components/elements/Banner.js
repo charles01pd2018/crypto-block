@@ -1,4 +1,4 @@
-import React, { useState, useCallback, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // types
@@ -33,22 +33,22 @@ const Banner = ({
     'banner-inner',
   );
   
-  const [tokenPriceData, setTokenPriceData] = useState(null);
-
-  const getTokenPriceData = async () => {
-    axios.get( GetTokenPriceURL() )
-      .then( response => {
-        const data = response.data;
-        setTokenPriceData(data.bitcoin);
-        console.log(data.bitcoin);
-      })
-      .catch( error => {
-        setTokenPriceData(null);
-        console.log(error);
-      });
-  }
+  const [tokenPriceData, setTokenPriceData] = useState(0);
 
   useEffect( () => {
+
+    const getTokenPriceData = async () => {
+      axios.get( GetTokenPriceURL() )
+        .then( response => {
+          setTokenPriceData(response.data.bitcoin);
+          console.log(response.data.bitcoin)
+        })
+        .catch( error => {
+          setTokenPriceData(null);
+          console.log(error);
+        });
+    }
+
     getTokenPriceData();
     console.log(tokenPriceData);
   }, [] );
