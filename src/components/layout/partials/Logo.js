@@ -24,7 +24,7 @@ const Logo = ({
       className={classes}
     >
       <h1 className="m-0">
-        <Link to="/crypto-block">
+        <Link to="/">
           <Image
             src={require('./../../../assets/images/logo.svg')}
             alt="Open"

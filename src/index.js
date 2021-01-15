@@ -1,5 +1,5 @@
 import React from 'react';
-import { Router } from "react-router-dom";
+import { Router } from 'react-router-dom';
 import { createBrowserHistory } from "history";
 import { hydrate, render } from "react-dom";
 
@@ -13,7 +13,7 @@ const history = createBrowserHistory();
 const rootElement = document.getElementById('root');
 const appRoute = (
   <Router history={history}>
-    <App />
+      <App />
   </Router>
 );
 

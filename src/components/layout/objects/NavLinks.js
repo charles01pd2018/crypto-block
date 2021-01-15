@@ -4,12 +4,12 @@ export const LEARN_LINKS = {
         {
             navBodyLabel: 'Bitcoin',
             navBodyLinks: ['What is Bitcoin?', 'Why is Bitcoin Valuable?', 'What is the Bitcoin Network?'],
-            navBodyLinksDestinations: ['/crypto-block/learn/bitcoin/what-is-bitcoin', '/crypto-block/learn/bitcoin/why-is-bitcoin-valuable', '/crypto-block/learn/bitcoin/what-is-the-bitcoin-network']
+            navBodyLinksDestinations: ['/learn/bitcoin/what-is-bitcoin', '/learn/bitcoin/why-is-bitcoin-valuable', '/learn/bitcoin/what-is-the-bitcoin-network']
         },
         {
             navBodyLabel: 'Cryptocurrency',
             navBodyLinks: ['What is Cryptocurrency?'],
-            navBodyLinksDestinations: ['/crypto-block/learn/cryptocurrency/what-is-cryptocurrency']
+            navBodyLinksDestinations: ['/learn/cryptocurrency/what-is-cryptocurrency']
         }
     ]
 };
@@ -20,7 +20,7 @@ export const LEARN_LINKS = {
         {
             navBodyLabel: 'Essentials',
             navBodyLinks: ['Best Crypto Exchanges in USA', 'Best Crypto Hardware Wallets in USA'],
-            navBodyLinksDestinations: ['/crypto-block/reviews/exchanges', '/crypto-block/reviews/hardware-wallets']
+            navBodyLinksDestinations: ['/reviews/exchanges', '/reviews/hardware-wallets']
         }
     ]
 };

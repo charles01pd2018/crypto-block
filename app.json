@@ -1,0 +1,6 @@
+{
+    "buildpacks": [
+    { "url": "heroku/nodejs" },
+    { "url": "https://github.com/nhutphuongit/create-react-app-buildpack.git" }
+    ]
+}

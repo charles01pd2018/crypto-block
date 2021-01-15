@@ -66,7 +66,7 @@ const FeaturesTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
-          <Link to='/crypto-block/reviews/exchanges'>
+          <Link to='/reviews/exchanges'>
             <div className={tilesItemClasses}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -92,7 +92,7 @@ const FeaturesTiles = ({
             </div>
           </Link>
 
-          <Link to='/crypto-block/reviews/hardware-wallets'>
+          <Link to='/reviews/hardware-wallets'>
             <div className={tilesItemClasses}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
