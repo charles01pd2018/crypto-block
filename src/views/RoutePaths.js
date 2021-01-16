@@ -29,7 +29,7 @@ const RoutePaths = [
 
     [ "/contact", Contact ],
     [ "/terms", Terms ],
-    
+
     [ "*", NotFoundPage ]
 ];
 
