@@ -1,16 +1,19 @@
 import React from 'react';
-import { Route } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 // route paths
 import RoutePaths from './RoutePaths';
 
 
 const SitemapRoutes = (
-    <Route>
+  <BrowserRouter>
+    <Switch>
         { RoutePaths.map ( ([ routePath, view ]) => (
           <Route path={routePath} /> ) ) 
         }
-    </Route>
+        <Route />
+    </Switch>
+    </BrowserRouter>
 );
 
 export default SitemapRoutes;
