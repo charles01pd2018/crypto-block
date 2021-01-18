@@ -33,25 +33,26 @@ const Banner = ({
     'banner-inner',
   );
   
-  const [tokenPriceData, setTokenPriceData] = useState(0);
+  const [tokenPriceData, setTokenPriceData] = useState(null);
+
+  const getTokenPriceData = async () => {
+    axios.get( GetTokenPriceURL() )
+      .then( response => {
+        const data = response.data.bitcoin;
+        setTokenPriceData(data);
+        console.log(data)
+      })
+      .catch( error => {
+        setTokenPriceData(null);
+        console.log(error);
+      });
+  }
 
   useEffect( () => {
-
-    const getTokenPriceData = async () => {
-      axios.get( GetTokenPriceURL() )
-        .then( response => {
-          setTokenPriceData(response.data.bitcoin);
-          console.log(response.data.bitcoin)
-        })
-        .catch( error => {
-          setTokenPriceData(null);
-          console.log(error);
-        });
-    }
-
     getTokenPriceData();
     console.log(tokenPriceData);
   }, [] );
+  
 
   return (
     <section
@@ -61,7 +62,7 @@ const Banner = ({
       <div className="banner">
         <div className={innerClasses}>
           {children}
-          <span className='fw-600'>{price}</span>
+          <span className='fw-600'>{`$${tokenPriceData?.usd}`}</span>
         </div>
       </div>
     </section>
