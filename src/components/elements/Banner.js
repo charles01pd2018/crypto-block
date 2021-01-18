@@ -51,8 +51,8 @@ const Banner = ({
   useEffect( () => {
     getTokenPriceData();
     console.log(tokenPriceData);
-  }, [] );
-  
+  }, []);
+
 
   return (
     <section
@@ -62,7 +62,7 @@ const Banner = ({
       <div className="banner">
         <div className={innerClasses}>
           {children}
-          <span className='fw-600'>{`$${tokenPriceData?.usd}`}</span>
+          <span className='fw-600'>{`Current BTC Price: $${tokenPriceData?.usd}`}</span>
         </div>
       </div>
     </section>
