@@ -9,7 +9,7 @@ import { Image, Button } from '../../../../elements';
 import DropdownMenu from '../../../partials/dropdown/DropdownMenu';
 
 // objects
-import { COINBASE_EXCHANGE_DATA, KRAKEN_EXCHANGE_DATA, CRYPTOCOM_EXCHANGE_DATA } from './objects';
+import { COINBASE_EXCHANGE_DATA, KRAKEN_EXCHANGE_DATA } from './objects';
 
 
 const propTypes = {
@@ -157,52 +157,6 @@ const ReviewPanels = ({
 
                             <DropdownMenu data={KRAKEN_EXCHANGE_DATA} dropdownKey='kraken'/>
                         </div>
-
-                        <div className={panelsItemClasses}>
-
-                          <div className='panels-item-inner'>
-
-                            <div className='panels-heading'>
-                              <div className='panels-image'>
-                                  <Image
-                                    src={require('./../../../../../assets/images/pages/reviews/exchanges/cryptocom-logo.jpg')}
-                                    alt="Image"
-                                    width={130}
-                                    height={130} />
-                              </div>
-                        
-                              <div className='panels-title'>
-                                  <h4 className="text-xs text-color-secondary fw-600 tt-u">Best for Crypto Fans</h4>
-                                  <h2 className='mt-0'>Crypto.com Exchange</h2>
-                              </div>
-                            </div>
-
-                          <div className='panels-description'>
-                            <div className='panels-main-description text-sm'>
-                              <p className='fw-600'>Transaction Fee: <span className='highlight'><b>Low</b></span></p>
-                              <p className='fw-600'>Transaction Fee with Credit Card: <span className='highlight'><b>4%</b></span></p>
-                              <p className='fw-600'>Transaction Fee with Bank: <span className='highlight'><b>~0.2%</b></span></p>
-                            </div>
-
-                            <div className='panels-overlay'>
-                              <div className='panels-qualities text-sm'>
-                                <p className='fw-600'>Cryptocurrencies Available: <span className='highlight'><b>BTC, ETH, +56 More</b></span></p>
-                                <p className='fw-600'>Margin Trading: <span className='highlight'><b>No</b></span></p>
-                              </div>
-
-                            <div className='affiliate-button'>
-                                <Button tag='a' color='primary' href='https://crypto.com/app/5xf7ch8euu' target='_blank'>
-                                  <p className='fw-600'>Learn More</p>
-                                </Button>
-                                <p className='text-xxs'>on Crypto.com</p>
-                            </div>
-                          </div>
-
-                        </div>
-                      </div>
-                      
-                      <DropdownMenu data={CRYPTOCOM_EXCHANGE_DATA} dropdownKey='cryptocom'/>
-                    </div>
                   </div>
                     
                 </div>
