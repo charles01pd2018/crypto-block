@@ -59,7 +59,7 @@ const Hero = ({
               </p>
             </div>
             
-            <Link to="/crypto-block" >
+            <Link to="/" >
               <p className='text-color-secondary fw-600'>Click Here to Return Home!</p>
             </Link>
             

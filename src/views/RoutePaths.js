@@ -20,9 +20,9 @@ const RoutePaths = [
     [ "/learn", Learn ],
 
     [ "/learn/bitcoin", LearnBitcoin ],
-    [ "learn/what-is-bitcoin", WhatIsBitcoin ],
-    [ "learn/why-is-bitcoin-valuable", WhyIsBitcoinValuable ],
-    [ "learn/what-is-bitcoin-network", WhatIsBitcoinNetwork ],
+    [ "/learn/bitcoin/what-is-bitcoin", WhatIsBitcoin ],
+    [ "/learn/bitcoin/why-is-bitcoin-valuable", WhyIsBitcoinValuable ],
+    [ "/learn/bitcoin/what-is-the-bitcoin-network", WhatIsBitcoinNetwork ],
     
     [ "/learn/cryptocurrency", LearnCrypto ],
     [ "/learn/cryptocurrency/what-is-cryptocurrency", WhatIsCrypto ],
