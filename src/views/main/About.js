@@ -8,7 +8,7 @@ import { Hero, FeaturesSplit, FeaturesTiles } from '../../components/sections/pa
 const About = () => {
 
     return ( 
-        <>
+        <div>
             <Helmet>
                 <meta name="description" content="Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges and hardware wallets." /> 
                 <title>Cryptocurrency: learn what's possible</title>
@@ -17,7 +17,7 @@ const About = () => {
             <Hero bottomDivider className='illustration-section-01'/>
             <FeaturesSplit />
             <FeaturesTiles />
-        </>
+        </div>
     );
 }
 
