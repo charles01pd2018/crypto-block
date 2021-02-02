@@ -14,12 +14,12 @@ import RoutePaths from "./views/RoutePaths";
 const Routes = () => {
 
     return (
-        <Route>
+        <Switch>
             {
             RoutePaths.map( ( [ routePath, view ] ) => (
                 <AppRoute exact path={routePath} component={view} layout={LayoutDefault} /> )) 
             }
-          </Route>
+          </Switch>
     );
 }
 
