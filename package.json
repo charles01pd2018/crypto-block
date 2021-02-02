@@ -25,14 +25,14 @@
     "url": "https://github.com/charles01pd2018/crypto-block.git"
   },
   "scripts": {
+    "sitemap": "node ./sitemap-generator.js",
     "dev": "react-scripts start",
-    "start": "serve -s build",
-    "predeploy": "yarn sitemap",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
+    "predeploy": "yarn sitemap",
+    "start": "serve -s build",
+    "build": "react-scripts build",
     "eject": "react-scripts eject",
-    "heroku-postbuild": "yarn build",
-    "sitemap": "node ./sitemap-generator.js"
+    "heroku-postbuild": "yarn build"
   },
   "resolutions": {
     "**/babel-loader": "8.1.0",
