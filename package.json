@@ -28,11 +28,9 @@
     "sitemap": "node ./sitemap-generator.js",
     "dev": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "yarn sitemap",
-    "start": "serve -s build",
+    "start": "serve -s build && yarn sitemap",
     "build": "react-scripts build",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "yarn build"
+    "eject": "react-scripts eject"
   },
   "resolutions": {
     "**/babel-loader": "8.1.0",
