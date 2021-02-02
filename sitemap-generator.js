@@ -35,7 +35,7 @@ function generateSitemap() {
     return (
       new Sitemap(router)
           .filterPaths(filterConfig)
-          .build("https:/crypto-block--staging.herokuapp.com")
+          .build("https://crypto-block--staging.herokuapp.com")
           .save("./public/sitemap.xml")
     );
 }

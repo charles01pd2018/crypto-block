@@ -2,4 +2,4 @@
 User-agent: *
 Disallow: /
 
-Sitemap: http://crypto-block--staging.herokuapp.com/sitemap.xml
+Sitemap: https://crypto-block--staging.herokuapp.com/sitemap.xml
