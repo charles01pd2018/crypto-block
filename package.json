@@ -3,7 +3,7 @@
   "description": "Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges and hardware wallets.",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cryptoblock.me",
+  "homepage": "https://www.cryptoblock.me",
   "dependencies": {
     "classnames": "^2.2.6",
     "gatsby": "^2.30.1",

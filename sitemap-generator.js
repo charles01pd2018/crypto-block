@@ -23,7 +23,7 @@ function generateSitemap() {
     return (
       new Sitemap(router)
           .filterPaths(filterConfig)
-          .build("https://crypto-block--staging.herokuapp.com")
+          .build("https://www.cryptoblock.me")
           .save("./public/sitemap.xml")
     );
 }
