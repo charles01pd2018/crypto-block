@@ -28,8 +28,8 @@
     "sitemap": "node ./sitemap-generator.js",
     "dev": "react-scripts start",
     "test": "react-scripts test --env=jsdom",
-    "predeploy": "node ./sitemap-generator.js",
     "start": "serve -s build",
+    "prebuild": "yarn sitemap",
     "build": "react-scripts build",
     "eject": "react-scripts eject"
   },
