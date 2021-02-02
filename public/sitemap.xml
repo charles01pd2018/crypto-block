@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>https://www.cryptoblock.me/</loc> </url>
-<url> <loc>https://www.cryptoblock.me/about</loc> </url>
-<url> <loc>https://www.cryptoblock.me/reviews</loc> </url>
-<url> <loc>https://www.cryptoblock.me/reviews/exchanges</loc> </url>
-<url> <loc>https://www.cryptoblock.me/reviews/hardware-wallets</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/bitcoin</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/bitcoin/what-is-bitcoin</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/bitcoin/why-is-bitcoin-valuable</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/bitcoin/what-is-the-bitcoin-network</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/cryptocurrency</loc> </url>
-<url> <loc>https://www.cryptoblock.me/learn/cryptocurrency/what-is-cryptocurrency</loc> </url>
-<url> <loc>https://www.cryptoblock.me/contact</loc> </url>
-<url> <loc>https://www.cryptoblock.me/terms</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/about</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/reviews</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/reviews/exchanges</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/reviews/hardware-wallets</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/bitcoin</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/bitcoin/what-is-bitcoin</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/bitcoin/why-is-bitcoin-valuable</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/bitcoin/what-is-the-bitcoin-network</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/cryptocurrency</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/learn/cryptocurrency/what-is-cryptocurrency</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/contact</loc> </url>
+<url> <loc>https://crypto-block--staging.herokuapp.com/terms</loc> </url>
 </urlset>
