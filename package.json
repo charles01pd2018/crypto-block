@@ -5,6 +5,7 @@
   "private": true,
   "homepage": "https://www.cryptoblock.me",
   "dependencies": {
+    "@agney/react-loading": "^0.1.2",
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
     "gatsby": "^2.30.1",

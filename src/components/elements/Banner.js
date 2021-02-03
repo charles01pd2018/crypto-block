@@ -7,6 +7,7 @@ import classNames from 'classnames';
 
 // data fetching
 import { GetTokenPriceURL } from '../../data/tokens';
+import { Bars } from '@agney/react-loading';
 
 
 const propTypes = {
@@ -20,7 +21,7 @@ const defaultProps = {
 const Banner = ({
   className,
   children,
-  price,
+  tokenSymbol,
   ...props
 }) => {
 
@@ -48,6 +49,11 @@ const Banner = ({
       });
   }
 
+  const handleFetchTokenPrice = () => {
+    if (tokenPriceData === null) return ( <Bars width="28" /> );
+    else return `$${tokenPriceData.usd}`;
+  }
+
   useEffect( () => {
     getTokenPriceData();
     console.log(tokenPriceData);
@@ -64,12 +70,14 @@ const Banner = ({
       <div className="banner">
         <div className={innerClasses}>
           {children}
-          <span>Current BTC Price: </span>
-          <span className='fw-600'>
-            {
-              tokenPriceData === null ? '...Loading...' : tokenPriceData.usd
-            }
-          </span>
+
+          <div className='banner-item'>
+          <span>BTC:</span>
+            <span className='fw-600 banner-value'>
+            { handleFetchTokenPrice() }
+            </span>
+          </div>
+
         </div>
       </div>
     </section>

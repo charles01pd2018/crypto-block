@@ -8,9 +8,22 @@
     position: sticky;
 
     .banner-inner {
+        width: 100%;
+        display: inline-flex;
         padding-top: 15px;
         padding-bottom: 15px;
 
-        text-align: center;
+        justify-content: center;
+
+        .banner-item {
+            padding-left: 70px;
+            padding-right: 70px;
+            border-left: 2px solid black;
+            border-right: 2px solid black;
+
+            .banner-value {
+                margin-left: 9px;
+            }
+        }
     }
 }

@@ -15,7 +15,7 @@ const LearnBitcoin = () => {
             <title>Learn About Bitcoin</title>
         </Helmet>
 
-        <Banner price="BTC: $5" />
+        <Banner />
         <Hero className='illustration-section-01'/>   
         <LearnBitcoinTiles border tileLink />
     </>
