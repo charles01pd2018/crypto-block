@@ -1,4 +1,5 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Noindex: 
-Disallow:
+Disallow: /
+
+Sitemap: https://crypto-block--staging.herokuapp.com/sitemap.xml

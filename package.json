@@ -1,9 +1,9 @@
 {
   "name": "crypto-block",
-  "description": "Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges.",
+  "description": "Learn what's possible in cryptocurrency. Discover the best cryptocurrency exchanges and hardware wallets.",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://cryptoblock.me",
+  "homepage": "https://www.cryptoblock.me",
   "dependencies": {
     "axios": "^0.21.1",
     "classnames": "^2.2.6",
@@ -15,6 +15,7 @@
     "react-ga": "^2.7.0",
     "react-helmet": "^6.1.0",
     "react-router-dom": "^5.1.2",
+    "react-router-sitemap": "^1.2.0",
     "react-scripts": "^3.4.1",
     "reactjs-popup": "^2.0.4",
     "serve": "^11.3.2",
@@ -25,12 +26,13 @@
     "url": "https://github.com/charles01pd2018/crypto-block.git"
   },
   "scripts": {
+    "sitemap": "node ./sitemap-generator.js",
     "dev": "react-scripts start",
-    "start": "serve -s build",
-    "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "yarn build"
+    "start": "serve -s build",
+    "prebuild": "yarn sitemap",
+    "build": "react-scripts build",
+    "eject": "react-scripts eject"
   },
   "resolutions": {
     "**/babel-loader": "8.1.0",
@@ -51,5 +53,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/preset-react": "^7.12.10",
+    "@babel/register": "^7.12.10"
   }
 }
