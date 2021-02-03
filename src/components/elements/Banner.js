@@ -51,6 +51,8 @@ const Banner = ({
   useEffect( () => {
     getTokenPriceData();
     console.log(tokenPriceData);
+
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
 
@@ -62,7 +64,12 @@ const Banner = ({
       <div className="banner">
         <div className={innerClasses}>
           {children}
-          <span className='fw-600'>{`Current BTC Price: $${tokenPriceData?.usd}`}</span>
+          <span>Current BTC Price: </span>
+          <span className='fw-600'>
+            {
+              tokenPriceData === null ? '...Loading...' : tokenPriceData.usd
+            }
+          </span>
         </div>
       </div>
     </section>
