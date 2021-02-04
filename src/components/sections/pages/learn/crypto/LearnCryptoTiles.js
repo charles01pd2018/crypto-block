@@ -66,7 +66,7 @@ const LearnCryptoTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
-          <Link to='/crypto-block/learn/cryptocurrency/what-is-cryptocurrency'>
+          <Link to='/learn/cryptocurrency/what-is-cryptocurrency'>
             <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">

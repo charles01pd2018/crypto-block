@@ -66,7 +66,7 @@ const LearnBitcoinTiles = ({
         <div className={innerClasses}>
           <div className={tilesClasses}>
 
-          <Link to='/crypto-block/learn/bitcoin/what-is-bitcoin'>
+          <Link to='/learn/bitcoin/what-is-bitcoin'>
             <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -92,7 +92,7 @@ const LearnBitcoinTiles = ({
             </div>
           </Link>
 
-          <Link to='/crypto-block/learn/bitcoin/why-is-bitcoin-valuable'>
+          <Link to='/learn/bitcoin/why-is-bitcoin-valuable'>
             <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
@@ -118,7 +118,7 @@ const LearnBitcoinTiles = ({
             </div>
           </Link>
 
-          <Link to='/crypto-block/learn/bitcoin/what-is-the-bitcoin-network'>
+          <Link to='/learn/bitcoin/what-is-the-bitcoin-network'>
             <div className={tilesItemClasses} style={{height: '190px'}}>
               <div className="tiles-item-inner">
                 <div className="features-tiles-item-header">
