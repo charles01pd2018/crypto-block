@@ -4,8 +4,8 @@ const GetTokenPriceURL = (
   token='bitcoin',
   currency='usd',
   // change variables are referencing last 24 hours
-  includeMarketCap=false,
-  includeVolumeChange=true,
+  includeMarketCap=true,
+  includeVolumeChange=false,
   includePercentageChange=true
 ) => {
 

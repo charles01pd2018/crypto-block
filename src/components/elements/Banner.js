@@ -12,10 +12,12 @@ import { Bars } from '@agney/react-loading';
 
 const propTypes = {
   children: PropTypes.node,
+  tokenSymbol: PropTypes.string
 }
 
 const defaultProps = {
   children: null,
+  tokenSymbol: 'bitcoin'
 }
 
 const Banner = ({
@@ -37,21 +39,28 @@ const Banner = ({
   const [tokenPriceData, setTokenPriceData] = useState(null);
 
   const getTokenPriceData = async () => {
-    axios.get( GetTokenPriceURL() )
+    axios.get( GetTokenPriceURL(tokenSymbol) )
       .then( response => {
         const data = response.data.bitcoin;
         setTokenPriceData(data);
-        console.log(data)
       })
       .catch( error => {
-        setTokenPriceData(null);
-        console.log(error);
+        setTokenPriceData(0);
       });
   }
 
-  const handleFetchTokenPrice = () => {
+  const handleFetchTokenPrice = ( valueType ) => {
     if (tokenPriceData === null) return ( <Bars width="28" /> );
-    else return `$${tokenPriceData.usd}`;
+    else if (tokenPriceData === 0) return '...Error...';
+    else return tokenPriceData[ valueType ];
+  }
+
+  const numberWithCommas = (num) => {
+    return num.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+  }
+  
+  const roundNumber = (num, decimalPlaces) => {
+    return ( Math.round(num * 100) / 100 ).toFixed(decimalPlaces);
   }
 
   useEffect( () => {
@@ -72,9 +81,23 @@ const Banner = ({
           {children}
 
           <div className='banner-item'>
-          <span>BTC:</span>
-            <span className='fw-600 banner-value'>
-            { handleFetchTokenPrice() }
+          <span>24hr Change</span>
+            <span className='fw-600 banner-value text-color-secondary'>
+            { roundNumber( handleFetchTokenPrice('usd_24h_change'), 2 ) }%
+            </span>
+          </div>
+
+          <div className='banner-item'>
+          <span>BTC Market Cap:</span>
+            <span className='fw-600 banner-value text-color-secondary'>
+            ${ numberWithCommas( roundNumber(handleFetchTokenPrice( 'usd_market_cap' ), 0 )) }
+            </span>
+          </div>
+
+          <div className='banner-item'>
+          <span>BTC Price:</span>
+            <span className='fw-600 banner-value text-color-secondary'>
+            ${ numberWithCommas(handleFetchTokenPrice( 'usd' )) }
             </span>
           </div>
 
