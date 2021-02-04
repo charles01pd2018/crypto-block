@@ -1,28 +1,30 @@
-.banner {
-    width: 100%;
-    background-color: grey;
-    top: 10px;
-    bottom: 1000px;
-    overflow: none;
-    position: -webkit-sticky;
-    position: sticky;
-
-    .banner-inner {
+@include media( '>1024px' ) {
+    .banner {
         width: 100%;
-        display: inline-flex;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        background-color: get-color(light, 3);
+        top: 10px;
+        bottom: 1000px;
+        overflow: none;
+        position: -webkit-sticky;
+        position: sticky;
 
-        justify-content: center;
+        .banner-inner {
+            width: 100%;
+            display: inline-flex;
+            padding-top: 15px;
+            padding-bottom: 15px;
 
-        .banner-item {
-            padding-left: 70px;
-            padding-right: 70px;
-            border-left: 2px solid black;
-            border-right: 2px solid black;
+            justify-content: center;
 
-            .banner-value {
-                margin-left: 9px;
+            .banner-item {
+                padding-left: 70px;
+                padding-right: 70px;
+                border-left: 2px solid get-color(dark, 2);
+                border-right: 2px solid get-color(dark, 2);
+
+                .banner-value {
+                    margin-left: 9px;
+                }
             }
         }
     }

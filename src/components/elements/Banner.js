@@ -37,6 +37,7 @@ const Banner = ({
   );
   
   const [tokenPriceData, setTokenPriceData] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   const getTokenPriceData = async () => {
     axios.get( GetTokenPriceURL(tokenSymbol) )
@@ -63,19 +64,30 @@ const Banner = ({
     return ( Math.round(num * 100) / 100 ).toFixed(decimalPlaces);
   }
 
+  const handleWindowWidthChange = () => {
+    setWindowWidth(window.innerWidth);
+  }
+
   useEffect( () => {
     getTokenPriceData();
-    console.log(tokenPriceData);
-
+    window.addEventListener('resize', handleWindowWidthChange);
+    return () => {
+      window.removeEventListener('resize', handleWindowWidthChange)
+    };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
+  const isDesktop = () => {
+    if ( windowWidth > 1024 ) return true;
+    return false;
+  }
 
   return (
     <section
       {...props}
       className={outerClasses}
     >
+      { isDesktop() ? (
       <div className="banner">
         <div className={innerClasses}>
           {children}
@@ -103,6 +115,9 @@ const Banner = ({
 
         </div>
       </div>
+      )
+      : (null)
+    }
     </section>
   );
 }
