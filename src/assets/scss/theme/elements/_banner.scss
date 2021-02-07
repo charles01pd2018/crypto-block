@@ -24,6 +24,11 @@
 
                 .banner-value {
                     margin-left: 9px;
+
+                    > * {
+                        display: inline-flex;
+                        margin-left: 10px;
+                    }
                 }
             }
         }
