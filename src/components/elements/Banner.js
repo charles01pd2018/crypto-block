@@ -51,8 +51,7 @@ const Banner = ({
   }
 
   const handleFetchTokenPrice = ( valueType ) => {
-    if (tokenPriceData === null) return ( <Bars width="28" /> );
-    else if (tokenPriceData === 0) return '...Error...';
+    if (tokenPriceData === 0) return '...Error...';
     else return tokenPriceData[ valueType ];
   }
 
@@ -68,6 +67,11 @@ const Banner = ({
     setWindowWidth(window.innerWidth);
   }
 
+  const isDesktop = () => {
+    if ( windowWidth > 1024 ) return true;
+    return false;
+  }
+
   useEffect( () => {
     getTokenPriceData();
     window.addEventListener('resize', handleWindowWidthChange);
@@ -76,11 +80,6 @@ const Banner = ({
     };
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
-
-  const isDesktop = () => {
-    if ( windowWidth > 1024 ) return true;
-    return false;
-  }
 
   return (
     <section
@@ -95,21 +94,27 @@ const Banner = ({
           <div className='banner-item'>
           <span>24hr Change</span>
             <span className='fw-600 banner-value text-color-secondary'>
-            { roundNumber( handleFetchTokenPrice('usd_24h_change'), 2 ) }%
+            { tokenPriceData === null ? 
+             <Bars width="28" /> : 
+             roundNumber( handleFetchTokenPrice('usd_24h_change'), 2 ) }%
             </span>
           </div>
 
           <div className='banner-item'>
           <span>BTC Market Cap:</span>
             <span className='fw-600 banner-value text-color-secondary'>
-            ${ numberWithCommas( roundNumber(handleFetchTokenPrice( 'usd_market_cap' ), 0 )) }
+            ${ tokenPriceData === null ? 
+              <Bars width="28" /> : 
+              numberWithCommas( roundNumber(handleFetchTokenPrice( 'usd_market_cap' ), 0 )) }
             </span>
           </div>
 
           <div className='banner-item'>
           <span>BTC Price:</span>
             <span className='fw-600 banner-value text-color-secondary'>
-            ${ numberWithCommas(handleFetchTokenPrice( 'usd' )) }
+            ${ tokenPriceData === null ? 
+              <Bars width="28" /> : 
+              numberWithCommas(handleFetchTokenPrice( 'usd' )) }
             </span>
           </div>
 
