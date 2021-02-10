@@ -8,7 +8,6 @@ import classNames from 'classnames';
 // data fetching
 import { GetTokenPriceURL } from '../../data/tokens';
 import { Bars } from '@agney/react-loading';
-import { graphql, useStaticQuery } from "gatsby"
 
 
 const propTypes = {
