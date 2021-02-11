@@ -27,6 +27,16 @@ const Banner = ({
   ...props
 }) => {
 
+  const [tokenPriceData, setTokenPriceData] = useState(null);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const handlePercentChange = () => {
+    let percentChange = tokenPriceData?.usd_24h_change;
+    if (percentChange === 0)  return 0;
+    else if (percentChange > 0) return 1;
+    else if (percentChange < 0) return -1;
+  }
+
   const outerClasses = classNames(
     'section',
     className
@@ -35,9 +45,12 @@ const Banner = ({
   const innerClasses = classNames(
     'banner-inner',
   );
-  
-  const [tokenPriceData, setTokenPriceData] = useState(null);
-  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  const bannerValueClasses = classNames(
+    'fw-600 banner-value',
+    handlePercentChange() === 1 && 'text-color-secondary',
+    handlePercentChange() === -1 && 'negative'
+  );
 
   const getTokenPriceData = async () => {
     axios.get( GetTokenPriceURL(tokenSymbol) )
@@ -93,7 +106,7 @@ const Banner = ({
 
           <div className='banner-item'>
           <span>24hr Change</span>
-            <span className='fw-600 banner-value text-color-secondary'>
+            <span className={bannerValueClasses}>
             { tokenPriceData === null ? 
              <Bars width="28" /> : 
              roundNumber( handleFetchTokenPrice('usd_24h_change'), 2 ) }%
@@ -102,7 +115,7 @@ const Banner = ({
 
           <div className='banner-item'>
           <span>BTC Market Cap:</span>
-            <span className='fw-600 banner-value text-color-secondary'>
+            <span className={bannerValueClasses}>
             ${ tokenPriceData === null ? 
               <Bars width="28" /> : 
               numberWithCommas( roundNumber(handleFetchTokenPrice( 'usd_market_cap' ), 0 )) }
@@ -111,7 +124,7 @@ const Banner = ({
 
           <div className='banner-item'>
           <span>BTC Price:</span>
-            <span className='fw-600 banner-value text-color-secondary'>
+            <span className={bannerValueClasses}>
             ${ tokenPriceData === null ? 
               <Bars width="28" /> : 
               numberWithCommas(handleFetchTokenPrice( 'usd' )) }

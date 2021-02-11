@@ -1,7 +1,7 @@
 @include media( '>1024px' ) {
     .banner {
         width: 100%;
-        background-color: get-color(light, 3);
+        background-color: darken(get-color(light, 3), 5);
         top: 10px;
         bottom: 1000px;
         overflow: none;
@@ -29,6 +29,10 @@
                         display: inline-flex;
                         margin-left: 10px;
                     }
+                }
+
+                .negative {
+                    color: darken(get-color(alert, error), 3);
                 }
             }
         }
