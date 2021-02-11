@@ -3,6 +3,7 @@ import { Helmet } from "react-helmet";
 
 // sections
 import { Hero, BitcoinNetworkExplanation, BitcoinParticipants, BitcoinNetworkImportance, BitcoinTransactions } from '../../../components/sections/pages/learn/bitcoin/what-is-bitcoin-network';
+import { Banner } from '../../../components/elements';
 
 
 const WhatIsBitcoinNetwork = () => {
@@ -14,6 +15,7 @@ const WhatIsBitcoinNetwork = () => {
                 <title>What is the Bitcoin Network?</title>
             </Helmet>
 
+            <Banner />
             <Hero bottomDivider className='illustration-section-01'/>
             <BitcoinNetworkExplanation invertMobile bottomDivider />
             <BitcoinParticipants invertMobile bottomDivider />

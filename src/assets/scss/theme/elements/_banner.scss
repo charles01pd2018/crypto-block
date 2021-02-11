@@ -1,0 +1,35 @@
+@include media( '>1024px' ) {
+    .banner {
+        width: 100%;
+        background-color: darken(get-color(light, 3), 5);
+
+        .banner-inner {
+            width: 100%;
+            display: inline-flex;
+            padding-top: 15px;
+            padding-bottom: 15px;
+
+            justify-content: center;
+
+            .banner-item {
+                padding-left: 70px;
+                padding-right: 70px;
+                border-left: 2px solid get-color(dark, 2);
+                border-right: 2px solid get-color(dark, 2);
+
+                .banner-value {
+                    margin-left: 9px;
+
+                    > * {
+                        display: inline-flex;
+                        margin-left: 10px;
+                    }
+                }
+
+                .negative {
+                    color: darken(get-color(alert, error), 3);
+                }
+            }
+        }
+    }
+}
