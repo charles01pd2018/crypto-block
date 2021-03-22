@@ -2,7 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { ReviewPanelsProps } from '../../../../../utils/SectionProps';
+import { ReviewPanelsProps } from '../../../utils/SectionProps';
 
 // elements
 import { Image, Button } from '../../../../elements';

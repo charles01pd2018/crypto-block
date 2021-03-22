@@ -2,7 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionTilesProps } from '../../../../../utils/SectionProps';
+import { SectionTilesProps } from '../../../utils/SectionProps';
 
 // elements
 import SectionHeader from '../../../partials/SectionHeader';

@@ -4,9 +4,9 @@ require('@babel/register')({
 
 require.extensions['.css'] = function () {
     return null;
-  };
+};
   
-  const filterConfig = {
+const filterConfig = {
 	isValid: false,
 	rules: [
 		/\*/,
@@ -16,7 +16,7 @@ require.extensions['.css'] = function () {
 const router = require("./sitemap-routes").default;
 const Sitemap = require("react-router-sitemap").default;
 
-function generateSitemap() {
+const generateSitemap = () => {
     return (
       new Sitemap(router)
           .filterPaths(filterConfig)

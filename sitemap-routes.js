@@ -9,6 +9,6 @@ export default (
          {
             RoutePaths.map( ( [ routePath, view ] ) => (
                 <Route exact path={routePath}  /> )) 
-            }
+        }
     </Route>
 );

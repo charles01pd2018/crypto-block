@@ -2,7 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionSplitProps } from '../../../../../../utils/SectionProps';
+import { SectionSplitProps } from '../../../../utils/SectionProps';
 
 // elements
 import { Image } from '../../../../../elements';

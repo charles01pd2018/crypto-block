@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 // types
 import classNames from 'classnames';
-import { SectionTilesProps } from '../../../../../utils/SectionProps';
+import { SectionTilesProps } from '../../../utils/SectionProps';
 
 // elements
 import { Image } from '../../../../elements';

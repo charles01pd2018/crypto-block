@@ -2,7 +2,7 @@ import React from 'react';
 
 // types
 import classNames from 'classnames';
-import { SectionProps } from '../../../../../utils/SectionProps';
+import { SectionProps } from '../../../utils/SectionProps';
 import { Link } from 'react-router-dom';
 
 
