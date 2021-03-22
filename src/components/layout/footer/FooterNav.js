@@ -1,6 +1,6 @@
 import React from 'react';
 
-// types
+// dependencies
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 

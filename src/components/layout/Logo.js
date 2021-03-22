@@ -1,11 +1,11 @@
 import React from 'react';
 
-// typess
+// dependencies
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
 // elements
-import { Image } from '../../elements';
+import { Image } from '../elements';
 
 const Logo = ({
   className,
@@ -19,15 +19,12 @@ const Logo = ({
   );
 
   return (
-    <div
-      {...props}
-      className={classes}
-    >
+    <div {...props} className={classes}>
       <h1 className="m-0">
         <Link to="/">
           <Image
-            src={require('./../../../assets/images/logo.svg')}
-            alt="Open"
+            src={require('./../../assets/images/logo.svg')}
+            alt="crypto-block-logo"
             width={60}
             height={60} 
             onClick={onClick} />

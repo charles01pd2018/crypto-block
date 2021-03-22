@@ -1,16 +1,16 @@
 import React, { useState, useRef, useEffect } from 'react';
 
-// types
+// dependencies
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
 
-// objects
-import { LEARN_LINKS, REVIEW_LINKS } from './objects/NavLinks';
+// content
+import { LEARN_LINKS, REVIEW_LINKS } from './NavLinks';
 
 // elements
-import { Logo } from './partials';
-import { HeaderDropdown } from './partials/header';
+import Logo from '../Logo';
+import HeaderDropdown from './HeaderDropdown';
 
 
 const propTypes = {

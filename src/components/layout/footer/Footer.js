@@ -1,12 +1,13 @@
 import React from 'react';
 
-// types
+// dependencies
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 
 // elements
-import { Logo } from './partials';
-import { FooterNav, FooterSocial } from './partials/footer';
+import Logo from '../Logo';
+import FooterNav from './FooterNav'; 
+import FooterSocial from './FooterSocial';
 
 
 const propTypes = {
