@@ -13,7 +13,7 @@ const history = createBrowserHistory();
 const rootElement = document.getElementById('root');
 const appRoute = (
   <Router history={history}>
-      <App />
+      <App history={history} />
   </Router>
 );
 

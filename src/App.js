@@ -17,7 +17,9 @@ const trackPage = page => {
   ReactGA.pageview(page);
 };
 
-const App = () => {
+const App = ({
+  history
+}) => {
 
   const childRef = useRef();
   let location = useLocation();
@@ -31,13 +33,11 @@ const App = () => {
   }, [location]);
 
   return (
-    <ScrollReveal
-      ref={childRef}
-      children={() => (
-        <ScrollToTop>
+    <ScrollReveal ref={childRef} children={ () => (
+        <ScrollToTop history={history} >
           <Routes />
         </ScrollToTop>
-      )} />
+      ) } />
   );
 }
 

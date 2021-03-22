@@ -16,8 +16,8 @@ const Routes = () => {
     return (
         <Switch>
             {
-            RoutePaths.map( ( [ routePath, view ] ) => (
-                <AppRoute exact path={routePath} component={view} layout={LayoutDefault} key={routePath}/> )) 
+                RoutePaths.map( ( [ routePath, view ] ) => (
+                    <AppRoute exact path={routePath} component={view} layout={LayoutDefault} key={routePath}/> )) 
             }
           </Switch>
     );
