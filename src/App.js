@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
 
 // utils
-import { ScrollToTop, ScrollReveal } from'./utils/route';
+import { ScrollToTop, ScrollReveal } from'./utils';
 
 // routes
 import Routes from './Routes';

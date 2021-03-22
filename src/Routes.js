@@ -2,7 +2,7 @@ import React from 'react';
 import { Switch } from 'react-router-dom';
 
 // utils
-import { AppRoute } from './utils/route';
+import { AppRoute } from './utils';
 
 // layouts
 import LayoutDefault from './layouts/LayoutDefault';
