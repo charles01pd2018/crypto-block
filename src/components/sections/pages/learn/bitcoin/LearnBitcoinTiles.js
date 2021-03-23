@@ -73,8 +73,8 @@ const LearnBitcoinTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../../assets/images/feature-tile-icon-06.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../../assets/images/cog-thinking.svg')}
+                      alt="cog thinking icon"
                       width={64}
                       height={64} />
                   </div>
@@ -99,8 +99,8 @@ const LearnBitcoinTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../../assets/images/feature-tile-icon-04.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../../assets/images/head-thinking.svg')}
+                      alt="head thinking icon"
                       width={64}
                       height={64} />
                   </div>
@@ -125,8 +125,8 @@ const LearnBitcoinTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../../assets/images/feature-tile-icon-03.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../../assets/images/globe.svg')}
+                      alt="globe icon"
                       width={64}
                       height={64} />
                   </div>

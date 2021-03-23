@@ -73,8 +73,8 @@ const FeaturesTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-01.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../assets/images/star-icon.svg')}
+                      alt="star icon"
                       width={64}
                       height={64} />
                   </div>
@@ -99,8 +99,8 @@ const FeaturesTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../assets/images/feature-tile-icon-05.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../assets/images/thumbs-up.svg')}
+                      alt="thumbs up icon"
                       width={64}
                       height={64} />
                   </div>

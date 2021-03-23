@@ -73,8 +73,8 @@ const LearnCryptoTiles = ({
                   
                   <div className="features-tiles-item-image mb-16">
                     <Image
-                      src={require('./../../../../../assets/images/feature-tile-icon-02.svg')}
-                      alt="Features tile icon 01"
+                      src={require('./../../../../../assets/images/page.svg')}
+                      alt="page icon"
                       width={64}
                       height={64} />
                   </div>
