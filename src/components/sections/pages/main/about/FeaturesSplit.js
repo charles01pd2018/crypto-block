@@ -6,7 +6,7 @@ import { SectionSplitProps } from '../../../utils/SectionProps';
 
 // elements
 import { Image } from '../../../../elements';
-import SectionHeader from '../../../partials/SectionHeader';
+import SectionHeader from '../../../../elements/SectionHeader';
 
 
 const propTypes = {

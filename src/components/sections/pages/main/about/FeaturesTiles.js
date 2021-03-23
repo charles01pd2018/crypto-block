@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import { SectionTilesProps } from '../../../utils/SectionProps';
 
 // elements
-import SectionHeader from '../../../partials/SectionHeader';
+import SectionHeader from '../../../../elements/SectionHeader';
 
 
 const propTypes = {

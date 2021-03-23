@@ -2,7 +2,7 @@ import React from 'react';
 import { Helmet } from "react-helmet";
 
 // elements
-import SectionHeader from '../../components/sections/partials/SectionHeader';
+import { SectionHeader } from '../../components/elements';
 
 // sections
 import { Hero } from '../../components/sections/pages/learn';
