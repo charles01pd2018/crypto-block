@@ -6,7 +6,7 @@ import { ReviewPanelsProps } from '../../../utils/SectionProps';
 
 // elements
 import { Image, Button } from '../../../../elements';
-import DropdownMenu from '../../../partials/dropdown/DropdownMenu';
+import DropdownMenu from '../shared/DropdownMenu';
 
 // objects
 import { LEDGER_WALLET_DATA, TREZOR_WALLET_DATA } from './objects';

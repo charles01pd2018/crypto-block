@@ -6,7 +6,7 @@ import { ReviewPanelsProps } from '../../../utils/SectionProps';
 
 // elements
 import { Image, Button } from '../../../../elements';
-import DropdownMenu from '../../../partials/dropdown/DropdownMenu';
+import DropdownMenu from '../shared/DropdownMenu';
 
 // objects
 import { COINBASE_EXCHANGE_DATA, KRAKEN_EXCHANGE_DATA } from './objects';

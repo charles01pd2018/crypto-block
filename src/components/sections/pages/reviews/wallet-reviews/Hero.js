@@ -8,7 +8,7 @@ import { SectionProps } from '../../../utils/SectionProps';
 import { Modal } from '../../../../elements';
 
 // objects
-import { advertisingModalTrigger, advertisingDiclosureText } from '../objects/AdvertisingDisclosure';
+import { advertisingModalTrigger, advertisingDiclosureText } from '../shared/AdvertisingDisclosure';
 
 
 const propTypes = {

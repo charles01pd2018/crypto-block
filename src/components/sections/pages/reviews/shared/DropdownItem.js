@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import classNames from 'classnames';
 
 // elements
-import { Button } from '../../../elements';
+import { Button } from '../../../../elements';
 
 
 const defaultProps = {
